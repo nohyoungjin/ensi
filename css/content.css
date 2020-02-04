@@ -1,0 +1,968 @@
+@charset "utf-8";
+
+/* 
+SUMMARY :
+
+01 BUTTON
+02 FORM 
+03 SEARCH 
+04 PAGINATION
+05 PAGE 
+06 PRIVACY
+07 404
+*/
+
+/* bn */
+
+.bn_wrap {margin-top:30px;font-size:0;text-align:center}
+.bn_wrap.v2 {margin-top:50px}
+.bn_wrap.v3 {margin-top:70px}
+
+.bn {display:inline-block;overflow:hidden;margin:0;vertical-align:top}
+.bn * {display:block;width:100%;height:100%;text-decoration:none !important;cursor:pointer}
+.bn_big {width:168px;height:54px;font-size:18px;font-weight:normal;text-align:center;border-radius:3px}
+.bn_big * {height:54px;font-size:16px;text-align:center;line-height:54px}
+
+.bn_bk * {background-color:#999;color:#fff}
+
+.bn_rd,
+.bn_rd a:hover,
+.bn_rd a:active,
+.bn_rd a:focus {border:0;background-color:#cc3946}
+
+.bn_rd *,
+.bn_rd button:hover {color:#fff}
+
+.bn_wrap .bn_big {margin-left:10px}
+.bn_wrap .bn_big:first-child {margin-left:0}
+
+/* form */
+
+.input {display:inline-block;height:40px;padding-left:10px;border:1px solid #d9d9d9;font-size:14px;color:#777;line-height:40px;border-radius:0;-webkit-appearance:none}
+.select {display:inline-block;height:40px;padding-left:10px;border:1px solid #d9d9d9;background-color:#fff;font-size:14px;color:#747474;vertical-align:middle}
+.textarea {display:inline-block;height:150px;padding:10px;border:1px solid #dbdbdb;font-size:16px;color:#777;line-height:1.6;border-radius:0;-webkit-appearance:none}
+
+/* check */
+
+.check {display:inline-block;position:absolute;top:0;left:0;z-index:-1;width:22px;height:22px;margin:0;padding:0;vertical-align:middle}
+.check + label {display:block;position:relative;float:left;height:22px;padding-left:30px;line-height:22px;cursor:pointer}
+.check + label:before {content:"";display:inline-block;position:absolute;left:0;top:0;width:22px;height:22px;background:url(../img/common/btn_check.png) no-repeat 0 0}
+.check.cancel + label:before {content:"";display:inline-block;position:absolute;left:0;top:0;width:22px;height:22px;background:url(../img/common/btn_check.png) no-repeat 0 0}
+.check:checked + label:before {background:url(../img/common/btn_check_on.png) no-repeat 0 0}
+.check:focus + label {position:relative;z-index:2;outline:#666 dotted 1px}
+
+/* file */
+
+.btn_slight {display:inline-block;width:86px;height:40px;margin-left:3px;border:1px solid #9b9b9b;background-color:#fff;font-size:14px;line-height:38px;text-align:center;vertical-align:top;color:#000;-webkit-appearance:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}
+.input._file {visibility:hidden;overflow:hidden;position:absolute;width:1px;height:1px}
+
+.btn_plus {display:inline-block;position:relative;width:40px;height:40px;border:1px solid #9d9d9d;background:url(../img/common/btn_plus.png) no-repeat 50% 50%}
+.btn_minus {display:inline-block;position:relative;width:40px;height:40px;border:1px solid #9d9d9d;background:url(../img/common/btn_minus.png) no-repeat 50% 50%}
+
+/* search */
+
+.search_wrap {margin:50px 0 0;padding:17px 0;background:#f5f5f5;text-align:center}
+.search_wrap .inner {display:inline-block;overflow:hidden;clear:both;vertical-align:middle}
+
+input::placeholder {font-size:16px;font-weight:300;color:#999}
+
+.search_input {display:inline-block;position:relative;padding-right:44px;border:1px solid #cecece;vertical-align:middle}
+.search_input .input {display:block;float:left;width:300px;height:38px;padding: 0 10px;border:none;font-size:16px;vertical-align:middle;color:#777;line-height:38px;border-radius:0;-webkit-appearance:none}
+.search_input .btn_search {position:absolute;top:0;right:0}
+
+.btn_search {display:inline-block;width:44px;height:38px;background:url(../img/common/btn_search.png) no-repeat 0 0}
+
+/* no search */
+
+.box_noData {min-height:400px;font-size:16px;text-align:center;line-height:400px}
+
+/* paging */
+
+.paging {width:100%;margin:50px 0 0;text-align:center}
+.paging button {display:inline-block;width:36px;height:36px;vertical-align:middle}
+.paging a {display:inline-block;width:36px;height:36px;font-size:15px;color:#777;vertical-align:middle;line-height:36px}
+
+.paging a:hover, 
+.paging a:focus,
+.paging a:active, 
+.paging a.on {background-color:#cc3946;color:#fff}
+
+.paging .btn_prev {margin-right:25px}
+.paging .btn_next {margin-left:25px}
+
+.btn_first {background:url(../img/common/img_common.png) no-repeat -499px -6px}
+.btn_prev {background:url(../img/common/img_common.png) no-repeat -540px -6px}
+.btn_next {background:url(../img/common/img_common.png) no-repeat -577px -6px}
+.btn_last {background:url(../img/common/img_common.png) no-repeat -618px -6px}
+
+.btn_first:hover,
+.btn_first:focus {background-position:-499px -46px}
+
+.btn_prev:hover,
+.btn_prev:focus {background-position:-540px -46px}
+
+.btn_next:hover,
+.btn_next:focus {background-position:-577px -46px}
+
+.btn_last:hover,
+.btn_last:focus {background-position:-618px -46px}
+
+/* page head */
+
+.spot {overflow:hidden;position:relative;width:100%;margin-top:91px}
+.spot_bg {position:absolute;top:0;bottom:0;left:0;right:0;background:no-repeat center center;background-size:cover;-webkit-transform:translateZ(0) scale(1.1) rotate(0.1deg);transform:translateZ(0) scale(1.1) rotate(0.1deg);-webkit-transition:1800ms}
+
+.spot ._bg01 {background:url(../img/common/visual_1.jpg) repeat center center}
+.spot ._bg02 {background:url(../img/common/visual_2.jpg) repeat center center}
+.spot ._bg03 {background:url(../img/common/visual_3.jpg) repeat center center}
+.spot ._bg04 {background:url(../img/common/visual_4.jpg) repeat center center}
+.spot ._bg05 {background:url(../img/common/visual_5.jpg) repeat center center}
+
+.spot .inner {display:table;position:relative;top:-20px;width:100%;height:379px;text-align:center}
+.spot .inner p {display:table-cell;font-family:'Open Sans', sans-serif;font-size:42px;font-weight:600;color:#fff;vertical-align:middle;opacity:0}
+
+.load .spot_bg {-webkit-transform:translateZ(0) scale(1) rotate(0deg);transform:translateZ(0) scale(1) rotate(0deg)}
+.load .spot .inner p {opacity:1}
+
+/* tab nav */
+
+.tab_nav {width:100%;height:60px;margin:-60px auto 0;background-color:#333;text-align:center;opacity:0.8}
+.tab_nav ul {font-size:0}
+.tab_nav ul li {display:inline-block;margin-top:16px;padding:0 70px;border-left:1px solid #474341;text-align:center}
+.tab_nav ul li a {display:block;font-size:18px;font-weight:300;color:#fff;opacity:0.3}
+.tab_nav ul li.on a {opacity:1}
+.tab_nav ul li:nth-last-child(1) {border-right:1px solid #474341}
+
+/* section */
+
+.sec_inner {overflow:hidden;position:relative;width:1000px;margin:0 auto;padding:80px 0}
+.sec_inner .h_section {margin-bottom:20px;font-size:40px;font-weight:500;color:#222;text-align:center;letter-spacing:-0.5px}
+.sec_inner .sub_txt {margin-bottom:40px;font-size:16px;font-weight:300;color:#727272;text-align:left}
+
+
+/* About - ENSI 소개 */
+
+.cont_ensi .sub_txt {width:94%;margin:0 auto;text-align:center}
+
+.cont_ensi ul.lst_ensi {margin:60px 0 40px}
+.cont_ensi ul.lst_ensi:after {display:block;clear:both;content:''}
+.cont_ensi ul.lst_ensi li {float:left;width:25%;text-align:center}
+.cont_ensi ul.lst_ensi li strong {display:block;margin:10px 0 5px;font-size:20px;font-weight:500;color:#222}
+.cont_ensi ul.lst_ensi li p {font-size:16px;font-weight:300;color:#666;line-height:22px}
+.cont_ensi ul.lst_ensi li p span {font-size:14px}
+
+.ico._intro {width:172px;height:172px}
+.ico._intro_1 {background-position:0 -100px}
+.ico._intro_2 {background-position:-177px -100px}
+.ico._intro_3 {background-position:-354px -100px}
+.ico._intro_4 {background-position:-531px -100px}
+
+.sec_fellow {background-color:#fafafa}
+
+.lst_fellow {max-width:1000px;margin:0 auto;font-size:0;text-align:center}
+.lst_fellow li {display:inline-block;width:25%;margin:30px 0;text-align:center}
+.lst_fellow li strong {display:block;margin:20px 0 10px;font-size:20px;font-weight:500;color:#222}
+.lst_fellow li p {font-size:16px;font-weight:300;color:#666;line-height:22px}
+.lst_fellow li p span {font-size:14px}
+
+.box_detail {max-width:1000px;margin:0 auto}
+.box_detail img {width:100%}
+
+
+/* About - 주요연혁 */
+
+.cont_history .sec_inner .box_detail {padding:10px 0 0}
+
+
+/* ENSI - 컨퍼런스, 포럼, 세미나 */
+
+.ensi_wrap {border:1px solid #ddd}
+.ensi_wrap .brochure_title {padding:20px 20px;background-color:#f5f5f5;text-align:center}
+.ensi_wrap .brochure_title h3 {font-size:24px;font-weight:500;color:#222}
+
+.ensi_wrap .brochure_box {padding:50px;background-color:#fff}
+.ensi_wrap .brochure_box img {width:100%}
+
+.ensi_wrap .brochure_box .slider {overflow:hidden;position:relative;z-index:1}
+.ensi_wrap .brochure_box .slider .slick-slide {float:left}
+.ensi_wrap .brochure_box .slider .slick-track {overflow:hidden}
+
+.ensi_wrap .brochure_box .slider .slick-arrow {display:block !important;overflow:hidden;position:absolute;top:50%;z-index:10000;width:42px;height:63px;margin-top:-31.5px;text-indent:-9999px;cursor:pointer;transition:all .3s ease;-webkit-transition:all .3s ease;-o-transition:all .3s ease;-moz-transition:all .3s ease}
+.ensi_wrap .brochure_box .slider .slick-prev {left:30px;background:url(../img/common/arrow_prev.png) no-repeat 50% 50%}
+.ensi_wrap .brochure_box .slider .slick-next {right:30px;background:url(../img/common/arrow_next.png) no-repeat 50% 50%}
+
+.ensi_wrap .brochure_box .slider .slick-prev:hover {left:20px}
+.ensi_wrap .brochure_box .slider .slick-next:hover {right:20px}
+
+.ensi_wrap .seminar {display:table;overflow:hidden;height:auto;padding:30px 0 40px;border-bottom:1px solid #d2d2d2}
+.ensi_wrap .seminar .info {display:table-cell;width:80%;padding-right:10px;vertical-align:top}
+
+.ensi_wrap .seminar .info ul li {font-size:16px;font-weight:300;color:#222;text-align:left}
+.ensi_wrap .seminar .info ul li:nth-child(1) {margin-bottom:25px}
+.ensi_wrap .seminar .info ul li:nth-child(2) {margin-bottom:8px}
+.ensi_wrap .seminar .info ul li:first-child {font-size:22px;font-weight:500;color:#222}
+
+.ensi_wrap .seminar .info ul li em {display:inline-block;float:left;width:54px;height:23px;margin:3px 14px 0 0;border:1px solid #d2d2d2;font-size:14px;font-weight:400;color:#727272;text-align:center}
+.ensi_wrap .seminar .info ul li:nth-child(1) em {margin-top:7px}
+.ensi_wrap .seminar .info ul li span {text-align:left}
+
+.ensi_wrap .seminar .btn_brochure {display:table-cell;width:auto;padding-top:10px}
+.ensi_wrap .seminar .btn_brochure button {width:200px;height:80px;background-color:#3b3c3c;font-size:16px;color:#fff;text-align:center}
+
+.ensi_wrap .si_cont {margin-top:35px}
+.ensi_wrap .si_cont strong {display:block;margin-bottom:20px;font-size:18px;font-weight:500;color:#444;text-align:left}
+
+.ensi_wrap .si_cont ul li {position:relative;margin-bottom:8px;padding-left:10px;font-size:16px;font-weight:300;color:#727272;text-align:left}
+.ensi_wrap .si_cont ul li:nth-last-child(1) {margin-bottom:0}
+.ensi_wrap .si_cont ul li:before {content:"";position:absolute;left:0;top:13px;width:2px;height:2px;background:#949494}
+
+/* 컨퍼런스 팝업내 페이지 설정 */
+
+.modal_box .ensi_wrap {border:0}
+.modal_box .ensi_wrap .brochure_box {padding:25px}
+
+.modal_box .ensi_wrap .seminar .info ul li:first-child {font-size:20px}
+.modal_box .ensi_wrap .seminar .info ul li {font-size:14px}
+
+.modal_box .ensi_wrap .seminar .info ul li em {margin-top:0}
+.modal_box .ensi_wrap .seminar .info ul li:nth-child(1) em {margin-top:4px}
+
+.modal_box .ensi_wrap .seminar .btn_brochure button {width:180px;height:72px}
+
+.modal_box .ensi_wrap .si_cont ul li {font-size:14px}
+.modal_box .ensi_wrap .si_cont ul li:before {top:11px}
+
+/* 히스토리 */
+
+.sec_history {background-color:#fafafa}
+
+.history_wrap {text-align:left}
+.history_wrap .title_ensi {margin:0 0 30px 10px;font-size:26px;font-weight:500;color:#222}
+
+.history_wrap .info_box {position:relative}
+.history_wrap .info_box:after {display:block;clear:both;content:''}
+
+.history_wrap .info_box a {display:block}
+
+.history_wrap .info_box .slick-list {overflow:hidden}
+.history_wrap .info_box .slick-slide {float:left;margin:0 10px;background:#fff}
+
+.history_wrap .info_box .thumb {padding-bottom:56.25%;background-position:center;background-repeat:no-repeat;background-size:cover}
+.history_wrap .info_box .cont {padding:20px 0}
+.history_wrap .info_box .cont strong {padding:0 25px;font-size:20px;color:#444;font-weight:500;line-height:130%}
+.history_wrap .info_box .cont p {overflow:hidden;padding:3px 25px 10px;font-size:20px;color:#444;font-weight:500;line-height:120%;white-space:nowrap;text-overflow:ellipsis}
+.history_wrap .info_box .cont span {display:inline-block;padding:0 25px;font-size:14px;font-weight:400;color:#747474}
+
+.history_wrap .info_box .slick-arrow {display:block !important;overflow:hidden;position:absolute;top:50%;z-index:100;width:42px;height:63px;margin-top:-31.5px;text-indent:-9999px;cursor:pointer;transition:all .3s ease;-webkit-transition:all .3s ease;-o-transition:all .3s ease;-moz-transition:all .3s ease}
+.history_wrap .info_box .slick-prev {left:30px;background:url(../img/common/arrow_prev.png) no-repeat 50% 50%}
+.history_wrap .info_box .slick-next {right:30px;background:url(../img/common/arrow_next.png) no-repeat 50% 50%}
+
+.history_wrap .info_box .slick-prev:hover {left:20px}
+.history_wrap .info_box .slick-next:hover {right:20px}
+
+
+/* SI Research - 연구공모 */
+
+.cont_competition .h_section {margin-bottom:15px}
+
+.cont_competition .inner_info {width:100%;padding:50px 0 20px;background:#697f8c}
+.cont_competition .inner_info:after {display:block;clear:both;content:''}
+.cont_competition .inner_info .fl {float:left;width:56.2%;margin:3% 0 0 6%}
+.cont_competition .inner_info .fr {float:right;width:37.8%;text-align:center}
+
+.cont_competition .inner_info .fl strong {display:inline-block;margin-bottom:30px;font-size:26px;font-weight:500;color:#fff}
+.cont_competition .inner_info .fl p {font-size:16px;font-weight:400;color:#fff;text-align:justify;letter-spacing:-0.01px;line-height:30px}
+
+.cont_competition .inner_cont_wrap {margin:50px 0 0 0;padding:50px 0;border:1px solid #ddd;}
+.cont_competition .inner_cont {width:100%;padding:30px 0}
+.cont_competition .inner_cont.last {padding:30px 0 0}
+.cont_competition .inner_cont:after {display:block;clear:both;content:''}
+.cont_competition .inner_cont .fl {float:left;width:15%;margin:0 6% 0 0;text-align:right}
+.cont_competition .inner_cont .fr {float:right;width:73%;margin:0 6% 0 0}
+
+.cont_competition .inner_cont .fl strong:before {content:'';display:block;position:absolute;top:-10px;right:0;width:100px;height:2px;background-color:#444}
+
+.cont_competition .inner_cont strong {display:inline-block;position:relative;margin-bottom:10px;font-size:16px;font-weight:500;color:#444}
+.cont_competition .inner_cont p {font-size:16px;font-weight:400;color:#727272;text-align:justify;letter-spacing:-0.01px;line-height:24px}
+.cont_competition .inner_cont p + p {margin:10px 0 0}
+
+.cont_competition .inner_cont .fr ul {margin:14px 0}
+.cont_competition .inner_cont .fr ul li {position:relative;padding:2px 0 2px 22px;font-size:16px;font-weight:400;color:#727272}
+.cont_competition .inner_cont .fr ul li:before {content:'';display:block;position:absolute;top:14px;left:11px;width:5px;height:1px;background-color:#727272}
+
+.cont_competition .inner_cont .fr ul.inquiry {padding:10px 10px;background:#f5f5f5}
+.cont_competition .inner_cont .fr ul.inquiry li {padding:10px 0 10px 55px}
+.cont_competition .inner_cont .fr ul.inquiry li:before {content:'';display:block;position:absolute;top:8px;left:11px;width:32px;height:32px;background:transparent url(../img/common/img_common.png);background-position:-250px -58px}
+.cont_competition .inner_cont .fr ul.inquiry li + li:before {background-position:-287px -58px}
+
+.cont_competition .table_01 {border-bottom:1px solid #888}
+.cont_competition .table_02 {border-bottom:1px solid #888}
+
+.wrap_fileSearch {position:relative;line-height:0}
+#file_add_form .wrap_fileSearch {height:40px}
+.wrap_fileSearch + .wrap_fileSearch {margin:10px 0 0}
+
+.wrap_fileSearch .fileName {overflow:hidden}
+
+.wrap_fileSearch .input-m {overflow:hidden}
+.wrap_fileSearch + .wrap_fileSearch .btn_slight {margin:0 0 0 7px}
+
+
+/* 파일삭제 */
+
+.ico_{display:inline-block;background-repeat:no-repeat;background-position:center center;background-size:auto 100%;-webkit-background-size:100% auto;background-size:100% auto;vertical-align:middle;text-indent:-10000px}
+.ico_.del {display:inline-block;position:relative;top:0;left:5px;width:40px;height:40px;margin-right:5px;border:1px solid #9d9d9d;background:url(../img/common/ico_del.png) no-repeat 50% 50%;vertical-align:top}
+
+.tbl_type,.tbl_type th,.tbl_type td {border:0}
+.tbl_type {width:100%;text-align:center}
+.tbl_type caption {display:none}
+.tbl_type thead th {padding:10px 0;background-color:#888;font-size:16px;color:#fff}
+.tbl_type th span {font-size:14px;font-weight:400}
+.tbl_type tbody th {border-right:1px solid #eee;border-bottom:1px solid #eee;font-size:16px;font-weight:500;color:#727272}
+.tbl_type td {padding:20px 10px;border-right:1px solid #eee;font-size:16px;font-weight:400;color:#727272}
+.tbl_type tfoot {background:#f5f5f5}
+
+.cont_competition .table_01 .tbl_type td:first-child {font-weight:500}
+.tbl_type td:last-child {border-right:0}
+
+.cont_competition .table_01 .tbl_type tr:nth-child(2n) td {background:#f5f5f5}
+.cont_competition .table_02 .tbl_type td {border-bottom:1px solid #eee}
+
+.tbl_type td ul {padding:0 4px}
+.tbl_type td ul li {text-align:left}
+
+/* 레이어 팝업 설정 */
+
+.modal_box .form_table {border-top:0;border-bottom:0}
+.modal_box .form_table th {border-top:0;background:#fff}
+.modal_box .form_table td {padding:1% 2%;border-top:0}
+.modal_box .form_table td p {margin:8px 0 0;font-size:14px;font-weight:400;color:#727272}
+
+.modal_box p.txt {margin-top:15px;font-size:18px;font-weight:400}
+
+
+/* SI Research, SI Education 공통 */
+
+ul.news_wrap {margin:20px 0 0 0;padding:0 !important}
+ul.news_wrap:after {display:block;clear:both;content:''}
+ul.news_wrap li {float:left;width:23.95%;margin:0 1.4% 0 0;background:#fff}
+
+ul.news_wrap li:nth-child(2) {float:left;width:23.95%;margin:0 1.4% 0 0}
+ul.news_wrap li:nth-child(3) {float:left;width:23.95%;margin:0 1.4% 0 0}
+ul.news_wrap li:nth-child(4) {float:left;width:23.95%;margin:0}
+
+ul.news_wrap li a {display:block;padding:30px;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s}
+ul.news_wrap li em {display:block;font-size:14px;font-weight:500;color:#cc3946}
+ul.news_wrap li strong {display:block;overflow:hidden;max-height:60px;margin:20px 0 15px;font-size:21px;font-weight:500;color:#222;line-height:28px;text-overflow:ellipsis}
+ul.news_wrap li p {overflow:hidden;max-height:60px;margin:0 0 15px;font-size:14px;font-weight:300;color:#747474;line-height:20px;text-overflow:ellipsis}
+ul.news_wrap li span {display:block;font-size:14px;font-weight:300;color:#747474}
+
+ul.news_wrap li:hover a {display:block;background:#cc3946}
+ul.news_wrap li:hover em,
+ul.news_wrap li:hover strong,
+ul.news_wrap li:hover p,
+ul.news_wrap li:hover span {color:#fff}
+
+.papersList ul.news_wrap li:hover strong {color:#fff}
+
+
+/* SI Research - 연구논문 */
+
+.cont_papers .h_section {margin-bottom:15px}
+
+.papersList ul.news_wrap li {width:32.33%;height:250px;margin:0 0 4%;background:#f5f5f5}
+
+.papersList ul.news_wrap li:nth-child(2),
+.papersList ul.news_wrap li:nth-child(5),
+.papersList ul.news_wrap li:nth-child(8),
+.papersList ul.news_wrap li:nth-child(11) {width:32.33%;margin:0 1.5% 4% 1.5%}
+
+.papersList ul.news_wrap li a {padding:33px 25px}
+
+.papersList ul.news_wrap li strong {display:-webkit-box;min-height:48px;max-height:48px;margin:0 0 25px;font-size:18px;font-weight:500;color:#444;line-height:24px;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.papersList ul.news_wrap li p {display:-webkit-box;min-height:60px;margin:0 0 25px;font-weight:400;-webkit-line-clamp:3;-webkit-box-orient:vertical}
+.papersList ul.news_wrap li span {position:relative;font-size:13px}
+
+.papersList ul.news_wrap li .bar {display:inline-block;position:relative;top:0;left:1px;width:1px;height:10px;margin:0 5px;background-color:#9c9c9c}
+.papersList ul.news_wrap li:hover .bar {background-color:#fff}
+
+.papers_both:after {display:block;clear:both;content:''}
+.papers_both .fl {float:left}
+.papers_both .fr {float:right}
+
+/* */
+
+.cont_papers .papers_both .fl {margin:0 10px 7px 0}
+.cont_papers .papers_both .fr {display:-webkit-box;overflow:hidden;float:none;height:19px;-webkit-line-clamp:1;-webkit-box-orient:vertical;text-overflow:ellipsis}
+
+.cont_papers .papersList ul.news_wrap li .eye {display:inline-block;position:relative;top:0;left:1px;width:19px;height:10px;margin:0 6px 0 0;background-position:-370px -58px}
+.cont_papers .papersList ul.news_wrap li:hover .eye {background-position:-394px -58px}
+
+
+/* 연구논문 - 디테일 */
+
+.papers_header {padding:50px 0 0;border-top:2px solid #444}
+.papers_header:after {display:block;clear:both;content:''}
+.papers_header > .fl {float:left;width:52%;margin:0 14% 0 0}
+.papers_header > .fr {float:right;width:34%;margin:0}
+.papers_header > .fr a {display:block;width:100%;height:100%}
+
+.papers_header strong {font-size:20px;font-weight:500}
+
+.papers_header .hits_wrap {display:block;overflow:hidden;margin-top:18px}
+.papers_header .hits_wrap p {float:left;padding-right:10px;font-size:14px;font-weight:400;color:#747474}
+.papers_header .hits_wrap p.tit {color:#222}
+.papers_header .hits_wrap p.tit.t2 {padding-left:10px}
+
+.papers_header .box_t01 {margin:25px 0;padding:20px 30px 20px;background-color:#f5f5f5;font-size:14px;color:#333;text-align:left;line-height:22px;word-break:break-all}
+
+.papers_header .photo_wrap {display:table;width:100%;margin:0 0 6px}
+.papers_header .photo_wrap .fl {display:table-cell;width:100%;height:92px;padding:10px 20px 11px;background:#f5f5f5;vertical-align:middle}
+.papers_header .photo_wrap .fr {height:92px}
+
+.papers_header .photo_wrap .fl strong {font-size:16px;color:#222}
+.papers_header .photo_wrap .fl i {position:relative;top:-1px;left:2px}
+.papers_header .photo_wrap .fl p {margin:3px 0 0;font-size:14px;color:#727272;line-height:20px}
+
+.papers_cont {margin:45px 0 0;border-bottom:1px solid #444;font-size:16px;font-weight:400;color:#747474;line-height:30px}
+
+.papers_cont .down_wrap {margin:40px 0 60px;text-align:center}
+.papers_cont .down_wrap a {display:inline-block;width:200px;padding:18px 0;background-color:#3b3c3c;color:#fff;font-size:16px;text-align:center}
+.papers_cont .down_wrap a + a {margin:0 0 0 5px}
+
+.papers_cont .mov {position:relative;padding:0 0 90px}
+.papers_cont .mov .img {position:absolute;top:0;left:0;width:100%;height:100%;background-position:center center;background-repeat:no-repeat;-webkit-background-size:cover;background-size:cover}
+
+.papers_cont .mov a {display:block;position:relative;width:60%;height:329px;margin:0 auto}
+.papers_cont .mov a.link:after {content:"";position:absolute;top:50%;left:50%;width:51px;height:76px;margin-left:-25px;margin-top:-38px;background:url(../img/common/ico_play.png) no-repeat 0 0;-webkit-background-size:cover;background-size:cover}
+
+
+/* SI Research - ENSI 인사이트 */
+
+.cont_insights .h_section {margin-bottom:15px}
+
+.box-result {margin-bottom:50px;padding:35px 20px;background:#f5f5f5;font-size:16px;color:#727272;text-align:center}
+
+.insightsList ul.news_wrap li {width:32.33%;margin:0 0 4%;background:#f5f5f5}
+
+.insightsList ul.news_wrap li:nth-child(2),
+.insightsList ul.news_wrap li:nth-child(5),
+.insightsList ul.news_wrap li:nth-child(8),
+.insightsList ul.news_wrap li:nth-child(11) {width:32.33%;margin:0 1.5% 4%}
+
+.insightsList ul.news_wrap li .thumb {height:192px;max-height:192px;padding-bottom:61.62%;background-position:center;background-repeat:no-repeat}
+.insightsList ul.news_wrap li strong {display:-webkit-box;height:60px;margin:20px 20px 0;font-size:18px;font-weight:500;color:#444;text-align:center;line-height:28px;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.insightsList ul.news_wrap li span {position:relative;font-size:13px}
+
+.insightsList ul.news_wrap li .down_wrap {margin:-15px 0 5px;text-align:center}
+.insightsList ul.news_wrap li .down_wrap a {display:inline-block;width:126px;margin:30px 0 20px;padding:7px 0;border:1px solid #d9d9d9;background-color:#fff;color:#666;font-size:14px;text-align:center}
+.insightsList ul.news_wrap li .down_wrap a + a {margin:0 0 0 5px}
+
+
+/* SI Education - 교육 과정 */
+
+.cont_curriculum .h_section {margin-bottom:15px}
+
+.curriculumList ul.news_wrap li {width:32.33%;margin:0 0 4%;background:#f5f5f5}
+
+.curriculumList ul.news_wrap li:nth-child(2),
+.curriculumList ul.news_wrap li:nth-child(5),
+.curriculumList ul.news_wrap li:nth-child(8),
+.curriculumList ul.news_wrap li:nth-child(11) {width:32.33%;margin:0 1.5% 4%}
+
+.curriculumList ul.news_wrap li a {height:100%;padding:0 0 5px 0}
+
+.curriculumList ul.news_wrap li .thumb {padding-bottom:65.92%;background-position:center;background-repeat:no-repeat;background-size:cover}
+.curriculumList ul.news_wrap li p {margin:0}
+.curriculumList ul.news_wrap li strong {display:-webkit-box;height:55px;margin:20px;font-size:18px;font-weight:500;color:#444;text-align:center;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+
+.curriculumList ul.news_wrap li:hover strong {color:#fff}
+
+/* 교육 과정 - 디테일 */
+
+.curriculum_header {padding:50px 0 0;border-top:2px solid #444}
+.curriculum_header:after {display:block;clear:both;content:''}
+.curriculum_header > .fl {float:left;width:49%;margin:0 5% 0 0}
+.curriculum_header > .fr {float:right;width:46%}
+
+.curriculum_header ul.info_title {display:table;margin:10px 0 0}
+.curriculum_header ul.info_title li {margin-bottom:16px;font-size:16px;font-weight:400;color:#222}
+
+.curriculum_header ul.info_title li span.title1 {display:inline-block;float:left;width:104px;height:22px;margin-right:14px;margin-top:2px;border:1px solid #d2d2d2;font-size:14px;font-weight:400;color:#727272;text-align:center}
+.curriculum_header ul.info_title li span.title2 {display:table-cell;vertical-align:top;}
+
+.curriculum_header .down_wrap {margin:35px 0 0;text-align:left}
+.curriculum_header .down_wrap a {display:inline-block;width:250px;padding:25px 0;background-color:#3b3c3c;color:#fff;font-size:16px;text-align:center}
+
+.curriculum_cont {margin:65px 0 0;padding:0 0 20px;border-bottom:1px solid #444;font-size:16px;font-weight:400;color:#747474;line-height:30px}
+.curriculum_cont .bod_strong {display:block;margin:0 0 15px;font-size:18px;font-weight:500;color:#444}
+
+.curriculum_cont .box_t01 {position:relative;margin:30px 0;padding:20px 40px 20px 62px;background-color:#f5f5f5;font-size:14px;text-align:left;line-height:22px;word-break:break-all}
+.curriculum_cont .box_t01:before {content:'';display:block;position:absolute;top:17px;left:21px;width:32px;height:32px;background:transparent url(../img/common/img_common.png);background-position:-324px -58px}
+
+
+/* SI Education - 교육 자료 */
+
+.cont_material .h_section {margin-bottom:15px}
+
+.materialList ul.news_wrap li {position:relative;width:32.33%;margin:0 0 4%;background:#f5f5f5}
+
+.materialList ul.news_wrap li:nth-child(2),
+.materialList ul.news_wrap li:nth-child(5),
+.materialList ul.news_wrap li:nth-child(8),
+.materialList ul.news_wrap li:nth-child(11) {width:32.33%;margin:0 1.5% 4%}
+
+.materialList ul.news_wrap li a {height:100%;padding:0 0 5px 0}
+
+.materialList ul.news_wrap li .thumb {padding-bottom:65.92%;background-position:center;background-repeat:no-repeat;background-size:cover}
+.materialList ul.news_wrap li p {margin:0}
+.materialList ul.news_wrap li strong {overflow:hidden;padding:0 20px 0;font-size:18px;font-weight:500;color:#444;text-align:center;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}
+.materialList ul.news_wrap li span {overflow:hidden;position:relative;margin:0 0 25px;padding:0 20px;font-size:14px;font-weight:400;color:#666;text-align:center;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}
+.materialList ul.news_wrap li .bar {display:inline-block;position:relative;left:1px;top:0;height:10px;width:1px;margin:0 7px;background-color:#9c9c9c}
+
+.materialList ul.news_wrap li:hover strong,
+.materialList ul.news_wrap li:hover span {color:#fff}
+.materialList ul.news_wrap li:hover .bar {background-color:#fff}
+
+/* 교육 자료 - 디테일 */
+
+.material_header {padding:50px 0 0;border-top:2px solid #444}
+.material_header:after {display:block;clear:both;content:''}
+.material_header > .fl {float:left;width:48%;margin:0 0 0 2%}
+.material_header > .fr {float:right;width:48%;margin:0 0 0 2%}
+
+.material_header ul.info_title {display:table;margin:10px 0 0}
+.material_header ul.info_title li {margin-bottom:16px;font-size:16px;font-weight:400;color:#222}
+
+.material_header ul.info_title li span.title1 {display:inline-block;float:left;width:104px;height:22px;margin-right:14px;margin-top:2px;border:1px solid #d2d2d2;font-size:14px;font-weight:400;color:#727272;text-align:center}
+.material_header ul.info_title li span.title2 {display:table-cell;vertical-align:top;}
+
+.material_cont {margin:45px 0 0;padding:0 0 20px;border-bottom:1px solid #444;font-size:16px;font-weight:400;color:#747474;line-height:30px}
+.material_cont .bod_strong {display:block;margin:0 0 15px;font-size:18px;font-weight:500;color:#444}
+
+.material_cont .box_t01 {position:relative;margin:30px 0;padding:20px 40px;background-color:#f5f5f5;font-size:14px;text-align:left;line-height:22px;word-break:break-all}
+.material_cont .box_t01 span.plann {display:block;position:absolute;top:20px;left:30px;width:72px;color:#333}
+.material_cont .box_t01 span.pfile {display:block;position:relative;padding-left:72px;font-size:14px;font-weight:400}
+.material_cont .box_t01 span.pfile:before {display:block;position:absolute;top:6px;left:63px;width:1px;height:11px;background:#c8c8c8;content:""}
+.material_cont .box_t01 span.pfile a {color:#666}
+
+.material_cont .mov {position:relative;padding:0 0 50px}
+.material_cont .mov .img {position:absolute;top:0;left:0;width:100%;height:100%;background-position:center center;background-repeat:no-repeat;-webkit-background-size:cover;background-size:cover}
+
+.material_cont .mov a {display:block;position:relative;width:60%;height:329px;margin:0 auto}
+.material_cont .mov a.link:after {content:"";position:absolute;top:50%;left:50%;width:51px;height:76px;margin-left:-25px;margin-top:-38px;background:url(../img/common/ico_play.png) no-repeat 0 0;-webkit-background-size:cover;background-size:cover}
+
+
+/* 게시판 리스트 */
+
+.tbl_list {width:100%;border-top:1px solid #9b9b9b;border-spacing:0}
+.tbl_list th {padding:16px 5px;border-bottom:1px solid #9b9b9b;background-color:#f8f8f8;font-size:15px;text-align:center;color:#454545}
+.tbl_list td {padding:16px 5px;border-bottom:1px solid #edeeef;font-size:15px;color:#727272;text-align:center;word-break:break-all}
+
+.tbl_list a:hover {text-decoration:underline}
+.tbl_list .ico._new {margin:-2px 4px 0 8px}
+
+/* */
+
+.ico._new {width:17px;height:18px;background-position:-200px -5px}
+.ico._file {width:16px;height:18px;background-position:-222px -5px}
+
+
+/* 게시판 뷰 */
+
+.boardView {position:relative;text-align:left}
+.bbs_view {overflow:hidden;position:relative;border-top:2px solid #444;border-bottom:1px solid #444}
+
+.bbs_view > ul.head {width:100%;padding:0 0 20px 30px}
+.bbs_view > ul.head:after {display:block;clear:both;content:''}
+
+.bbs_view > ul > li {float:left;font-size:14px;color:#222}
+
+.bbs_view li.part {width:100%}
+.bbs_view li.part .title {overflow:hidden;width:85%;max-width:100%;padding:23px 0 25px;font-size:20px}
+.bbs_view li.text {width:auto}
+
+.bbs_view > ul > li > p {position:relative;float:left;min-height:24px;font-size:14px;line-height:24px}
+.bbs_view > ul > li > p.th {margin-right:12px}
+.bbs_view > ul > li > p.td {margin-right:60px;font-weight:300;color:#747474}
+.bbs_view > ul > li > p.td.txt_link a {font-weight:300;color:#747474}
+
+.bbs_view .sns_link {position:absolute;top:10px;right:20px;margin:40px 0 0}
+.bbs_view .sns_link .sns_group {display:none;position:absolute;right:0;width:266px;height:84px;margin-top:5px;padding-top:20px;border:1px solid #acacac;background:#fff;font-size:0;text-align:center}
+.bbs_view .sns_link .sns_group li {display:inline-block;margin:0 5px}
+
+.bbs_view .sns_link ._share {width:46px;height:46px;background-position:-250px -5px}
+
+.bbs_view .sns_link ._sns {width:44px;height:44px}
+.bbs_view .sns_link ._sns_01 {background-position:-299px -5px}
+.bbs_view .sns_link ._sns_02 {background-position:-348px -5px}
+.bbs_view .sns_link ._sns_03 {background-position:-397px -5px}
+.bbs_view .sns_link ._sns_04 {background-position:-446px -5px}
+
+.bbs_view .cont {display:block;padding:15px 30px 50px;border-top:1px solid #eee;font-size:16px;font-weight:300;color:#747474;line-height:160%;white-space:pre-line}
+.bbs_view .cont img {max-width:100%}
+
+
+/* 게시판 리스트, 뷰 공통 */
+
+.boardList td.title a:hover,
+.boardList td.title a:focus,
+.boardList td.title a:active,
+.boardView a:hover,
+.boardView a:focus,
+.boardView a:active {font-weight:500;text-decoration:underline}
+
+
+/* board 이전, 다음글 */
+
+.boardNext {overflow:hidden;margin-top:50px;border-top:1px solid #444;border-bottom:1px solid #444}
+.boardNext ul {overflow:hidden}
+
+.boardNext li {width:100%;border-top:1px solid #ddd;font-size:16px}
+.boardNext li:first-child {border-top:none}
+
+.boardNext li > p {display:block;position:relative;float:left;width:100px;min-height:20px;padding:16px 16px 16px 35px;font-size:16px;font-weight:400;line-height:150%}
+.boardNext li > p > span {position:absolute;top:50%;left:7px;margin-top:-3.5px;width:13px;height:7px}
+
+.ico._up {background-position:-424px -59px}
+.ico._down {background-position:-442px -59px}
+
+.boardNext li > div {display:block;overflow:hidden;float:left;width:65%;min-height:20px;padding:16px 0 16px 20px;font-size:16px;font-weight:300;color:#747474;line-height:150%;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal}
+.boardNext li > div.date {float:right;width:16%;text-align:center}
+.boardNext li > div a {font-size:16px;font-weight:300;color:#747474}
+
+.boardNext a:hover,
+.boardNext a:focus,
+.boardNext a:active {font-weight:300;color:#333;text-decoration:none}
+
+.boardNext li.prev:after,
+.boardNext li.next:after {display:block;clear:both;content:''}
+
+
+/* CONTACT */
+
+.table_info {margin-bottom:40px;padding:30px 40px;background-color:#f5f5f5}
+.table_info ul li {padding-left:15px;background:url(../img/common/blank.gif) no-repeat 0px 13px;font-size:16px;font-weight:300;color:#747474}
+
+.tbl_inplist {border-top:1px solid #dedede}
+.tbl_inplist table {table-layout:fixed;width:100%;border-spacing:0;border-collapse:collapse}
+.tbl_inplist th {padding:10px 0 10px 20px;font-size:15px;border-bottom:1px solid #dedede;background-color:#f8f8f8;color:#727272;font-weight:normal;text-align:left;word-break:break-all}
+
+.tbl_inplist th span {display:inline-block;overflow:hidden;width:1px;height:1px;font-size:1px;line-height:999px}
+.tbl_inplist .bl_ess {position:static;top:28px;left:30px;width:9px !important;height:16px !important;background:none;font-size:14px;line-height:normal !important}
+.bl_ess:before {margin-right:5px;font-size:14px;color:#f35065;content:'*'}
+
+.tbl_inplist td {padding:10px 20px;border-bottom:1px solid #dedede;font-size:15px;color:#727272;word-break:break-all}
+.tbl_inplist span {display:inline-block}
+.tbl_inplist span.ml {margin-left:6px}
+
+.wrap_fileSearch .input {background:#f5f5f5}
+
+.cont-contact .btn_slight {margin-left:5px}
+.cont-contact .btn-txt {padding:8px 10px 0}
+
+/* media query */
+
+@media (max-width:1200px) {
+
+	/* page head */
+
+	.spot {margin-top:75px}
+	.spot .inner {height:250px}
+
+	/* section */
+
+	.sec_inner {width:auto;padding:40px 10px}
+	.sec_inner .h_section {margin-bottom:30px}
+
+	/* SI Research - 연구공모 */
+
+	.cont_competition .inner_info {padding:40px 0 30px}
+
+	/* SI Research - 연구논문 */
+
+	.papersList ul.news_wrap li {float:left !important;width:48% !important;margin:0 1% 2%}
+	.papersList ul.news_wrap li:nth-child(2),
+	.papersList ul.news_wrap li:nth-child(5),
+	.papersList ul.news_wrap li:nth-child(8),
+	.papersList ul.news_wrap li:nth-child(11) {float:left !important;width:48% !important;margin:0 1% 2%}
+
+	.papersList ul.news_wrap li a {margin-bottom:0}
+
+	/* SI Research - ENSI 인사이트 */
+
+	.insightsList ul.news_wrap li {float:left !important;width:48% !important;margin:0 1% 2%;padding:4% 0 0}
+	.insightsList ul.news_wrap li:nth-child(2),
+	.insightsList ul.news_wrap li:nth-child(5),
+	.insightsList ul.news_wrap li:nth-child(8),
+	.insightsList ul.news_wrap li:nth-child(11) {float:left !important;width:48% !important;margin:0 1% 2%}
+    .insightsList ul.news_wrap li strong {margin:20px 20px 0;padding:0 20px}
+
+	.insightsList ul.news_wrap li .thumb {padding-bottom:0}
+
+	/* SI Education - 교육 과정 */
+
+	.curriculumList ul.news_wrap li {float:left !important;width:48% !important;margin:0 1% 2%}
+	.curriculumList ul.news_wrap li:nth-child(2),
+	.curriculumList ul.news_wrap li:nth-child(5),
+	.curriculumList ul.news_wrap li:nth-child(8),
+	.curriculumList ul.news_wrap li:nth-child(11) {float:left !important;width:48% !important;margin:0 1% 2%}
+
+	/* SI Education - 교육 자료 */
+
+	.materialList ul.news_wrap li {float:left !important;width:48% !important;margin:0 1% 2%}
+	.materialList ul.news_wrap li:nth-child(2),
+	.materialList ul.news_wrap li:nth-child(5),
+	.materialList ul.news_wrap li:nth-child(8),
+	.materialList ul.news_wrap li:nth-child(11) {float:left !important;width:48% !important;margin:0 1% 2%}
+
+}
+
+@media (max-width:1024px) {
+
+    /* paging */
+
+    .paging {margin-top:30px}
+	.paging a {width:28px;height:28px;line-height:28px}
+
+    .paging .btn_prev {margin-right:5px}
+    .paging .btn_next {margin-left:5px}
+
+    .btn_first,
+    .btn_prev,
+    .btn_next,
+    .btn_last {width:28px;height:28px}
+
+	/* About - ENSI 소개 */
+
+	.cont_ensi .sec_inner .sub_txt {width:100%}
+	.cont_ensi .sec_inner .sub_txt br {display:none}
+
+	.cont_ensi ul.lst_ensi {margin:60px 0 20px}
+	.cont_ensi ul.lst_ensi li {width:50%;height:300px}
+
+    .sec_fellow {padding:70px 10px 20px}
+	.lst_fellow {text-align:left}
+	.lst_fellow li {width:50%;margin-bottom:35px}
+	.lst_fellow strong {margin-bottom:50px;font-size:28px}
+
+	/* ENSI - 컨퍼런스, 포럼, 세미나 */
+
+	.ensi_wrap .brochure_title h3 {font-size:22px}
+	.ensi_wrap .brochure_box {padding:30px}
+
+	.ensi_wrap .seminar {display:block}
+	.ensi_wrap .seminar .info {display:block;width:100%}
+	.ensi_wrap .seminar .info ul li:nth-child(1) em {margin-top:5px}
+
+	.ensi_wrap .seminar .btn_brochure {display:block;overflow:hidden;width:208px;height:auto;margin:10px auto 0;padding-top:50px;text-align:center}
+
+	.history_wrap .title_ensi {margin-bottom:30px}
+
+	/* SI Research - 연구공모 */
+
+	.cont_competition .inner_cont_wrap {padding:20px 0 45px}
+
+	.cont_competition .inner_info .fl {float:none;width:100%;margin:0;padding:0 20px}
+	.cont_competition .inner_info .fr {float:none;width:100%;margin:0}
+
+	.cont_competition .inner_info .fl strong {margin-bottom:20px;font-size:22px}
+	.cont_competition .inner_info .fl p {font-size:14px;line-height:25px}
+
+	.cont_competition .inner_info img {width:220px;margin-top:20px}
+
+	.cont_competition .inner_cont .fl {float:none;width:92%;margin:0 4%;text-align:left}
+	.cont_competition .inner_cont .fl strong:before {float:left;left:0;width:75px}
+	.cont_competition .inner_cont .fr {float:none;width:92%;margin:0 4%}
+	.cont_competition .inner_cont p {font-size:13px;text-align:left;line-height:21px}
+
+	.cont_competition .inner_cont .fr ul li {padding:2px 0 2px 15px;font-size:12px}
+	.cont_competition .inner_cont .fr ul li:before {top:11px;left:4px}
+
+	.cont_competition .inner_cont .fr ul.inquiry li:before {top:4px}
+
+	.tbl_type thead th {padding:2% 1% 2% 3%;font-size:13px;line-height:18px}
+	.tbl_type tbody th {font-size:13px;line-height:18px}
+	.tbl_type td {padding:10px 5px;font-size:12px}
+
+	/* 레이어 팝업 설정 */
+
+	.modal_box .form_table table {margin:0}
+	.modal_box .form_table th {font-size:13px}
+	.modal_box .form_table td {font-size:12px}
+	.modal_box .form_table td p {font-size:12px}
+
+	.modal_box p.txt {margin:15px 0 0;font-size:13px}
+
+	.modal_box .wrap_fileSearch .btn_slight {width:64px;font-size:12px}
+
+	.modal_box .w49 {width:46% !important}
+	.modal_box .w60 {width:35% !important}
+
+	/* SI Research - 연구논문 */
+
+	.papers_header > .fl {float:none;width:100%;margin:0 0 5%}
+	.papers_header > .fr {float:none;width:100%;margin:0}
+
+	.papers_header strong br {display:none}
+
+	.papers_header .photo_wrap .fl {width:90%}
+	.papers_header .photo_wrap .fr {width:10%}
+
+	.papers_cont {font-size:14px;line-height:24px}
+	.papers_cont .down_wrap a {width:140px;font-size:14px}
+	.papers_cont .mov a {width:100%;height:auto;margin:0 auto;padding-bottom:100%}
+
+	/* SI Education - 교육 과정 */
+
+	.curriculum_header > .fl {float:none;width:100%;margin:0 0 8%}
+	.curriculum_header > .fr {float:none;width:100%;margin:0}
+	.curriculum_header > .fr img {width:100%}
+
+	.curriculum_header .down_wrap a {width:160px;font-size:14px}
+	.curriculum_cont {font-size:14px;line-height:24px}
+
+	/* SI Education - 교육 자료 */
+
+	.material_header > .fl {float:none;width:100%;margin:0}
+	.material_header > .fr {float:none;width:100%;margin:0}
+
+	.material_header > .fl ul.info_title li:last-child {margin-bottom:6px}
+
+	.material_cont {font-size:14px;line-height:24px}
+	.material_cont .mov a {width:100%;height:auto;margin:0 auto;padding-bottom:100%}
+
+    /* CONTACT */
+
+	.tbl_inplist .w30 {width:99%;margin:0 0 10px}
+	.tbl_inplist .w3 {display:none !important}
+	.tbl_inplist .w40 {width:99%;margin:0 0 10px}
+	.tbl_inplist .w24 {width:100%}
+	.tbl_inplist span.ml {margin-left:0}
+
+	.cont_contact .btn_slight {margin-left:0}
+	.cont_contact .btn-txt {display:block;padding:8px 0 30px 0;font-size:12px}
+
+}
+
+@media (max-width:640px) {
+
+	/* page head */
+
+	.spot ._bg01 {background:url(../img/common/visual_m_1.jpg) repeat center center}
+	.spot ._bg02 {background:url(../img/common/visual_m_2.jpg) repeat center center}
+	.spot ._bg03 {background:url(../img/common/visual_m_3.jpg) repeat center center}
+	.spot ._bg04 {background:url(../img/common/visual_m_4.jpg) repeat center center}
+	.spot ._bg05 {background:url(../img/common/visual_m_5.jpg) repeat center center}
+
+	.spot .inner {top:-10px}
+	.spot .inner p {font-size:36px}
+
+	/* tab_nav */
+
+	.tab_nav {display:none}
+
+	/* section */
+
+	.sec_inner .h_section {margin-bottom:20px;font-size:30px;font-weight:500}
+	.sec_inner .sub_txt {margin-bottom:30px;font-size:15px;font-weight:400;line-height:24px;letter-spacing:-0.7px}
+
+	/* About - ENSI 소개 */
+
+	.cont_ensi ul.lst_ensi li {float:none;width:100%;height:auto;padding:0 0 30px}
+    .lst_fellow li {display:block;width:100%}
+
+	/* ENSI - 컨퍼런스, 포럼, 세미나 */
+
+	.ensi_wrap .brochure_title {padding:20px}
+	.ensi_wrap .brochure_title h3 {font-size:18px}
+
+	.ensi_wrap .brochure_box {padding:20px 20px 40px}
+	.ensi_wrap .seminar .info ul li:first-child {font-size:16px;line-height:120%}
+	.ensi_wrap .seminar .info ul li:nth-child(1) {margin-bottom:15px}
+	.ensi_wrap .seminar .btn_brochure {padding-top:30px}
+	.ensi_wrap .seminar .btn_brochure button {height:70px}
+
+	/* 컨퍼런스 팝업 설정 */
+
+	.modal_box .ensi_wrap .brochure_box {padding:10px}
+	.history_wrap .title_ensi {margin-bottom:20px;font-size:20px}
+
+    /* 검색 */
+
+    .search_input .input {width:230px;font-size:14px}
+
+	/* SI Research - 연구논문 */
+
+	.papersList ul.news_wrap li {float:none !important;width:100% !important;margin:0 0 2%}
+	.papersList ul.news_wrap li:nth-child(2),
+	.papersList ul.news_wrap li:nth-child(5),
+	.papersList ul.news_wrap li:nth-child(8),
+	.papersList ul.news_wrap li:nth-child(11) {float:none !important;width:100% !important;margin:0 0 2%}
+
+	.wrap_fileSearch .input-m {font-size:12px}
+
+	/* SI Research - ENSI 인사이트 */
+
+	.insightsList ul.news_wrap li {float:none !important;width:100% !important;margin:0 0 2%}
+	.insightsList ul.news_wrap li:nth-child(2),
+	.insightsList ul.news_wrap li:nth-child(5),
+	.insightsList ul.news_wrap li:nth-child(8),
+	.insightsList ul.news_wrap li:nth-child(11) {float:none !important;width:100% !important;margin:0 0 2%}
+
+	/* SI Education - 교육 과정 */
+
+	.curriculumList ul.news_wrap li {float:none !important;width:100% !important;margin:0 0 2%}
+	.curriculumList ul.news_wrap li:nth-child(2),
+	.curriculumList ul.news_wrap li:nth-child(5),
+	.curriculumList ul.news_wrap li:nth-child(8),
+	.curriculumList ul.news_wrap li:nth-child(11) {float:none !important;width:100% !important;margin:0 0 2%}
+	.curriculumList ul.news_wrap li strong {height:auto;max-height:100%}
+
+	/* SI Education - 교육 자료 */
+
+	.materialList ul.news_wrap li {float:none !important;width:100% !important;margin:0 0 2%}
+	.materialList ul.news_wrap li:nth-child(2),
+	.materialList ul.news_wrap li:nth-child(5),
+	.materialList ul.news_wrap li:nth-child(8),
+	.materialList ul.news_wrap li:nth-child(11) {float:none !important;width:100% !important;margin:0 0 2%}
+
+	/* 게시판 리스트 */
+
+	.tbl_list th {font-size:14px}
+	.tbl_list td {font-size:14px;font-weight:400}
+
+	/* 게시판 뷰 */
+
+	.bbs_view > ul.head {padding:0 0 15px 10px}
+	.bbs_view .cont {padding:20px 10px 40px}
+
+	.bbs_view li.text {display:block;width:100%}
+	.bbs_view li.part .title {padding:15px 0 10px;font-size:18px;font-weight:500 !important}
+	.bbs_view > ul > li {font-size:12px}
+
+	.bbs_view .sns_link {right:10px}
+
+	/* board 이전, 다음글 */
+
+	.boardNext li > p {width:95px;padding:16px 16px 16px 28px;font-size:14px}
+	.boardNext li > div {width:50%;padding:16px 0;font-size:14px}
+	.boardNext li > div.date {width:100px;margin-right:0}
+
+	.boardNext {margin-top:0}
+	.boardNext li > div a {font-size:14px}
+
+	/* CONTACT */
+
+	.table_info {padding:20px 20px 10px}
+	.table_info ul li {margin-bottom:10px;font-size:14px;font-weight:400}
+
+}
+
+@media (max-width:480px) {
+
+	/* board 이전, 다음글 */
+
+	.boardNext li > div {width:42%}
+
+}
