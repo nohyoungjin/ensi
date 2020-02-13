@@ -673,7 +673,7 @@ function InputFileEvt(btnFile, inputFile, btnDelete) {
 
 	function DeleteFileEvt() {
 		var _this = $(this);
-		$(_this).parent().children('input[type='file']').val(null);
+		$(_this).parent().children('input[type="file"]').val(null);
 		$(_this).parent().children('.btn_slight').show();
 		$(_this).parent().children('.fileName').html('');
 		$(_this).detach();
