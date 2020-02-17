@@ -109,18 +109,16 @@ $(function() {
 
 		$('#gnb').on('mouseenter', '> .box > ul > li', function() {
 			if ( $('body').data('device') != 'mobile' ) {
-				$(this).css('height','332px');
 				$(this).parents('.h_group').addClass('menu_hover');
+				$(this).parents('.h_group').stop().animate({'height':'280px'}, 300);
 				$(this).parents('.h_group').css('background','url(./img/common/menu_bg.png)');
 				$('#gnb > .box > ul > li > a').css('color','#444');
-				$(this).parents('.h_group').stop().animate({'height':'280px'}, 300);
 				$('#gnb .sub_menu').show();
 			}
 		});
 
 		$('.h_group').on('mouseleave', function() {
 			if ( $('body').data('device') != 'mobile' ) {
-				$('#gnb > .box > ul > li').css('height','auto');
 				$('#gnb > .box > ul > li').parents('.h_group').stop().animate({'height':'91px'}, 300, function() {
 					$(this).removeClass('menu_hover');
 					$('#gnb > .box > ul > li').siblings().children('.sub_menu').hide();
@@ -143,11 +141,10 @@ $(function() {
 
 		$('#gnb').on('focusin', '> .box > ul > li', function() {
 			if ( $('body').data('device') != 'mobile' ) {
-				$(this).css('height','332px');
 				$(this).parents('.h_group').addClass('menu_hover');
+				$(this).parents('.h_group').stop().animate({'height':'280px'}, 300);
 				$(this).parents('.h_group').css('background','url(./img/common/menu_bg.png)');
 				$('#gnb > .box > ul > li > a').css('color','#444');
-				$(this).parents('.h_group').stop().animate({'height':'280px'}, 300);
 				$('#gnb .sub_menu').show();
 			}
 		});
