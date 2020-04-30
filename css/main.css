@@ -88,7 +88,7 @@ SUMMARY :
 
 /* e2 */
 
-.ensi.e2 {height:649px;background:#a3adb3 url(../img/main/e2_bg.png) no-repeat center center}
+.ensi.e2 {height:649px;background:#a3adb3 url(../img/main/e2_bg.jpg) no-repeat center center}
 
 .ensi.e2 .lst_walk {width:100%;margin:0 auto;padding-top:110px}
 .ensi.e2 .lst_walk:after {display:block;clear:both;content:''}
@@ -102,7 +102,7 @@ SUMMARY :
 
 /* e3 */
 
-.ensi.e3 {height:650px;background:url(../img/main/e3_bg.png) repeat-x center center}
+.ensi.e3 {height:650px;background:url(../img/main/e3_bg.jpg) repeat-x center center}
 .ensi.e3 .h_section {color:#fff}
 .ensi.e3 .tit {color:#fff}
 
