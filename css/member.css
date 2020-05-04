@@ -8,52 +8,6 @@ h2.title_text {font-size:44px;font-weight:500;color:#222;line-height:100%}
 h3.title_text {display:block;padding:25px 0 18px;font-size:20px;font-weight:500;color:#222;text-align:left}
 .sub_txt {margin:20px 0;font-size:16px;font-weight:300;color:#727272}
 
-/* 로그인 */
-
-.login_bx {overflow:hidden;max-width:620px;height:auto;margin:0 auto;padding:50px;background-color:#fff}
-.txt_error {font-size:16px;color:#cc3946;text-align:center}
-
-.input_l {display:inline-block;height:48px;margin-top:15px;padding-left:10px;border:1px solid #d9d9d9;font-size:16px;color:#999;vertical-align:middle;border-radius:0;-webkit-appearance:none}
-.login_bx .btn_login {margin:30px 0;text-align:center}
-.login_bx .btn_login button {width:100%;height:48px;border:1px solid #cc3946;background:#cc3946;font-size:22px;font-weight:300;color:#fff}
-
-.keeping {display:block;position:relative;font-size:16px;font-weight:300;text-align:left;line-height:120%}
-.keeping:after {display:block;clear:both;content:''}
-
-.help {max-width:620px;margin:0 auto;padding:40px 0 0;font-size:0}
-.help li {padding-bottom:14px}
-.help li p {display:inline-block;width:50%;font-size:16px;font-weight:300;color:#666}
-.help li p.txt {text-align:left}
-.help li p.anchor {text-align:right}
-.help li p.anchor a {width:198px;padding:6px 0}
-
-.btn_type {display:inline-block;min-width:168px;padding:14px 10px;border:1px solid #cc3946;background:#cc3946;font-size:16px;color:#fff;vertical-align:middle;text-align:center;border-radius:3px;cursor:pointer}
-.btn_type.white {border:1px solid #727272;background:#fff;color:#727272}
-.btn_type.gray {border:1px solid #747474;background:#747474;color:#fff}
-
-/* 회원가입 - 공통 */
-
-.form_wrap {overflow:hidden;max-width:900px;margin:40px auto 0;padding:50px;background-color:#fff}
-
-.step_area {overflow:hidden;padding:5px 0 25px}
-.step_area:after {display:block;clear:both;content:''}
-.step_area li {position:relative;float:left;width:33.3%;text-align:center}
-.step_area li:after {content:"";display:block;position:absolute;top:65px;right:-13px;width:21px;height:41px;background:url(../img/common/arrow_step.png) no-repeat}
-
-.step_area li .txt {display:block;position:absolute;top:110px;left:50%;font-size:18px;color:#747474;transform:translateX(-50%)}
-.step_area li.on .txt {color:#fff}
-.step_area li.last:after {display:none}
-
-.step_area li ._mem {width:160px;height:160px}
-
-.step_area li ._mem_01 {background-position:0 -282px}
-.step_area li ._mem_02 {background-position:-165px -282px}
-.step_area li ._mem_03 {background-position:-330px -282px}
-
-.step_area li.on ._mem_01 {background-position:0 -452px}
-.step_area li.on ._mem_02 {background-position:-165px -452px}
-.step_area li.on ._mem_03 {background-position:-330px -452px}
-
 /* 개인정보처리방침 */
 
 .cont_privacy .E_01 p {margin:10px 0 0}
@@ -90,40 +44,6 @@ h3.title_text {display:block;padding:25px 0 18px;font-size:20px;font-weight:500;
 .etc_wrap .red:before {border:1px solid #cc3946;color:#cc3946 !important}
 .etc_wrap ul li ol {margin:10px 0 10px 20px}
 
-/* 약관동의 - 이용약관 */
-
-.box_agree {overflow-y:scroll;max-width:900px;height:180px;margin:0 0 20px;padding:0 30px 20px;border:1px solid #d9d9d9;background-color:#fff;color:#747474;text-align:left}
-.box_agree h3 {display:block;margin:20px 0 20px;font-size:17px;font-weight:400}
-.box_agree h4 {display:block;margin:20px 0 8px;font-size:14px;font-weight:340;color:#444}
-
-.box_agree p {font-size:14px !important;font-weight:300;color:#727272;line-height:23px}
-.box_agree ol {margin:5px 0 0;counter-reset:list-number-counter}
-.box_agree ol li {position:relative;padding-left:22px;font-size:13px !important;font-weight:300;color:#727272;line-height:23px;letter-spacing:-0.1px}
-.box_agree ol li:before {position:absolute;left:0;top:4px;width:14px;height:14px;border:1px solid #727272;font-size:10px;text-align:center;line-height:17px;color:#727272;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;content:counter(list-number-counter);counter-increment:list-number-counter}
-
-.box_agree ul {margin:5px 0 0}
-.box_agree ul li {position:relative;font-size:14px;font-weight:300;color:#727272;line-height:23px}
-.box_agree .red {color:#cc3946}
-.box_agree .red:before {border:1px solid #cc3946;color:#cc3946 !important}
-.box_agree ul li ol {margin:10px 0 10px 20px}
-
-/* 약관동의 - 개인정보처리방침 */
-
-.box_agree .E_01 p {margin:20px 0 0}
-.box_agree .E_01 p + p {margin:10px 0 0}
-
-/* 동의 */
-
-.box_agree.box_privacy ul li {padding-left:14px}
-.box_agree.box_privacy ul li:before {content:'';display:block;position:absolute;top:12px;left:2px;width:5px;height:1px;margin-right:20px;background-color:#727272}
-
-.aree_check {display:inline-block;position:relative;padding:0 1px;font-size:16px;font-weight:300;color:#444;line-height:120%}
-.aree_check:after {display:block;clear:both;content:''}
-
-.all_check_box {margin:40px 0 0;padding:40px 20px 0;border-top:1px solid #444;border-width:1px 0;text-align:center}
-.all_check_box .aree_check {margin-bottom:0;font-size:18px;text-align:center}
-.aree_check input {margin-right:10px}
-
 /* 정보입력 */
 
 .signup {position:relative}
@@ -144,13 +64,6 @@ sup {display:inline-block;position:relative;top:-5px;width:7px;height:7px;margin
 p.guide_txt {margin-top:10px}
 span.guide_txt {margin-left:10px}
 
-/* 가입완료 */
-
-.complete {margin:40px auto 0;padding-top:65px;border-top:1px solid #444;text-align:center}
-.complete strong {display:block;margin-bottom:35px;font-size:24px;font-weight:500;color:#222}
-.complete .info_txt {margin-bottom:55px;font-size:18px;color:#727272}
-.complete .info_txt span {font-weight:300;color:#cc3946}
-
 /* 입력폼 */
 
 .form_table {position:relative;width:100%;border-top:1px solid #444;border-bottom:1px solid #444}
@@ -165,17 +78,6 @@ span.guide_txt {margin-left:10px}
 
 .form_table textarea {width:100%;height:180px;padding:10px;border:1px solid #d9d9d9;font-size:18px;font-weight:300;color:#747474;text-align:left;line-height:160%;border-radius:0;-webkit-appearance:none}
 
-/* 팝업 - 공통 */
-
-.popup_wrap {overflow:hidden}
-.popup_wrap .top_title {width:100%;height:60px;background-color:#cc3946;font-size:20px;font-weight:400;color:#fff;text-align:center;line-height:60px}
-.popup_wrap .top_logo {width:100%;padding:25px 0 25px 40px;background-color:#cc3946}
-
-.add_wrap {padding:0 40px}
-.add_wrap .h2_tit {position:relative;margin:30px 0 20px;padding-left:10px;font-size:14px;color:#747474}
-.add_wrap .h2_tit:before {content:" ";position:absolute;left:0;top:10px;width:3px;height:3px;background:#cc3946}
-.add_wrap .h3_tit {padding:40px 0;font-size:16px;color:#727272;text-align:center}
-
 /*  */
 
 @media (max-width:1200px) {
@@ -186,21 +88,9 @@ span.guide_txt {margin-left:10px}
 
 }
 
-
 /* 모바일 설정 */
 
 @media (max-width:1024px) {
-
-	/* 회원가입 */
-
-	h3.title_text {padding:30px 0 20px}
-
-	/* 회원가입_컨텐츠 */
-
-	.cont_step2 .w25 {width:20%}
-	.cont_step2 .w74 {width:34%}
-
-	.cont_step2 .select.w13 {width:auto;padding:0 5px;font-size:12px}
 
 	/* 입력폼 */
 
@@ -209,66 +99,9 @@ span.guide_txt {margin-left:10px}
 	.form_table td input[type="text"] {font-size:12px}
 	.form_table td input[type="password"] {font-size:12px}
 
-	/* 팝업창 */
-
-	.popup_wrap .top_logo {padding:25px 0 25px 20px}
-
 }
 
 @media (max-width:640px) {
-
-	/* 로그인 */
-
-	.login_bx {padding:0 20px}
-	.login_bx .btn_login button {font-size:20px}
-
-	.help {margin:0 20px}
-	.help li {display:table;width:100%}
-	.help li p {font-size:13px}
-	.help li p.txt,
-	.help li p.anchor {display:table-cell;width:50%;vertical-align:middle}
-	.help li p.anchor a {width:148px;min-width:148px;font-size:14px}
-
-	.w13 {width:23.5%}
-	.w50 {width:100%}
-	.w75 {width:46%}
-	.w90 {width:100%}
-
-	/* 회원가입 - 공통 */
-
-	.form_wrap {padding:0 20px}
-
-	.step_area li {display:inline-block;height:48px;border:1px solid #d2d2d2;background-color:#f5f5f5;font-size:15px;font-weight:400;color:#666;line-height:48px}
-	.step_area li:after {background:none}
-
-	.step_area li:nth-child(1) {border-right:0}
-	.step_area li:nth-child(2) {border-right:0}
-
-	.step_area li.on {background-color:#fff}
-	.step_area li.last:after {display:none}
-	.step_area li .txt {top:0;width:100%;font-size:16px}
-	.step_area li.on .txt {display:inline-block;color:#cc3946}
-	
-	.step_area li ._mem {background:none}
-	
-	/* 회원가입 */
-
-	h2.title_text {font-size:30px}
-	h3.title_text {padding:20px 0 10px 0;font-size:18px}
-
-	/* 회원가입 - 정보입력 */
-
-	.require_both {top:20px}
-
-	.aree_check {font-size:14px}
-	.all_check_box .aree_check {font-size:16px}
-
-	.form_table p {font-size:12px}
-	span.guide_txt {margin:10px 0 0;font-size:12px}
-
-    .cont_step2 .w25 {width:40%}
-    .cont_step2 .w22 {width:40%;margin-top:10px;font-size:12px}
-    .td_email .btn_pack {margin-top:10px}
 
 	/* */
 
