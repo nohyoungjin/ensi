@@ -90,10 +90,10 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 .paging .btn_prev {margin-right:25px}
 .paging .btn_next {margin-left:25px}
 
-.btn_first {background:url(../img/common/img_common.png) no-repeat -499px -6px}
-.btn_prev {background:url(../img/common/img_common.png) no-repeat -540px -6px}
-.btn_next {background:url(../img/common/img_common.png) no-repeat -577px -6px}
-.btn_last {background:url(../img/common/img_common.png) no-repeat -618px -6px}
+.btn_first {background:url(../img/common/sp_common.png) no-repeat -499px -6px}
+.btn_prev {background:url(../img/common/sp_common.png) no-repeat -540px -6px}
+.btn_next {background:url(../img/common/sp_common.png) no-repeat -577px -6px}
+.btn_last {background:url(../img/common/sp_common.png) no-repeat -618px -6px}
 
 .btn_first:hover,
 .btn_first:focus {background-position:-499px -46px}
@@ -188,8 +188,8 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 .ensi_wrap .brochure_box .slider .slick-track {overflow:hidden}
 
 .ensi_wrap .brochure_box .slider .slick-arrow {display:block !important;overflow:hidden;position:absolute;top:50%;z-index:10000;width:42px;height:63px;margin-top:-31.5px;text-indent:-9999px;cursor:pointer;transition:all .3s ease;-webkit-transition:all .3s ease;-o-transition:all .3s ease;-moz-transition:all .3s ease}
-.ensi_wrap .brochure_box .slider .slick-prev {left:30px;background:url(../img/common/arrow_prev.png) no-repeat 50% 50%}
-.ensi_wrap .brochure_box .slider .slick-next {right:30px;background:url(../img/common/arrow_next.png) no-repeat 50% 50%}
+.ensi_wrap .brochure_box .slider .slick-prev {left:30px;background:url(../img/common/ico_prev.png) no-repeat 50% 50%}
+.ensi_wrap .brochure_box .slider .slick-next {right:30px;background:url(../img/common/ico_next.png) no-repeat 50% 50%}
 
 .ensi_wrap .brochure_box .slider .slick-prev:hover {left:20px}
 .ensi_wrap .brochure_box .slider .slick-next:hover {right:20px}
@@ -254,8 +254,8 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 .history_wrap .info_box .cont span {display:inline-block;padding:0 25px;font-size:14px;font-weight:400;color:#747474}
 
 .history_wrap .info_box .slick-arrow {display:block !important;overflow:hidden;position:absolute;top:50%;z-index:100;width:42px;height:63px;margin-top:-31.5px;text-indent:-9999px;cursor:pointer;transition:all .3s ease;-webkit-transition:all .3s ease;-o-transition:all .3s ease;-moz-transition:all .3s ease}
-.history_wrap .info_box .slick-prev {left:30px;background:url(../img/common/arrow_prev.png) no-repeat 50% 50%}
-.history_wrap .info_box .slick-next {right:30px;background:url(../img/common/arrow_next.png) no-repeat 50% 50%}
+.history_wrap .info_box .slick-prev {left:30px;background:url(../img/common/ico_prev.png) no-repeat 50% 50%}
+.history_wrap .info_box .slick-next {right:30px;background:url(../img/common/ico_next.png) no-repeat 50% 50%}
 
 .history_wrap .info_box .slick-prev:hover {left:20px}
 .history_wrap .info_box .slick-next:hover {right:20px}
@@ -292,7 +292,7 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 
 .cont_competition .inner_cont .fr ul.inquiry {padding:10px 10px;background:#f5f5f5}
 .cont_competition .inner_cont .fr ul.inquiry li {padding:10px 0 10px 55px}
-.cont_competition .inner_cont .fr ul.inquiry li:before {content:'';display:block;position:absolute;top:8px;left:11px;width:32px;height:32px;background:transparent url(../img/common/img_common.png);background-position:-250px -58px}
+.cont_competition .inner_cont .fr ul.inquiry li:before {content:'';display:block;position:absolute;top:8px;left:11px;width:32px;height:32px;background:transparent url(../img/common/sp_common.png);background-position:-250px -58px}
 .cont_competition .inner_cont .fr ul.inquiry li + li:before {background-position:-287px -58px}
 
 .cont_competition .table_01 {border-bottom:1px solid #888}
@@ -498,7 +498,7 @@ ul.news_wrap li:hover span {color:#fff}
 .curriculum_cont .bod_strong {display:block;margin:0 0 15px;font-size:18px;font-weight:500;color:#444}
 
 .curriculum_cont .box_t01 {position:relative;margin:30px 0;padding:20px 40px 20px 62px;background-color:#f5f5f5;font-size:14px;text-align:left;line-height:22px;word-break:break-all}
-.curriculum_cont .box_t01:before {content:'';display:block;position:absolute;top:17px;left:21px;width:32px;height:32px;background:transparent url(../img/common/img_common.png);background-position:-324px -58px}
+.curriculum_cont .box_t01:before {content:'';display:block;position:absolute;top:17px;left:21px;width:32px;height:32px;background:transparent url(../img/common/sp_common.png);background-position:-324px -58px}
 
 
 /* SI Education - 교육 자료 */

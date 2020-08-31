@@ -27,21 +27,23 @@ SUMMARY :
 
 .visual.mobile div img {width:100%}
 
-.visual_cont {position:absolute;top:45%;left:80px;z-index:2;max-width:600px;color:#fff}
+.visual_cont {opacity:0;position:absolute;top:45%;left:80px;max-width:600px;color:#fff}
+body.load .visual_cont {opacity:1}
+
 .visual_cont strong {display:inline-block;margin:0 0 25px;font-size:50px;font-weight:500;line-height:64px}
 .visual_cont p {font-size:21px;font-weight:100}
 
 /* visual text animation */
 
 .slick-slide .visual_cont strong {opacity:0;-webkit-transition:0ms;transition:0ms;-webkit-transition-delay:500ms;transition-delay:500ms;-webkit-transform:translate3d(0,-80px,0);transform:translate3d(0,-80px,0)}
-.slick-slide.active-item .visual_cont strong {opacity:1;-webkit-transition:800ms;transition:800ms;-webkit-transition-delay:400ms;transition-delay:400ms;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+body.load .slick-slide.active-item .visual_cont strong {opacity:1;-webkit-transition:800ms;transition:800ms;-webkit-transition-delay:400ms;transition-delay:400ms;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 
 .slick-slide .visual_cont p {opacity:0;-webkit-transition:0ms;transition:0ms;-webkit-transition-delay:500ms;transition-delay:500ms;-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}
-.slick-slide.active-item .visual_cont p {opacity:1;-webkit-transition:800ms;transition:800ms;-webkit-transition-delay:800ms;transition-delay:800ms;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+body.load .slick-slide.active-item .visual_cont p {opacity:1;-webkit-transition:800ms;transition:800ms;-webkit-transition-delay:800ms;transition-delay:800ms;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 
 .slick-arrow {display:none;overflow:hidden;position:absolute;top:50%;z-index:5;width:30px;height:57px;text-indent:-9999px;cursor:pointer}
-.slick-prev {left:60px;background:transparent url(../img/common/img_common.png);background-position:-741px -6px}
-.slick-next {right:60px;background:transparent url(../img/common/img_common.png);background-position:-787px -6px}
+.slick-prev {left:60px;background:transparent url(../img/common/sp_common.png);background-position:-741px -6px}
+.slick-next {right:60px;background:transparent url(../img/common/sp_common.png);background-position:-787px -6px}
 
 .visual .slick-dots {position:absolute;top:50%;right:80px;z-index:1000;width:114px;margin-top:-57px;text-align:right}
 .visual .slick-dots li {display:block}
@@ -49,7 +51,7 @@ SUMMARY :
 .visual .slick-dots li.slick-active a {font-size:24px;color:#fff}
 
 .visual_btn {position:absolute;top:50%;right:91px;z-index:1;margin-top:86px}
-.btn_play {display:block;width:10px;height:14px;background:transparent url(../img/common/img_common.png);background-position:-200px -33px;text-indent:-9999px;cursor:pointer}
+.btn_play {display:block;width:10px;height:14px;background:transparent url(../img/common/sp_common.png);background-position:-200px -33px;text-indent:-9999px;cursor:pointer}
 .btn_play.on {background-position:-217px -33px}
 
 /* more */
