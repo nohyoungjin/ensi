@@ -1,5 +1,5 @@
 str = ''		
-str += '<div class="footer">'
+str += '<div id="footer">'
 str += '	<div class="inner">'
 str += ''
 str += '		<ul class="add">'
