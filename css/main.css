@@ -116,7 +116,7 @@ body.load .slick-slide.active-item .visual_cont p {opacity:1;-webkit-transition:
 
 .thesis_slider .slick-slide {display:block;position:relative;float:left;margin:0 20px;padding:40px;background:#fff;color:#747474; }
 .thesis_slider .slick-slide strong {display:inline-block;display:-webkit-box;overflow:hidden;height:61px;margin:0 0 20px;font-size:23px;color:#444 !important;line-height:29px;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical}
-.thesis_slider .slick-slide p {display:-webkit-box;overflow:hidden;height:67px;margin:0 0 18px;font-size:15px;font-weight:300;text-overflow: ellipsis;-webkit-line-clamp:3;-webkit-box-orient:vertical}
+.thesis_slider .slick-slide p {display:-webkit-box;overflow:hidden;height:69px;margin:0 0 16px;font-size:15px;font-weight:300;text-overflow: ellipsis;-webkit-line-clamp:3;-webkit-box-orient:vertical}
 
 .thesis_slider .slick-slide ul {position:relative;padding:0 0 5px 0}
 .thesis_slider .slick-slide ul li {display:inline;position:relative;padding:0 10px 0 5px;font-size:15px;font-weight:300}
