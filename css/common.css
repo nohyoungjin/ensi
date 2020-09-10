@@ -113,7 +113,7 @@ html, body {width:100%;height:100%}
 #header .h_group > div:after {display:block;clear:both;content:''}
 #header .h_group > div h1 {position:relative;float:left;left:80px}
 #header .h_group > div h1 span.top_logo {display:block;position:absolute;top:32px;left:0;width:77px;height:27px;background:url(../img/common/logo.png) no-repeat;background-size:77px 27px}
-#header .h_group > div h1 span.top_logo_txt {display:inline-block;position:absolute;top:32px;left:90px;width:200px;font-size:10px;font-weight:300;color:#fff;line-height:140%}
+#header .h_group > div h1 span.top_logo_txt {display:inline-block;position:absolute;top:32px;left:90px;font-size:10px;font-weight:300;color:#fff;line-height:140%}
 
 #header .h_group.menu_hover > div h1 span,
 #header .h_group.affix > div h1 span,
