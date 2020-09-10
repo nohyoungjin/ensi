@@ -113,7 +113,7 @@ html, body {width:100%;height:100%}
 #header .h_group > div:after {display:block;clear:both;content:''}
 #header .h_group > div h1 {position:relative;float:left;left:80px}
 #header .h_group > div h1 span.top_logo {display:block;position:absolute;top:32px;left:0;width:77px;height:27px;background:url(../img/common/logo.png) no-repeat;background-size:77px 27px}
-#header .h_group > div h1 span.top_logo_txt {display:inline-block;position:absolute;top:32px;left:90px;font-size:10px;font-weight:300;color:#fff;line-height:140%}
+#header .h_group > div h1 span.top_logo_txt {display:inline-block;position:relative;top:27px;left:90px;font-size:10px;font-weight:300;color:#fff;line-height:140%}
 
 #header .h_group.menu_hover > div h1 span,
 #header .h_group.affix > div h1 span,
@@ -218,10 +218,6 @@ html, body {width:100%;height:100%}
 
 @media (max-width: 1300px) {
 
-	/* header */
-
-	#gnb > .box > ul > li > a {padding:10px 30px 10px 50px}
-
 	/* scroll top */
 
 	.btn_top {left:auto;right:20px;margin-left:0}
@@ -241,11 +237,12 @@ html, body {width:100%;height:100%}
 	#header .h_group > div {width:auto;height:75px;padding:0 20px}
 
 	#header .h_group > div h1 {float:none;left:0}
-	#header .h_group > div h1 span.top_logo_txt {display:block}
+	#header .h_group > div h1 span.top_logo {top:25px}
+	#header .h_group > div h1 span.top_logo_txt {display:block;top:25px}
 
 	#gnb {position:static}
 	#gnb .btn_menu,
-	#gnb .btn_close {display:block;top:30px}
+	#gnb .btn_close {display:block;top:26px}
 
 	#gnb > .box {display:none;position:absolute;top:-5px;right:-80%;z-index:20;width:80%;padding-bottom:2px}
 	#gnb > .box > ul {display:inline-block;width:100%;padding-top:80px;background:#cc3946}
@@ -326,8 +323,8 @@ html, body {width:100%;height:100%}
 
 	/* header */
 
-	#header .h_group > div h1 span.top_logo {display:block;position:absolute;top:32px;left:0px;width:54px;height:19px;background:url(../img/common/logo.png) no-repeat;background-size:54px 19px}
-	#header .h_group > div h1 span.top_logo_txt {left:65px;top:29px;line-height:120%}
+	#header .h_group > div h1 span.top_logo {top:27px;width:54px;height:19px;background-size:54px 19px}
+	#header .h_group > div h1 span.top_logo_txt {left:65px;top:25px;line-height:120%}
 
 	/* util menu */
 

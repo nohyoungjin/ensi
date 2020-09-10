@@ -169,11 +169,11 @@ body.load .slick-slide.active-item .visual_cont p {opacity:1;-webkit-transition:
 
 	/* visual */
 
-	.visual_cont {top:33%;left:20px}
+	.visual_cont {top:50%;left:20px}
 	.visual_cont strong {margin:0 20px 0 0;font-size:42px;line-height:58px}
 	.visual_cont p {display:none}
 
-	.visual .slick-dots {top:48%;left:15px;margin-top:0}
+	.visual .slick-dots {top:65%;left:15px;margin-top:0}
 	.visual .slick-dots li {display:inline}
 	.visual_btn {display:none}
 
@@ -202,6 +202,7 @@ body.load .slick-slide.active-item .visual_cont p {opacity:1;-webkit-transition:
 
 	.thesis_slider .slick-track {margin-left:0}
 
+	.thesis_slider .slick-arrow {top:-125px}
 	.thesis_slider .slick-prev {left:96.5%}
 	.thesis_slider .slick-next {right:3.5%}
 
@@ -242,10 +243,6 @@ body.load .slick-slide.active-item .visual_cont p {opacity:1;-webkit-transition:
 
 	.ensi.e2 .lst_walk li:before {display:block;top:10px;left:50%;width:130px;height:1px;margin-left:-65px}
 	.ensi.e2 .lst_walk li:first-child:before {display:none}
-
-	/* e3 */
-
-	.thesis_slider .slick-arrow {top:-125px}
 
 	/* e4 */
 
