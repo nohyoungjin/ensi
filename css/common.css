@@ -44,7 +44,7 @@ html, body {width:100%;height:100%}
 
 /* global */
 
-.blind {display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0.1em;line-height:0.01em;text-indent:-9999px}
+.blind {overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px;clip:rect(0 0 0 0)}
 
 /* icon */
 
@@ -110,10 +110,9 @@ html, body {width:100%;height:100%}
 #header .h_group {overflow:visible;position:fixed;top:0;left:0;z-index:999;width:100%;height:91px;background-color:transparent}
 #header .h_group:before {content:"";position:absolute;top:91px;left:0px;width:100%;height:1px}
 #header .h_group > div {height:91px;margin:0 auto}
-#header .h_group > div:after {display:block;clear:both;content:''}
-#header .h_group > div h1 {position:relative;float:left;top:32px;left:80px;width:77px;height:27px}
-#header .h_group > div h1 a.logo {display:inline-block;width:77px;height:27px;background:url(../img/common/logo.png) no-repeat;background-size:77px 27px}
-#header .h_group > div h1 span.txt {display:inline-block;position:absolute;top:4px;left:94px;width:192px;font-size:10px;font-weight:300;color:#fff;line-height:140%}
+#header .h_group > div h1 {position:absolute;top:34px;left:80px;width:77px;height:27px}
+#header .h_group > div h1 a.logo {display:block;width:77px;height:27px;background:url(../img/common/logo.png) no-repeat;background-size:77px 27px}
+#header .h_group > div h1 span.txt {display:inline-block;position:absolute;top:0;left:94px;width:200px;font-size:10px;font-weight:300;color:#fff;line-height:140%}
 
 #header .h_group.menu_hover > div h1 span,
 #header .h_group.affix > div h1 span,
@@ -132,7 +131,7 @@ html, body {width:100%;height:100%}
 #header .h_group.affix #gnb > .box > ul > li > a:focus,
 #header .h_group.sub #gnb > .box > ul > li > a:focus {color:#cc3946 !important}
 
-#gnb {position:absolute;left:50%;margin-left:-456px;padding:28px 0 0}
+#gnb {position:absolute;left:50%;margin-left:-448px;padding:28px 0 0}
 #gnb .btn_menu {display:none;overflow:hidden;position:absolute;top:34px;right:20px;width:32px;height:20px;background:url(../img/common/btn_menu_on.png) no-repeat;background-size:32px 20px !important;text-indent:-999em}
 
 .h_group.affix #gnb .btn_menu,
@@ -143,7 +142,7 @@ html, body {width:100%;height:100%}
 #gnb > .box {display:block}
 #gnb > .box > ul:after {display:block;clear:both;content:''}
 #gnb > .box > ul > li {position:relative;float:left}
-#gnb > .box > ul > li > a {display:block;padding:7px 44px;font-family:'Open Sans', sans-serif;font-size:18px;font-weight:600;color:#fff;cursor:pointer}
+#gnb > .box > ul > li > a {display:block;padding:5px 44px;font-family:'Open Sans', sans-serif;font-size:18px;font-weight:600;color:#fff;cursor:pointer}
 #gnb > .box > ul > li.current > a,
 #gnb > .box > ul > li > a:hover,
 #gnb > .box > ul > li > a:focus {color:#cc3946}
@@ -236,7 +235,7 @@ html, body {width:100%;height:100%}
 	#header .h_group {height:75px !important;border-top:0}
 	#header .h_group > div {width:auto;height:75px;padding:0 20px}
 
-	#header .h_group > div h1 {float:none;top:21px;left:0}
+	#header .h_group > div h1 {top:24px;left:18px}
 	#header .h_group > div h1 span.txt {display:inline-block}
 
 	#gnb {position:static}
