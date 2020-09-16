@@ -109,10 +109,14 @@ html, body {width:100%;height:100%}
 
 #header .h_group {overflow:visible;position:fixed;top:0;left:0;z-index:999;width:100%;height:91px;background-color:transparent}
 #header .h_group:before {content:"";position:absolute;top:91px;left:0px;width:100%;height:1px}
+
 #header .h_group > div {height:91px;margin:0 auto}
 #header .h_group > div h1 {position:absolute;top:34px;left:80px;width:77px;height:27px}
 #header .h_group > div h1 a.logo {display:block;width:77px;height:27px;background:url(../img/common/logo.png) no-repeat;background-size:77px 27px}
 #header .h_group > div h1 span.txt {display:inline-block;position:absolute;top:0;left:94px;width:200px;font-size:10px;font-weight:300;color:#fff;line-height:140%}
+
+#header .h_group.menu_hover {background:#fff}
+#header .h_group.menu_hover:before {content:"";position:absolute;top:91px;left:0;width:100%;height:189px;background-color:#f8f8f8;border:1px solid #ddd;border-width:1px 0}
 
 #header .h_group.menu_hover > div h1 span,
 #header .h_group.affix > div h1 span,
