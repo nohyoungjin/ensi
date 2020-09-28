@@ -109,6 +109,8 @@ $(function() {
 
 		$('#gnb').on('mouseenter', '> .box > ul > li', function() {
 			if ($('body').data('device') != 'mobile') {
+				$('#gnb > .box > ul > li').removeClass('on');
+				$(this).addClass('on');
 				$(this).parents('.h_group').addClass('menu_hover');
 				$(this).parents('.h_group').stop().animate({'height': '280px'}, 300);
 				$('#gnb > .box > ul > li > a').css('color','#444');
@@ -118,6 +120,7 @@ $(function() {
 
 		$('.h_group').on('mouseleave', function() {
 			if ($('body').data('device') != 'mobile') {
+				$('#gnb > .box > ul > li').removeClass('on');
 				$('#gnb > .box > ul > li').parents('.h_group').stop().animate({'height': '91px'}, 300, function() {
 					$(this).removeClass('menu_hover');
 					$('#gnb > .box > ul > li').siblings().children('.sub_menu').hide();
@@ -216,9 +219,6 @@ $(function() {
 			if ($('body').data('device') == 'mobile') {
 
 				e.preventDefault ? e.preventDefault() : e.returnValue = false;
-
-				// $('#gnb > .box > ul > li > .sub_menu > ul').filter(':not(:animated)').slideUp('fast');
-				// $(this).parent().find('> .sub_menu > ul').filter(':not(:animated)').slideToggle();
 
 				if ($(this).parent().hasClass('current')) {
 					$(this).parent().removeClass('current');
