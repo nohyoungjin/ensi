@@ -7,23 +7,31 @@
 SUMMARY :
 
 01 LAYOUT
-02 GLOBAL
-03 HEADER
-04 FOOTER
-05 LAYER POPUP
-06 SCROLL TOP 
+02 HEADER
+03 FOOTER
+04 LAYER POPUP
+05 SCROLL TOP 
 */
 
 /* layout */
 
-html, body {width:100%;height:100%}
+html {font-size:62.5%;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%}
+body {font-family:'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', 'Apple Gothic', sans-serif;font-size:13px;font-weight:400;color:#333;line-height:1.5;word-break:keep-all}
+
 #wrap {position:relative;width:100%;min-height:100%}
 #container {width:100%}
 *html #container {height:100%}
 .content {min-height:calc(100vh - 173px);padding-bottom:146px}
-#footer {position:relative}
 
-/* global */
+/* skip */
+
+#skip_navi {height:0}
+#skip_navi a {position:absolute;top:-9999px;z-index:10000;width:100%;height:30px;background-color:#000;font-weight:600;color:#fff;text-align:center;line-height:30px;opacity:0.6;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";filter:alpha(opacity=60)}
+#skip_navi a:hover,
+#skip_navi a:focus,
+#skip_navi a:active {top:0;color:#fff}
+
+/* blind */
 
 .blind {overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px;clip:rect(0 0 0 0)}
 
@@ -77,14 +85,6 @@ html, body {width:100%;height:100%}
 
 .youtubeWrap {position:relative;width:100%;padding-bottom:56.35%;text-align:left}
 .youtubeWrap iframe {position:absolute;width:100%;height:100%}
-
-/* skip */
-
-#skip_navi {height:0}
-#skip_navi a {position:absolute;top:-9999px;z-index:10000;width:100%;height:30px;background-color:#000;font-weight:600;color:#fff;text-align:center;line-height:30px;opacity:0.6;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";filter:alpha(opacity=60)}
-#skip_navi a:hover,
-#skip_navi a:focus,
-#skip_navi a:active {top:0;color:#fff}
 
 /* header */
 
