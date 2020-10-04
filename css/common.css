@@ -16,7 +16,7 @@ SUMMARY :
 /* layout */
 
 html {font-size:62.5%;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%}
-body {font-family:'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', 'Apple Gothic', sans-serif;font-size:13px;font-weight:400;color:#333;line-height:1.5;word-break:keep-all}
+body {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum','Apple Gothic',sans-serif;font-size:13px;font-weight:400;color:#333;line-height:1.5;word-break:keep-all}
 
 #wrap {position:relative;width:100%;min-height:100%}
 #container {width:100%}
@@ -35,9 +35,9 @@ body {font-family:'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', '돋움', 'D
 
 .blind {overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px;clip:rect(0 0 0 0)}
 
-/* icon */
+/* ico */
 
-.ico {display:inline-block;background-image:url(../img/common/sp_common.png);background-repeat:no-repeat;vertical-align:middle;text-indent:-99999px}
+.ico {display:inline-block;background-image:url(../img/common/sp_common.png);background-repeat:no-repeat;vertical-align:middle}
 
 /* width */
 
@@ -140,7 +140,7 @@ body {font-family:'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', '돋움', 'D
 #gnb > .box > ul > li > .sub_menu > ul > li > a:hover,
 #gnb > .box > ul > li > .sub_menu > ul > li > a:focus {color:#cc3946}
 
-#gnb > .box > ul > li > .sub_menu > ul > li > a:after {content:'';position:absolute;top:1.7rem;left:0;width:0;height:1px;background:#cc3946;-webkit-transition:all 250ms ease-out;-moz-transition:all 250ms ease-out;-ms-transition:all 250ms ease-out;-o-transition:all 250ms ease-out;transition: all 250ms ease-out}
+#gnb > .box > ul > li > .sub_menu > ul > li > a:after {content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:#cc3946;-webkit-transition:all 250ms ease-out;-moz-transition:all 250ms ease-out;-ms-transition:all 250ms ease-out;-o-transition:all 250ms ease-out;transition: all 250ms ease-out}
 #gnb > .box > ul > li > .sub_menu > ul > li > a:hover:after {width:100%}
 
 /* util menu */
@@ -179,7 +179,7 @@ body {font-family:'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', '돋움', 'D
 
 .modal_box {position:relative;background:#fff}
 .modal_header {padding:23px 30px;background:#f5f5f5}
-.modal_header h3 {display:block;overflow:hidden;width:90%;font-size:22px;font-weight:500;color:#222;text-align:left;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}
+.modal_header h3 {display:block;overflow:hidden;width:90%;font-size:22px;font-weight:700;color:#222;text-align:left;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}
 
 .article_content {margin:20px;padding:0 0 20px}
 .papers_ensi .article_content {height:600px;margin:0}
@@ -251,6 +251,8 @@ body {font-family:'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', '돋움', 'D
 	#gnb > .box > ul > li > .sub_menu > ul > li > a:focus {background:#f5f5f5}
 	#gnb > .box > ul > li > .sub_menu > ul > li > a:hover,
 	#gnb > .box > ul > li > .sub_menu > ul > li > a:focus {color:#cc3946}
+
+	#gnb > .box > ul > li > .sub_menu > ul > li > a:after {display:none}
 
 	#gnb > .box > ul > li.current > .sub_menu {max-height:300px}
 
