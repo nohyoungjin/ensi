@@ -51,7 +51,7 @@ h3.title_text {display:block;padding:25px 0 18px;font-size:20px;font-weight:500;
 .require_both {position:absolute;top:30px;right:0}
 .require_both p {font-size:16px;font-weight:300;color:#747474}
 
-sup {display:inline-block;position:relative;top:-5px;width:7px;height:7px;margin:0 5px;background:url(../img/common/ico_asterisk.png) no-repeat;font-size:0}
+sup {display:inline-block;position:relative;top:-10px;width:7px;height:7px;margin:0 5px;background:url(../img/common/ico_asterisk.png) no-repeat;font-size:0}
 
 .form_table span.space {display:inline-block;padding:0 8px;font-size:16px}
 .form_table .item label {margin:0 20px 0 0}
