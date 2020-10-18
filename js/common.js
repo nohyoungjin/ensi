@@ -268,13 +268,14 @@ $(function() {
 		// 비주얼
 
 		$('.visual').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
+			accessibility: false,
 			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 5000,
 			dots: true,
 			fade: true,
-			autoplay: true,
-			autoplaySpeed: 5000
+			slidesToShow: 1,
+			slidesToScroll: 1
 		});
 
 		// 정지, 재생
@@ -349,12 +350,13 @@ $(function() {
 		}
 
 		$('.thesis_slider').slick({
-			slidesToShow: 4,
+			accessibility: false,
 			arrows: true,
-			dots: false,
-			infinite: true,
 			autoplay: false,
 			centerMode: true,
+			dots: false,
+			infinite: true,
+			slidesToShow: 4,
 			responsive: [
 				{
 					breakpoint: 1600,

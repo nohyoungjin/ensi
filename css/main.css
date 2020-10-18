@@ -47,8 +47,8 @@ body.load .slick-slide.active-item .visual_cont p {opacity:1;-webkit-transition:
 
 .visual .slick-dots {position:absolute;top:50%;right:80px;z-index:1000;width:114px;margin-top:-57px;text-align:right}
 .visual .slick-dots li {display:block}
-.visual .slick-dots a {display:inline-block;overflow:hidden;width:35px;margin:5px 0;font-family:'Open Sans', sans-serif;font-size:16px;font-weight:600;background:transparent;color:#807d7a;text-align:center;cursor:pointer}
-.visual .slick-dots li.slick-active a {font-size:24px;color:#fff}
+.visual .slick-dots li button {display:inline-block;overflow:hidden;width:35px;margin:5px 0;font-family:'Open Sans', sans-serif;font-size:16px;font-weight:600;background:transparent;color:#807d7a;text-align:center;cursor:pointer}
+.visual .slick-dots li.slick-active button {font-size:24px;color:#fff}
 
 .visual_btn {position:absolute;top:50%;right:91px;z-index:1;margin-top:86px}
 .btn_play {display:block;width:10px;height:14px;background:transparent url(../img/common/sp_common.png);background-position:-200px -33px;text-indent:-9999px;cursor:pointer}

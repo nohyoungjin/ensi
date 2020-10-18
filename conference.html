@@ -263,7 +263,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 	<script src="js/SplitTextmin.js"></script>
-	<script src="js/slick.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/jquery.slimscroll.min.js"></script>
 	<script src="js/easing.js"></script>
@@ -271,29 +271,26 @@
 
 	<script type="text/javascript">
 
-	$(function(){
-		
-		// 
+	$(function(){ 
 
 		$('.slider').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
+			accessibility: false,
 			arrows: true,
+			autoplay: false,
+			autoplaySpeed: 2000,
 			dots: false,
 			fade: true,
-			autoplay: false,
-			autoplaySpeed: 2000
+			slidesToShow: 1,
+			slidesToScroll: 1
 		});
 
-		//
-
 		$(".info_box").slick({
-			slidesToShow: 3,
+			accessibility: false,
 			arrows: true,
+			autoplay: false,
 			dots: false,
 			infinite: true,
-			autoplay: false,
-			centerMode: true,
+			slidesToShow: 3,
 			responsive: [
 				{
 					breakpoint: 1600,
@@ -312,7 +309,6 @@
 					breakpoint: 768,
 					settings: {
 						dots: false,
-						centerMode: false,
 						slidesToShow: 1,
 						slidesToScroll: 1
 					}
