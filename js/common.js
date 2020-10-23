@@ -11,7 +11,9 @@ $(function() {
 	sticky();
 	small_nav();
 
-	main_visual_slider();
+	// main_visual_slider();
+	visual_slider();
+
 	floating();
 	lst_walk();
 	thesis_slider();
@@ -295,6 +297,149 @@ $(function() {
 		});
 
 	}
+
+
+	// visual slider
+
+	function visual_slider() {
+	
+		var $slider = $('.viewport'),
+			$progress = jQuery('.main_slider .cycle_progress'),
+			progress_time = null,
+			flag_next = false;
+
+		if (!$slider.length) {
+			return;
+		}
+
+		// pre init
+
+		$(document).on('cycle-pre-initialize', $slider, function(event, opts) {
+
+			if ($(event.target).hasClass('viewport')) {
+
+				// init motion
+
+				slide_motion($slider.find('.slider_item:eq(0)')[0], true);
+
+				// progress
+
+				main_visual_action(opts.timeout);
+
+			}
+
+		});
+
+		// Run cycle
+
+		$slider.cycle({
+			slides          : '> div',
+			paused          : true,
+			timeout         : 4000,
+			speed           : 800,
+			swipe           : true,
+			log			    : false,
+			prev            : '.controller .prev',
+			next            : '.controller .next',
+			caption         : '.cycle_caption',
+			captionTemplate : '<span class="cycle_caption_caption_text current">{{slideNum}}</span><span class="swiper_progress_hidden_space"></span><span class="cycle_caption_caption_text total">{{slideCount}}</span>',
+			pager           : '.cycle_pager',
+			pagerTemplate   : '<li><button>{{slideNum}}</button></li>'
+		});
+
+		// cycle-before
+
+		$slider.on('cycle-before', function(event, opts, currEl, nextEl, fwdFlag) {
+
+			slide_motion(nextEl, false);
+			main_visual_action(opts.timeout+opts.speed);
+
+		})
+
+		// motion
+
+		function slide_motion(el, flag) {
+
+			var $el_txt = $(el).find('.inner'),
+				y_pos = 50;
+
+			if (flag) {
+				TweenMax.set('.inner', { autoAlpha: 1 });
+			}
+
+			// TweenMax.fromTo($el_txt.find('h2'), 2, { y: 200, autoAlpha: 1 }, smooth_args({ y: 0, autoAlpha: 1, force3D: true, ease: Power3.easeOut, delay: 0.10 }), 0.15);    
+
+			TweenMax.to($('.lines h2'), 0.35, { y: 0, autoAlpha: 0, onComplete: function() {
+				TweenMax.fromTo($('.lines h2'), 1, { y: 80, autoAlpha: 0, ease: Power3.easeOut, delay: 0 }, { y: 0, autoAlpha: 1, delay: 0 });
+			}})
+
+			TweenMax.to($('.lines p'), 0.35, { y: 0, autoAlpha: 0, onComplete: function() {
+				TweenMax.fromTo($('.lines p'), 1, { y: 80, autoAlpha: 0, ease: Power3.easeOut, delay: 0 }, { y: 0, autoAlpha: 1, delay: 0.3 });
+			}})
+
+		}
+
+
+		// Pause on mouseover
+
+		/* $('.slider_item').hover(function() {
+			$slider.cycle('pause');
+		}, function() {
+			$slider.cycle('resume');
+		}); */
+
+
+		// Play, Pause
+
+		jQuery('.main_visual_state .cycle_state').on('click', function() {
+
+			if (jQuery(this).hasClass('play')) {
+				jQuery(this).removeClass('play').addClass('pause');
+				progress_time.pause();
+
+				jQuery(this).find('.icon_play').focus();
+			} else {
+				jQuery(this).removeClass('pause').addClass('play');
+				progress_time.play();
+
+				if (flag_next) { 
+					$slider.cycle('next'); 
+				}
+
+				jQuery(this).find('.icon_pause').focus();
+			}
+
+		});
+
+		// main visual slider helper
+
+		function main_visual_action(speed) {
+
+			TweenMax.killTweensOf($progress);
+
+			progress_time = TweenMax.fromTo($progress, parseInt(speed / 1000), {
+				width : '0%'
+			}, {
+				width : '100%',
+				ease : Power0.easeNone,
+				onStart: function() {
+					flag_next = false;
+				},
+				onComplete: function() {
+					flag_next = true;
+
+					// swipe
+
+					if (jQuery('.main_visual_state .cycle_state').hasClass('play')) {
+						$slider.cycle('next');
+					}
+				}
+			});
+
+		}
+
+	}
+
 
 	// floating
 

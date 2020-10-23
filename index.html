@@ -46,7 +46,7 @@
 				<section class="ensi e1">
 					<div class="visual_wrap">
 
-						<div class="visual">
+						<!-- <div class="visual">
 							<div>
 								<div class="visual_web" style="background:url(img/main/banner_01.jpg) no-repeat center center;"></div>
 								<div class="visual_m"><img src="img/main/banner_01_m.jpg" alt="첫번째 슬라이드" /></div>
@@ -85,7 +85,66 @@
 						<a href="javascript:" class="more_btn floating">
 							More About Us
 							<span></span>
-						</a>
+						</a> -->
+
+						<div id="main_slider" class="main_slider skrollable skrollable-between" data-0="top: 0px" data-800="top: 400px">
+
+							<div class="viewport">
+								<div class="slider_item item_1">
+									<div class="message_box" data-0="opacity: 1" data-800="opacity: 0">
+										<div class="inner">
+											<div class="lines">
+												<h2>지식과 경험을 공유하기 위한 플랫폼, ENSI</h2>
+											</div>
+											<div class="lines">
+												<p>사회혁신에 대한 논의와 실행 그 중심에 ENSI가 있습니다.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="slider_item item_2">
+									<div class="message_box" data-0="opacity: 1" data-800="opacity: 0">
+										<div class="inner">
+											<div class="lines">
+												<h2>사회혁신교육자네트워크</h2>
+											</div>
+											<div class="lines">
+												<p>‘사회혁신교육자네트워크’는 연구·교육 모임을 구성하여 재단의 전문성과 자원을 통한 다양한 활동을 전개하고 있습니다.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="controller" data-0="opacity: 1" data-800="opacity: 1">
+								<a href="javascript:" class="prev">이전 사진</a>
+								<a href="javascript:" class="next">다음 사진</a>
+							</div>
+
+							<div class="main_visual_state loaded">
+								<div data-font="secondary" class="cycle_caption loaded"></div>
+								
+								<div class="cycle_state play">
+									<button class="cycle_state_btn icon_play">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="none" d="M0 0h24v24H0z"/><path d="M9 8.482v7.036L15.03 12 9 8.482zM7.752 5.44l10.508 6.13a.5.5 0 0 1 0 .863l-10.508 6.13A.5.5 0 0 1 7 18.128V5.871a.5.5 0 0 1 .752-.432z" fill="rgba(255,255,255,1)"/></svg>
+										<span class="blind">재생</span>
+									</button>
+									<button class="cycle_state_btn icon_pause">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="none" d="M0 0h24v24H0z"/><path d="M6 5h2v14H6V5zm10 0h2v14h-2V5z" fill="rgba(255,255,255,1)"/></svg>
+										<span class="blind">일시정지</span>
+									</button>
+								</div>
+
+								<!-- cycle progress -->
+
+								<div class="cycle_progress_wrap">
+									<span class="cycle_progress"></span>
+								</div>
+
+							</div>
+
+						</div>
 
 					</div>
 				</section>
@@ -298,7 +357,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 	<script src="js/SplitTextmin.js"></script>
 	<script src="js/ScrambleTextPlugin.min.js"></script>
+	
+	<script src="js/jquery.cycle2.min.js"></script>
+	<script src="js/jquery.cycle2.swipe.min.js"></script>
+	
 	<script src="js/slick.min.js"></script>
+
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/easing.js"></script>
 	<script src="js/common.js"></script>
