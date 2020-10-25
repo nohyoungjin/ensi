@@ -83,6 +83,7 @@ body.load .slick-slide.active-item .visual_cont p {opacity:1;-webkit-transition:
 .slider_item {position:absolute;top:0;left:0;width:100%;height:100%;background-position:center;background-size:cover}
 .item_1 {display:block;background-image:url(../img/main/banner_01.jpg)}
 .item_2 {display:none;background-image:url(../img/main/banner_02.jpg)}
+.item_3 {display:none;background-image:url(../img/main/banner_03.jpg)}
 
 .slider_item h2 {display:block;padding:0 0 24px;font-size:48px;font-weight:400;color:#fff;line-height:1.2;letter-spacing:-1.2px}
 .slider_item p {font-size:20px;font-weight:300;color:#fff;line-height:1.0;letter-spacing:-0.8px}
