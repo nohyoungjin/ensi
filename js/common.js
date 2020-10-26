@@ -11,8 +11,7 @@ $(function() {
 	sticky();
 	small_nav();
 
-	// main_visual_slider();
-	visual_slider();
+	main_visual_slider();
 
 	floating();
 	lst_walk();
@@ -251,57 +250,6 @@ $(function() {
 	// main visual slider
 
 	function main_visual_slider() {
-
-		if (!$('body').hasClass('home')) { 
-			return; 
-		}
-
-		// 줌-아웃 효과
-
-		$('.visual').on('init', function(event, slick) {
-			$('.slick-slide').eq(0).addClass('active-item');
-		});
-
-		$('.visual').on('afterChange', function(event, slick, currentSlide) {
-			$('.slick-slide').removeClass('active-item');
-			$(this).find('.slick-slide').eq(currentSlide).addClass('active-item')
-		});
-
-		// 비주얼
-
-		$('.visual').slick({
-			accessibility: false,
-			arrows: false,
-			autoplay: true,
-			autoplaySpeed: 5000,
-			dots: true,
-			fade: true,
-			slidesToShow: 1,
-			slidesToScroll: 1
-		});
-
-		// 정지, 재생
-
-		$('.visual_btn .btn_play').on('click', function() {
-			var $pauseBtn = $(this);
-
-			if ($pauseBtn.hasClass('on')) {
-				$('.visual').slick('slickPlay');
-				$(this).text('정지');
-				$pauseBtn.removeClass('on');
-			} else {
-				$('.visual').slick('slickPause');
-				$(this).text('재생');
-				$pauseBtn.addClass('on');
-			}
-		});
-
-	}
-
-
-	// visual slider
-
-	function visual_slider() {
 	
 		var $slider = $('.viewport'),
 			$progress = jQuery('.main_slider .cycle_progress'),
@@ -439,7 +387,6 @@ $(function() {
 		}
 
 	}
-
 
 	// floating
 
