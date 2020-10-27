@@ -77,7 +77,6 @@ SUMMARY :
 .message_box {display:table;height:100%;margin:0 auto;text-align:center}
 .message_box .inner {display:table-cell;position:relative;top:-60px;vertical-align:middle}
 
-
 /* ensi */
 
 .ensi {padding:20px 0;background:#f5f5f5}
@@ -134,6 +133,10 @@ SUMMARY :
 .thesis_slider .slick-slide:hover ul li .bar {background-color:#fff}
 .thesis_slider .slick-slide:hover a {color:#cc3946;background:#fff}
 
+.slick-arrow {display:none;overflow:hidden;position:absolute;top:50%;z-index:5;width:30px;height:57px;text-indent:-9999px;cursor:pointer}
+.slick-prev {left:60px;background:transparent url(../img/common/sp_common.png);background-position:-741px -6px}
+.slick-next {right:60px;background:transparent url(../img/common/sp_common.png);background-position:-787px -6px}
+
 .thesis_slider .slick-arrow {display:block;top:-94px;width:48px;height:48px;margin-top:-28px;border:1px solid #ccc}
 .thesis_slider .slick-prev {left:80%;margin-left:-95px;background-repeat:no-repeat}
 .thesis_slider .slick-next {right:20%;background-repeat:no-repeat}
@@ -170,16 +173,6 @@ SUMMARY :
 /* media query */
 
 @media (max-width: 1200px) {
-
-	/* visual */
-
-	.visual_cont {top:50%;left:20px}
-	.visual_cont strong {margin:0 20px 0 0;font-size:42px;line-height:58px}
-	.visual_cont p {display:none}
-
-	.visual .slick-dots {top:65%;left:15px;margin-top:0}
-	.visual .slick-dots li {display:inline}
-	.visual_btn {display:none}
 
 	/* ensi */
 
@@ -225,12 +218,13 @@ SUMMARY :
 
 	/* visual */
 
-	.visual {height:100%}
-	.visual_web {display:none}
-	.visual_m {display:block;height:100%;background-size:contain;font-size:0;line-height:0}
+	.viewport {height:500px}
 
-	.visual_cont strong {font-size:27px;line-height:36px}
-	.visual_cont p {font-size:22px}
+	.slider_item h2 {margin-top:0;font-size:28px}
+	.slider_item p {font-size:16px;line-height:20px}
+
+	.controller a.prev {left:10px}
+	.controller a.next {right:10px}
 
 	/* more */
 
@@ -255,13 +249,5 @@ SUMMARY :
 	.ensi.e4 .lst_noti li a {font-size:14px}
 	.ensi.e4 .lst_noti .title {width:70%}
 	.ensi.e4 .lst_noti .date {font-size:14px}
-
-}
-
-@media (max-width: 480px) {
-
-	/* visual */
-
-	.visual_cont strong {font-size:22px;line-height:34px}
 
 }
