@@ -48,8 +48,8 @@ SUMMARY :
 .controller:after {display:block;clear:both;content:''}
 
 .controller a {overflow:hidden;position:absolute;z-index:100;width:82px;height:72px;background-repeat:no-repeat;font-size:0;text-indent:100%;transition:all .3s ease;-webkit-transition:all .3s ease;-o-transition:all .3s ease;-moz-transition:all .3s ease}
-.controller a.prev {left:40px;background-image:url(../img/btn_prev.png)}
-.controller a.next {right:40px;background-image:url(../img/btn_next.png)}
+.controller a.prev {left:40px;background-image:url(../img/common/btn_prev.png)}
+.controller a.next {right:40px;background-image:url(../img/common/btn_next.png)}
 
 .controller a.prev:hover {background-position:-10px center}
 .controller a.next:hover {background-position:10px center}
