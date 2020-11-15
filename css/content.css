@@ -202,7 +202,7 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 .ensi_wrap .seminar .info ul li:nth-child(2) {margin-bottom:8px}
 .ensi_wrap .seminar .info ul li:first-child {font-size:22px;font-weight:500;color:#222}
 
-.ensi_wrap .seminar .info ul li em {display:inline-block;float:left;width:54px;height:23px;margin:3px 14px 0 0;border:1px solid #d2d2d2;font-size:14px;font-weight:400;color:#727272;text-align:center}
+.ensi_wrap .seminar .info ul li em {display:inline-block;float:left;width:54px;height:23px;margin:1px 14px 0 0;border:1px solid #d2d2d2;font-size:14px;font-weight:400;color:#727272;text-align:center}
 .ensi_wrap .seminar .info ul li:nth-child(1) em {margin-top:7px}
 .ensi_wrap .seminar .info ul li span {text-align:left}
 
