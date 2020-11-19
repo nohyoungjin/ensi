@@ -573,7 +573,7 @@ $(function() {
 
 			type: 'inline',
 			callbacks : {
-				open : function() { $(window).load(); }
+				open : function() { $(window).on('load'); }
 			},
 
 			fixedContentPos: false,
