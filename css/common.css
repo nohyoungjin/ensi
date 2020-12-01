@@ -155,22 +155,22 @@ body {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum
 
 /* footer */
 
-#footer {position:absolute;bottom:0;width:100%;height:146px;padding:40px 0;border-top:1px solid #ddd;background-color:#fff;color:#acacac}
+#footer {position:absolute;bottom:0;width:100%;height:146px;padding:40px 0;border-top:1px solid #ddd;background-color:#fff}
 #footer .inner {position:relative;width:1160px;margin:0 auto}
-#footer .inner ul.add {position:relative;padding:0 0 5px 0}
-#footer .inner ul.add li {display:inline;position:relative;padding:0 16px;font-size:16px}
-#footer .inner ul.add li:first-child {padding:0 16px 0 0}
+#footer .inner ul.add {position:relative}
+#footer .inner ul.add li {display:inline;position:relative;padding:0 12px;font-size:16px}
+#footer .inner ul.add li:first-child {padding:0 12px 0 0}
 #footer .inner ul.add li .bar {position:absolute;left:-2px;top:50%;height:12px;width:1px;margin-top:-5px;background-color:#9c9c9c}
 #footer .inner ul.add li a {color:#444}
 #footer .inner p {margin:15px 0 0;font-size:14px;font-weight:300;color:#666;letter-spacing:-0.5px}
 
 #footer .inner .family {position:absolute;top:0;right:0}
 
-.btn_familyView {display:block;position:relative;width:224px;padding:10px;border-bottom:1px solid #666;background:url(../img/common/ico_down.png) center right 10px no-repeat;font-size:16px;color:#666}
-.btn_familyView.open {display:block;width:224px;padding:10px;border-bottom:1px solid #666;background:url(../img/common/ico_up.png) center right 10px no-repeat;font-size:16px;color:#666}
+.btn_family {display:block;position:relative;width:224px;padding:10px;border-bottom:1px solid #666;background:url(../img/common/ico_down.png) center right 10px no-repeat;font-size:16px;color:#666}
+.btn_family.open {display:block;width:224px;padding:10px;border-bottom:1px solid #666;background:url(../img/common/ico_up.png) center right 10px no-repeat;font-size:16px;color:#666}
 
-.list_family {display:none;position:absolute;bottom:45px;z-index:3;width:224px;padding:10px;border:1px solid #999;background:#fff}
-.list_family li {font-size:14px;color:#999;line-height:28px}
+.lst_family {display:none;position:absolute;bottom:45px;z-index:3;width:224px;padding:10px;border:1px solid #999;background:#fff}
+.lst_family li {font-size:14px;color:#999;line-height:28px}
 
 /* layer popup */
 
@@ -276,10 +276,10 @@ body {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum
 
 	#footer .inner .family {left:20px;right:20px;border-top:1px solid #666}
 
-	.btn_familyView,
-	.btn_familyView.open {width:100%;padding:15px}
+	.btn_family,
+	.btn_family.open {width:100%;padding:15px}
 
-	.list_family {bottom:55px;width:100%;padding:15px}
+	.lst_family {bottom:55px;width:100%;padding:15px}
 
 }
 

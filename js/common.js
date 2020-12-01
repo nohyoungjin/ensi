@@ -526,21 +526,24 @@ $(function() {
 
 	function family_site() {
 
-		$('.btn_familyView').click(function() {
+		$('.btn_family').click(function() {
+
 			if ($(this).next().css('display') == 'none') {
-				$('.btn_familyView').removeClass('open');
-				$('.list_family').slideUp(150);
+				$('.btn_family').removeClass('open');
+				$('.lst_family').slideUp(150);
 				$(this).addClass('open');
 				$(this).find('.txt').text('닫기');
 				$(this).find('._down3').attr('class','ico _up3');
 				$(this).next().slideDown(150);
 			} else {
-				$('.btn_familyView').removeClass('open');
-				$('.list_family').slideUp(150);
+				$('.btn_family').removeClass('open');
+				$('.lst_family').slideUp(150);
 				$(this).find('.txt').text('열림');
 				$(this).find('._up3').attr('class','ico _down3');
 			}
+
 			return false;
+
 		});
 
 	}
