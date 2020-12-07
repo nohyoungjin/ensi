@@ -528,7 +528,7 @@ $(function() {
 
 		$('.btn_family').click(function() {
 
-			if ($(this).next().css('display') == 'none') {
+			if (!$('.btn_family').hasClass('open')) {
 				$('.btn_family').removeClass('open');
 				$('.lst_family').slideUp(150);
 				$(this).addClass('open');
