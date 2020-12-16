@@ -149,7 +149,7 @@ body {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum
 #gnb > .box > ul:after {display:block;clear:both;content:''}
 #gnb > .box > ul > li {position:relative;float:left}
 #gnb > .box > ul > li > a {display:block;padding:5px 44px;font-family:'Open Sans', sans-serif;font-size:18px;font-weight:600;color:#fff;cursor:pointer}
-#gnb > .box > ul > li > a:after {content:'';position:absolute;top:62px;left:50%;width:0;height:2px;background:#cc3946;-ms-transform:translate(-50%,0);-webkit-transform:translate(-50%,0);transform:translate(-50%,0);transition:.4s ease-in-out}
+#gnb > .box > ul > li > a:after {content:'';position:absolute;top:63px;left:50%;width:0;height:1px;background:#cc3946;-ms-transform:translate(-50%,0);-webkit-transform:translate(-50%,0);transform:translate(-50%,0);transition:.4s ease-in-out}
 #gnb > .box > ul > li.on > a:after {width:50%}
 #gnb > .box > ul > li.current > a,
 #gnb > .box > ul > li > a:hover,
@@ -239,7 +239,7 @@ body {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum
 	/* layout */
 
 	#container {min-width:100%}
-	.content {padding-bottom:194px}
+	.content {padding-bottom:173px}
 
 	/* header */
 
@@ -247,7 +247,6 @@ body {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum
 	#header .h_group > div {width:auto;height:75px;padding:0 20px}
 
 	#header .h_group > div h1 {top:24px;left:18px}
-	#header .h_group > div h1 span.txt {display:inline-block}
 
 	#gnb {position:static}
 	#gnb .btn_menu {display:block;top:30px}
@@ -288,7 +287,7 @@ body {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum
 
 	/* footer */
 
-	#footer {height:194px;padding:30px 0 50px;border-top:0}
+	#footer {height:194px;padding:0 0 50px;border-top:0}
 
 	#footer .inner {float:none;width:100%;margin:0;padding:15px 0 0;text-align:left}
 	#footer .inner ul.add {width:100%;margin-top:60px;padding:0 20px;text-align:center}

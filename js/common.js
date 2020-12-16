@@ -29,11 +29,11 @@ $(function() {
 
 	// on load
 
-    $(window).on('load', function() {
-
-		$('body').addClass('load');
-
-	});
+	window.onload = new function() { 
+		
+		$('body').addClass('load'); 
+		
+	};
 
 	// on resize
 
@@ -327,26 +327,19 @@ $(function() {
 
 		}
 
-
-		// Pause on mouseover
-
-		/* $('.slider_item').hover(function() {
-			$slider.cycle('pause');
-		}, function() {
-			$slider.cycle('resume');
-		}); */
-
-
 		// Play, Pause
 
 		jQuery('.main_visual_state .cycle_state').on('click', function() {
 
 			if (jQuery(this).hasClass('play')) {
+
 				jQuery(this).removeClass('play').addClass('pause');
 				progress_time.pause();
 
-				jQuery(this).find('.icon_play').focus();
+				jQuery(this).find('.ico_play').focus();
+
 			} else {
+
 				jQuery(this).removeClass('pause').addClass('play');
 				progress_time.play();
 
@@ -354,7 +347,8 @@ $(function() {
 					$slider.cycle('next'); 
 				}
 
-				jQuery(this).find('.icon_pause').focus();
+				jQuery(this).find('.ico_pause').focus();
+
 			}
 
 		});
@@ -418,10 +412,10 @@ $(function() {
 
 			var tl = new TimelineMax();
 
-			tl.from('.num_01', 1, {scrambleText:{text: '30', chars: '12345678910', revealDelay: 0.5, tweenLength: false, ease: Linear.easeNone}});
-			tl.from('.num_02', 1, {scrambleText:{text: '86', chars: '12345678910', revealDelay: 0.5, tweenLength: false, ease: Linear.easeNone}});
-			tl.from('.num_03', 1, {scrambleText:{text: '229', chars: '12345678910', revealDelay: 0.5, tweenLength: false, ease: Linear.easeNone}});
-			tl.from('.num_04', 1, {scrambleText:{text: '4,679', chars: '12345678910', revealDelay: 0.5, tweenLength: false, ease: Linear.easeNone}});
+			tl.from('.num_1', 1, {scrambleText:{text: '30', chars: '12345678910', revealDelay: 0.5, tweenLength: false, ease: Linear.easeNone}});
+			tl.from('.num_2', 1, {scrambleText:{text: '86', chars: '12345678910', revealDelay: 0.5, tweenLength: false, ease: Linear.easeNone}});
+			tl.from('.num_3', 1, {scrambleText:{text: '229', chars: '12345678910', revealDelay: 0.5, tweenLength: false, ease: Linear.easeNone}});
+			tl.from('.num_4', 1, {scrambleText:{text: '4,679', chars: '12345678910', revealDelay: 0.5, tweenLength: false, ease: Linear.easeNone}});
 
 			this.destroy();
 
