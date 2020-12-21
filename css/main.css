@@ -38,7 +38,7 @@ SUMMARY :
 
 /* */
 
-.main_visual_state {position:absolute;bottom:12%;left:50%;z-index:100;width:222px;font-size:0;line-height:1;transform:translate(-50%, -50%)}
+.main_visual_state {position:absolute;bottom:8%;left:50%;z-index:100;width:222px;font-size:0;line-height:1;transform:translate(-50%, -50%)}
 .main_visual_state .cycle_caption {display:inline-block;font-size:13px;color:#fff;text-align:center;vertical-align:middle;opacity:0}
 .main_visual_state .cycle_caption.loaded {opacity:1}
 

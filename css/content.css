@@ -39,7 +39,7 @@ SUMMARY :
 /* form */
 
 .input {display:inline-block;height:40px;padding-left:10px;border:1px solid #d9d9d9;font-size:14px;color:#777;line-height:40px;border-radius:0;-webkit-appearance:none}
-.select {display:inline-block;height:40px;padding-left:10px;border:1px solid #d9d9d9;background-color:#fff;font-size:14px;color:#747474;vertical-align:middle}
+.select {display:inline-block;height:40px;padding-left:10px;border:1px solid #d9d9d9;background:#fff url(../img/common/btn_select.png) no-repeat right 12px center;font-size:14px;color:#747474;vertical-align:middle;border-radius:0;-webkit-appearance:none;-moz-appearance:none;appearance:none}
 .textarea {display:inline-block;height:150px;padding:10px;border:1px solid #dbdbdb;font-size:16px;color:#777;line-height:1.6;border-radius:0;-webkit-appearance:none}
 
 /* check */
@@ -136,7 +136,7 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 /* section */
 
 .sec_inner {overflow:hidden;position:relative;width:1000px;margin:0 auto;padding:80px 0}
-.sec_inner .h_section {margin-bottom:20px;font-size:40px;font-weight:700;color:#222;text-align:center;letter-spacing:-0.5px}
+.sec_inner .h_section {margin-bottom:30px;font-size:40px;font-weight:700;color:#222;text-align:center;letter-spacing:-0.5px}
 .sec_inner .sub_txt {margin-bottom:40px;font-size:16px;font-weight:300;color:#727272;text-align:left}
 
 
@@ -147,15 +147,15 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 .cont_ensi ul.lst_ensi {margin:60px 0 40px}
 .cont_ensi ul.lst_ensi:after {display:block;clear:both;content:''}
 .cont_ensi ul.lst_ensi li {float:left;width:25%;text-align:center}
-.cont_ensi ul.lst_ensi li strong {display:block;margin:10px 0 5px;font-size:20px;font-weight:500;color:#222}
+.cont_ensi ul.lst_ensi li strong {display:block;padding:14px 0 7px;font-size:20px;font-weight:500;color:#222}
 .cont_ensi ul.lst_ensi li p {font-size:16px;font-weight:300;color:#666;line-height:22px}
 .cont_ensi ul.lst_ensi li p span {font-size:14px}
 
-.ico._intro {width:172px;height:172px}
-.ico._intro_1 {background-position:0 -100px}
-.ico._intro_2 {background-position:-177px -100px}
-.ico._intro_3 {background-position:-354px -100px}
-.ico._intro_4 {background-position:-531px -100px}
+.ico.ico_intro {width:172px;height:172px}
+.ico.ico_intro_1 {background-position:0 -100px}
+.ico.ico_intro_2 {background-position:-177px -100px}
+.ico.ico_intro_3 {background-position:-354px -100px}
+.ico.ico_intro_4 {background-position:-531px -100px}
 
 .sec_fellow {background-color:#fafafa}
 
@@ -164,9 +164,6 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 .lst_fellow li strong {display:block;margin:20px 0 7px;font-size:20px;font-weight:500;color:#222}
 .lst_fellow li p {font-size:16px;font-weight:300;color:#666;line-height:22px}
 .lst_fellow li p span {font-size:14px}
-
-.box_detail {max-width:1000px;margin:0 auto}
-.box_detail img {width:100%}
 
 
 /* About - 주요연혁 */
@@ -177,37 +174,37 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 /* ENSI - 컨퍼런스, 포럼, 세미나 */
 
 .ensi_wrap {border:1px solid #ddd}
-.ensi_wrap .brochure_title {padding:20px 20px;background-color:#f5f5f5;text-align:center}
-.ensi_wrap .brochure_title h3 {font-size:24px;font-weight:500;color:#222;letter-spacing:-0.6px}
+.ensi_wrap .si_tit {padding:20px 20px;background-color:#f5f5f5;text-align:center}
+.ensi_wrap .si_tit h3 {font-size:24px;font-weight:500;color:#222;letter-spacing:-0.6px}
 
-.ensi_wrap .brochure_box {padding:50px;background-color:#fff}
-.ensi_wrap .brochure_box img {width:100%}
+.ensi_wrap .si_box {padding:50px;background-color:#fff}
+.ensi_wrap .si_box img {width:100%}
 
-.ensi_wrap .brochure_box .slider {overflow:hidden;position:relative;z-index:1}
-.ensi_wrap .brochure_box .slider .slick-slide {float:left}
-.ensi_wrap .brochure_box .slider .slick-track {overflow:hidden}
+.ensi_wrap .si_box .slider {overflow:hidden;position:relative;z-index:1}
+.ensi_wrap .si_box .slider .slick-slide {float:left}
+.ensi_wrap .si_box .slider .slick-track {overflow:hidden}
 
-.ensi_wrap .brochure_box .slider .slick-arrow {display:block !important;overflow:hidden;position:absolute;top:50%;z-index:10000;width:42px;height:63px;margin-top:-31.5px;text-indent:-9999px;cursor:pointer;transition:all .3s ease;-webkit-transition:all .3s ease;-o-transition:all .3s ease;-moz-transition:all .3s ease}
-.ensi_wrap .brochure_box .slider .slick-prev {left:30px;background:url(../img/common/ico_prev.png) no-repeat 50% 50%}
-.ensi_wrap .brochure_box .slider .slick-next {right:30px;background:url(../img/common/ico_next.png) no-repeat 50% 50%}
+.ensi_wrap .si_box .slider .slick-arrow {display:block !important;overflow:hidden;position:absolute;top:50%;z-index:10000;width:42px;height:63px;margin-top:-31.5px;text-indent:-9999px;cursor:pointer;transition:all .3s ease;-webkit-transition:all .3s ease;-o-transition:all .3s ease;-moz-transition:all .3s ease}
+.ensi_wrap .si_box .slider .slick-prev {left:30px;background:url(../img/common/ico_prev.png) no-repeat 50% 50%}
+.ensi_wrap .si_box .slider .slick-next {right:30px;background:url(../img/common/ico_next.png) no-repeat 50% 50%}
 
-.ensi_wrap .brochure_box .slider .slick-prev:hover {left:20px}
-.ensi_wrap .brochure_box .slider .slick-next:hover {right:20px}
+.ensi_wrap .si_box .slider .slick-prev:hover {left:20px}
+.ensi_wrap .si_box .slider .slick-next:hover {right:20px}
 
-.ensi_wrap .seminar {display:table;overflow:hidden;height:auto;padding:30px 0 40px;border-bottom:1px solid #d2d2d2}
-.ensi_wrap .seminar .info {display:table-cell;width:80%;padding-right:10px;vertical-align:top}
+.ensi_wrap .si_head {display:table;overflow:hidden;height:auto;padding:30px 0 40px;border-bottom:1px solid #d2d2d2}
+.ensi_wrap .si_head .info {display:table-cell;width:80%;padding-right:10px;vertical-align:top}
 
-.ensi_wrap .seminar .info ul li {font-size:16px;font-weight:300;color:#222;text-align:left}
-.ensi_wrap .seminar .info ul li:nth-child(1) {margin-bottom:25px}
-.ensi_wrap .seminar .info ul li:nth-child(2) {margin-bottom:8px}
-.ensi_wrap .seminar .info ul li:first-child {font-size:22px;font-weight:500;color:#222}
+.ensi_wrap .si_head .info li {font-size:16px;font-weight:300;color:#222;text-align:left}
+.ensi_wrap .si_head .info li:nth-child(1) {margin-bottom:25px}
+.ensi_wrap .si_head .info li:nth-child(2) {margin-bottom:8px}
+.ensi_wrap .si_head .info li:first-child {font-size:22px;font-weight:500;color:#222}
 
-.ensi_wrap .seminar .info ul li em {display:inline-block;float:left;width:54px;height:23px;margin:1px 14px 0 0;border:1px solid #d2d2d2;font-size:14px;font-weight:400;color:#727272;text-align:center}
-.ensi_wrap .seminar .info ul li:nth-child(1) em {margin-top:7px}
-.ensi_wrap .seminar .info ul li span {text-align:left}
+.ensi_wrap .si_head .info li em {display:inline-block;float:left;width:54px;height:23px;margin:1px 14px 0 0;border:1px solid #d2d2d2;font-size:14px;font-weight:400;color:#727272;text-align:center}
+.ensi_wrap .si_head .info li:nth-child(1) em {margin-top:7px}
+.ensi_wrap .si_head .info li span {text-align:left}
 
-.ensi_wrap .seminar .btn_brochure {display:table-cell;width:auto;padding-top:10px}
-.ensi_wrap .seminar .btn_brochure button {width:200px;height:80px;background-color:#3b3c3c;font-size:16px;color:#fff;text-align:center}
+.ensi_wrap .si_head .btn_brochure {display:table-cell;width:auto;padding-top:10px}
+.ensi_wrap .si_head .btn_brochure button {width:200px;height:80px;background-color:#3b3c3c;font-size:16px;color:#fff;text-align:center}
 
 .ensi_wrap .si_cont {margin-top:35px}
 .ensi_wrap .si_cont strong {display:block;margin-bottom:20px;font-size:18px;font-weight:500;color:#444;text-align:left}
@@ -219,15 +216,15 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 /* 컨퍼런스 팝업내 페이지 설정 */
 
 .modal_box .ensi_wrap {border:0}
-.modal_box .ensi_wrap .brochure_box {padding:25px}
+.modal_box .ensi_wrap .si_box {padding:25px}
 
-.modal_box .ensi_wrap .seminar .info ul li:first-child {font-size:20px}
-.modal_box .ensi_wrap .seminar .info ul li {font-size:14px}
+.modal_box .ensi_wrap .si_head .info li:first-child {font-size:20px}
+.modal_box .ensi_wrap .si_head .info li {font-size:14px}
 
-.modal_box .ensi_wrap .seminar .info ul li em {margin-top:0}
-.modal_box .ensi_wrap .seminar .info ul li:nth-child(1) em {margin-top:4px}
+.modal_box .ensi_wrap .si_head .info li em {margin-top:0}
+.modal_box .ensi_wrap .si_head .info li:nth-child(1) em {margin-top:4px}
 
-.modal_box .ensi_wrap .seminar .btn_brochure button {width:180px;height:72px}
+.modal_box .ensi_wrap .si_head .btn_brochure button {width:180px;height:72px}
 
 .modal_box .ensi_wrap .si_cont ul li {font-size:14px}
 .modal_box .ensi_wrap .si_cont ul li:before {top:11px}
@@ -750,14 +747,14 @@ ul.news_wrap li:hover span {color:#fff}
 
 	/* ENSI - 컨퍼런스, 포럼, 세미나 */
 
-	.ensi_wrap .brochure_title h3 {font-size:22px}
-	.ensi_wrap .brochure_box {padding:30px}
+	.ensi_wrap .si_tit h3 {font-size:22px}
+	.ensi_wrap .si_box {padding:30px}
 
-	.ensi_wrap .seminar {display:block}
-	.ensi_wrap .seminar .info {display:block;width:100%}
-	.ensi_wrap .seminar .info ul li:nth-child(1) em {margin-top:5px}
+	.ensi_wrap .si_head {display:block}
+	.ensi_wrap .si_head .info {display:block;width:100%}
+	.ensi_wrap .si_head .info li:nth-child(1) em {margin-top:5px}
 
-	.ensi_wrap .seminar .btn_brochure {display:block;overflow:hidden;width:208px;height:auto;margin:10px auto 0;padding-top:50px;text-align:center}
+	.ensi_wrap .si_head .btn_brochure {display:block;overflow:hidden;width:208px;height:auto;margin:10px auto 0;padding-top:50px;text-align:center}
 
 	.history_wrap .title_ensi {margin-bottom:30px}
 
@@ -876,18 +873,18 @@ ul.news_wrap li:hover span {color:#fff}
 
 	/* ENSI - 컨퍼런스, 포럼, 세미나 */
 
-	.ensi_wrap .brochure_title {padding:20px}
-	.ensi_wrap .brochure_title h3 {font-size:18px}
+	.ensi_wrap .si_tit {padding:20px}
+	.ensi_wrap .si_tit h3 {font-size:18px}
 
-	.ensi_wrap .brochure_box {padding:20px 20px 40px}
-	.ensi_wrap .seminar .info ul li:first-child {font-size:16px;line-height:120%}
-	.ensi_wrap .seminar .info ul li:nth-child(1) {margin-bottom:15px}
-	.ensi_wrap .seminar .btn_brochure {padding-top:30px}
-	.ensi_wrap .seminar .btn_brochure button {height:70px}
+	.ensi_wrap .si_box {padding:20px 20px 40px}
+	.ensi_wrap .si_head .info li:first-child {font-size:16px;line-height:120%}
+	.ensi_wrap .si_head .info li:nth-child(1) {margin-bottom:15px}
+	.ensi_wrap .si_head .btn_brochure {padding-top:30px}
+	.ensi_wrap .si_head .btn_brochure button {height:70px}
 
 	/* 컨퍼런스 팝업 설정 */
 
-	.modal_box .ensi_wrap .brochure_box {padding:10px}
+	.modal_box .ensi_wrap .si_box {padding:10px}
 	.history_wrap .title_ensi {margin-bottom:20px;font-size:20px}
 
     /* 검색 */

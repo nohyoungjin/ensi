@@ -412,10 +412,10 @@ $(function() {
 
 			var tl = new TimelineMax();
 
-			tl.from('.num_1', 1, {scrambleText:{text: '30', chars: '12345678910', revealDelay: 0.5, tweenLength: false, ease: Linear.easeNone}});
-			tl.from('.num_2', 1, {scrambleText:{text: '86', chars: '12345678910', revealDelay: 0.5, tweenLength: false, ease: Linear.easeNone}});
-			tl.from('.num_3', 1, {scrambleText:{text: '229', chars: '12345678910', revealDelay: 0.5, tweenLength: false, ease: Linear.easeNone}});
-			tl.from('.num_4', 1, {scrambleText:{text: '4,679', chars: '12345678910', revealDelay: 0.5, tweenLength: false, ease: Linear.easeNone}});
+			tl.from('.num_1', 1, {scrambleText: {text: '0', chars: '12345678910', revealDelay: 0.1, tweenLength: false, speed: 0.4, ease: Linear.easeNone} });
+			tl.from('.num_2', 1, {scrambleText: {text: '0', chars: '12345678910', revealDelay: 0.1, tweenLength: false, speed: 0.4, ease: Linear.easeNone} });
+			tl.from('.num_3', 1, {scrambleText: {text: '0', chars: '12345678910', revealDelay: 0.1, tweenLength: false, speed: 0.4, ease: Linear.easeNone} });
+			tl.from('.num_4', 1, {scrambleText: {text: '0', chars: '12345678910', revealDelay: 0.1, tweenLength: false, speed: 0.4, ease: Linear.easeNone} });
 
 			this.destroy();
 
@@ -523,17 +523,19 @@ $(function() {
 		$('.btn_family').click(function() {
 
 			if (!$('.btn_family').hasClass('open')) {
+
 				$('.btn_family').removeClass('open');
 				$('.lst_family').slideUp(150);
 				$(this).addClass('open');
 				$(this).find('.txt').text('닫기');
-				$(this).find('._down3').attr('class','ico _up3');
 				$(this).next().slideDown(150);
+
 			} else {
+
 				$('.btn_family').removeClass('open');
 				$('.lst_family').slideUp(150);
 				$(this).find('.txt').text('열림');
-				$(this).find('._up3').attr('class','ico _down3');
+
 			}
 
 			return false;

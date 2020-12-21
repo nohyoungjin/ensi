@@ -263,7 +263,7 @@ body {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum
 	#gnb > .box > ul > li > a:focus {color:#cc3946 !important}
 
 	#gnb > .box > ul > li > .sub_menu {position:relative;top:0px;width:100%;padding:0;border-bottom:none;-webkit-transition:max-height 0.6s ease-in-out;-moz-transition:max-height 0.6s ease-in-out;-ms-transition:max-height 0.6s ease-in-out;-o-transition:max-height 0.6s ease-in-out;transition:max-height 0.6s ease-in-out;transform:translate3d(0px, 0px, 0px)}
-	#gnb > .box > ul > li > .sub_menu > ul {/* display:none; */float:none;margin-left:0;padding:15px 0;background:#f5f5f5}
+	#gnb > .box > ul > li > .sub_menu > ul {float:none;margin-left:0;padding:15px 0;border-top:1px solid #e8e8e8;background:#f5f5f5}
 	#gnb > .box > ul > li > .sub_menu > ul > li {float:none;width:auto;margin:0;background:#f5f5f5}
 	#gnb > .box > ul > li > .sub_menu > ul > li:first-child {margin-left:0}
 	#gnb > .box > ul > li > .sub_menu > ul > li > a {display:block;height:42px;padding-left:30px;color:#444;line-height:42px}
