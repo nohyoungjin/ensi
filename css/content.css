@@ -191,39 +191,30 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 .ensi_wrap .si_box .slider .slick-prev:hover {left:20px}
 .ensi_wrap .si_box .slider .slick-next:hover {right:20px}
 
-.ensi_wrap .si_head {display:table;overflow:hidden;height:auto;padding:30px 0 40px;border-bottom:1px solid #d2d2d2}
-.ensi_wrap .si_head .info {display:table-cell;width:80%;padding-right:10px;vertical-align:top}
+.ensi_wrap .si_head {overflow:hidden;height:auto;padding:30px 0 40px;border-bottom:1px solid #d2d2d2}
+.ensi_wrap .si_head .info {display:table;float:left;width:74%}
 
-.ensi_wrap .si_head .info li {font-size:16px;font-weight:300;color:#222;text-align:left}
-.ensi_wrap .si_head .info li:nth-child(1) {margin-bottom:25px}
-.ensi_wrap .si_head .info li:nth-child(2) {margin-bottom:8px}
-.ensi_wrap .si_head .info li:first-child {font-size:22px;font-weight:500;color:#222}
+.ensi_wrap .si_head .info li {display:table-row;font-size:16px;font-weight:300;color:#222;text-align:left}
+.ensi_wrap .si_head .info li:first-child span {font-weight:500}
 
-.ensi_wrap .si_head .info li em {display:inline-block;float:left;width:54px;height:23px;margin:1px 14px 0 0;border:1px solid #d2d2d2;font-size:14px;font-weight:400;color:#727272;text-align:center}
-.ensi_wrap .si_head .info li:nth-child(1) em {margin-top:7px}
-.ensi_wrap .si_head .info li span {text-align:left}
+.ensi_wrap .si_head .info li em {display:table-cell;width:64px;padding-bottom:10px;font-weight:400;color:#727272;text-align:center;vertical-align:middle}
+.ensi_wrap .si_head .info li span {display:table-cell;padding-bottom:10px;text-align:left;vertical-align:middle}
 
-.ensi_wrap .si_head .btn_brochure {display:table-cell;width:auto;padding-top:10px}
+.ensi_wrap .si_head .btn_brochure {float:right;width:auto;padding-top:5px}
 .ensi_wrap .si_head .btn_brochure button {width:200px;height:80px;background-color:#3b3c3c;font-size:16px;color:#fff;text-align:center}
 
 .ensi_wrap .si_cont {margin-top:35px}
 .ensi_wrap .si_cont strong {display:block;margin-bottom:20px;font-size:18px;font-weight:500;color:#444;text-align:left}
 
-.ensi_wrap .si_cont ul li {position:relative;margin-bottom:8px;padding-left:10px;font-size:16px;font-weight:300;color:#727272;text-align:left}
-.ensi_wrap .si_cont ul li:nth-last-child(1) {margin-bottom:0}
-.ensi_wrap .si_cont ul li:before {content:"";position:absolute;left:0;top:13px;width:2px;height:2px;background:#949494}
+.ensi_wrap .si_cont ul li {position:relative;margin-bottom:8px;padding-left:15px;font-size:15px;font-weight:300;color:#727272;text-align:left}
+.ensi_wrap .si_cont ul li:before {content:"";position:absolute;left:5px;top:12px;width:2px;height:2px;background:#949494}
 
 /* 컨퍼런스 팝업내 페이지 설정 */
 
 .modal_box .ensi_wrap {border:0}
 .modal_box .ensi_wrap .si_box {padding:25px}
 
-.modal_box .ensi_wrap .si_head .info li:first-child {font-size:20px}
-.modal_box .ensi_wrap .si_head .info li {font-size:14px}
-
-.modal_box .ensi_wrap .si_head .info li em {margin-top:0}
-.modal_box .ensi_wrap .si_head .info li:nth-child(1) em {margin-top:4px}
-
+.modal_box .ensi_wrap .si_head .info li {font-size:15px}
 .modal_box .ensi_wrap .si_head .btn_brochure button {width:180px;height:72px}
 
 .modal_box .ensi_wrap .si_cont ul li {font-size:14px}
@@ -234,7 +225,7 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 .sec_history {background-color:#fafafa}
 
 .history_wrap {text-align:left}
-.history_wrap .title_ensi {margin:0 0 30px 10px;font-size:26px;font-weight:500;color:#222}
+.history_wrap .tit_history {margin:0 0 30px 10px;font-size:26px;font-weight:500}
 
 .history_wrap .info_box {position:relative}
 .history_wrap .info_box:after {display:block;clear:both;content:''}
@@ -245,10 +236,10 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 .history_wrap .info_box .slick-slide {float:left;margin:0 10px;background:#fff}
 
 .history_wrap .info_box .thumb {padding-bottom:56.25%;background-position:center;background-repeat:no-repeat;background-size:cover}
-.history_wrap .info_box .cont {padding:20px 0}
-.history_wrap .info_box .cont strong {padding:0 25px;font-size:20px;color:#444;font-weight:500;line-height:130%}
-.history_wrap .info_box .cont p {overflow:hidden;padding:3px 25px 10px;font-size:20px;color:#444;font-weight:500;line-height:120%;white-space:nowrap;text-overflow:ellipsis}
-.history_wrap .info_box .cont span {display:inline-block;padding:0 25px;font-size:14px;font-weight:400;color:#747474}
+.history_wrap .info_box .cont {padding:20px 15px}
+.history_wrap .info_box .cont strong {padding:1px 10px 2px;font-size:14px;border-radius:15px;background:#cc3946;color:#fff;font-weight:300}
+.history_wrap .info_box .cont p {overflow:hidden;padding:5px 0 10px;font-size:18px;font-weight:500;color:#444;white-space:nowrap;text-overflow:ellipsis}
+.history_wrap .info_box .cont span {display:inline-block;font-size:14px;font-weight:300;color:#747474}
 
 .history_wrap .info_box .slick-arrow {display:block !important;overflow:hidden;position:absolute;top:50%;z-index:100;width:42px;height:63px;margin-top:-31.5px;text-indent:-9999px;cursor:pointer;transition:all .3s ease;-webkit-transition:all .3s ease;-o-transition:all .3s ease;-moz-transition:all .3s ease}
 .history_wrap .info_box .slick-prev {left:30px;background:url(../img/common/ico_prev.png) no-repeat 50% 50%}
@@ -267,8 +258,8 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 .cont_competition .inner_info .fl {float:left;width:56.2%;margin:3% 0 0 6%}
 .cont_competition .inner_info .fr {float:right;width:37.8%;text-align:center}
 
-.cont_competition .inner_info .fl strong {display:inline-block;margin-bottom:30px;font-size:26px;font-weight:500;color:#fff}
-.cont_competition .inner_info .fl p {font-size:16px;font-weight:400;color:#fff;text-align:justify;line-height:28px;letter-spacing:-0.01px}
+.cont_competition .inner_info .fl strong {display:inline-block;margin-bottom:20px;font-size:26px;font-weight:500;color:#fff;letter-spacing:-0.9px}
+.cont_competition .inner_info .fl p {font-size:16px;font-weight:300;color:#fff;text-align:justify;line-height:27px}
 
 .cont_competition .inner_cont_wrap {margin:50px 0 0 0;padding:50px 0;border:1px solid #ddd;}
 .cont_competition .inner_cont {width:100%;padding:30px 0}
@@ -279,12 +270,12 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 
 .cont_competition .inner_cont .fl strong:before {content:'';display:block;position:absolute;top:-10px;right:0;width:100px;height:2px;background-color:#444}
 
-.cont_competition .inner_cont strong {display:inline-block;position:relative;margin-bottom:10px;font-size:16px;font-weight:500;color:#444}
-.cont_competition .inner_cont p {font-size:16px;font-weight:400;color:#727272;text-align:justify;letter-spacing:-0.01px;line-height:24px}
-.cont_competition .inner_cont p + p {margin:10px 0 0}
+.cont_competition .inner_cont strong {display:inline-block;position:relative;margin-bottom:10px;font-size:16px;font-weight:500}
+.cont_competition .inner_cont p {font-size:15px;font-weight:300;color:#727272;text-align:justify;line-height:23px}
+.cont_competition .inner_cont p + p {margin:7px 0 0}
 
 .cont_competition .inner_cont .fr ul {margin:14px 0}
-.cont_competition .inner_cont .fr ul li {position:relative;padding:2px 0 2px 22px;font-size:16px;font-weight:400;color:#727272}
+.cont_competition .inner_cont .fr ul li {position:relative;padding:1px 0 1px 22px;font-size:15px}
 .cont_competition .inner_cont .fr ul li:before {content:'';display:block;position:absolute;top:14px;left:11px;width:5px;height:1px;background-color:#727272}
 
 .cont_competition .inner_cont .fr ul.inquiry {padding:10px 10px;background:#f5f5f5}
@@ -294,6 +285,22 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 
 .cont_competition .table_01 {border-bottom:1px solid #888}
 .cont_competition .table_02 {border-bottom:1px solid #888}
+
+/* form table */
+
+.form_table {position:relative;width:100%;border-top:1px solid #444;border-bottom:1px solid #444}
+.form_table table {width:100%}
+.form_table th {position:relative;padding:13px 25px;border-top:1px solid #e5e5e5;background-color:#f6f6f6;font-size:16px;font-weight:300;text-align:left}
+.form_table td {padding:13px 20px;border-top:1px solid #e5e5e5;font-size:16px;font-weight:300;text-align:left;color:#747474}
+.form_table td input {height:40px;padding:0 10px;font-size:16px;color:#747474;line-height:40px}
+
+.form_table td input[type="checkbox"] {width:22px;height:22px}
+.form_table td input[type="text"] {border:1px solid #d9d9d9}
+.form_table td input[type="password"] {border:1px solid #d9d9d9}
+
+.form_table textarea {width:100%;height:180px;padding:10px;border:1px solid #d9d9d9;font-size:18px;font-weight:300;color:#747474;text-align:left;line-height:160%;border-radius:0;-webkit-appearance:none}
+
+/* */
 
 .wrap_fileSearch {position:relative;line-height:0}
 #file_add_form .wrap_fileSearch {height:40px}
@@ -307,19 +314,17 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 
 /* 파일삭제 */
 
-.ico_{display:inline-block;background-repeat:no-repeat;background-position:center center;background-size:auto 100%;-webkit-background-size:100% auto;background-size:100% auto;vertical-align:middle;text-indent:-10000px}
 .ico_.del {display:inline-block;position:relative;top:0;left:5px;width:40px;height:40px;margin-right:5px;border:1px solid #9d9d9d;background:url(../img/common/ico_del.png) no-repeat 50% 50%;vertical-align:top}
 
 .tbl_type,.tbl_type th,.tbl_type td {border:0}
 .tbl_type {width:100%;text-align:center}
 .tbl_type caption {display:none}
-.tbl_type thead th {padding:10px 0;background-color:#888;font-size:16px;color:#fff}
+.tbl_type thead th {padding:10px 0;background-color:#888;font-size:16px;color:#fff;vertical-align:middle}
 .tbl_type th span {font-size:14px;font-weight:400}
-.tbl_type tbody th {border-right:1px solid #eee;border-bottom:1px solid #eee;font-size:16px;font-weight:500;color:#727272}
-.tbl_type td {padding:20px 10px;border-right:1px solid #eee;font-size:16px;font-weight:400;color:#727272}
+.tbl_type tbody th {border-right:1px solid #eee;border-bottom:1px solid #eee;font-size:16px;font-weight:400;color:#727272;vertical-align:middle}
+.tbl_type td {padding:20px 10px;border-right:1px solid #eee;font-size:15px;font-weight:300;color:#727272;vertical-align:middle}
 .tbl_type tfoot {background:#f5f5f5}
 
-.cont_competition .table_01 .tbl_type td:first-child {font-weight:500}
 .tbl_type td:last-child {border-right:0}
 
 .cont_competition .table_01 .tbl_type tr:nth-child(2n) td {background:#f5f5f5}
@@ -333,9 +338,9 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 .modal_box .form_table {border-top:0;border-bottom:0}
 .modal_box .form_table th {border-top:0;background:#fff}
 .modal_box .form_table td {padding:1% 2%;border-top:0}
-.modal_box .form_table td p {margin:8px 0 0;font-size:14px;font-weight:400;color:#727272}
+.modal_box .form_table td p {margin:8px 0 0;font-size:13px;font-weight:300;color:#727272}
 
-.modal_box p.txt {margin-top:15px;font-size:18px;font-weight:400}
+.modal_box p.txt {margin-top:15px;font-size:16px;font-weight:300}
 
 
 /* SI Research, SI Education 공통 */
@@ -658,9 +663,82 @@ ul.news_wrap li:hover span {color:#fff}
 .cont-contact .btn_slight {margin-left:5px}
 .cont-contact .btn-txt {padding:8px 10px 0}
 
+
+/* 개인정보처리방침 */
+
+.cont_privacy .E_01 p {margin:10px 0 0}
+.cont_privacy .E_01 p + p {margin:10px 0 0}
+
+.cont_privacy p + p {margin:10px 0 0}
+.cont_privacy h3 {margin:30px 0 6px}
+
+.etc_wrap .cont_privacy ul {margin:5px 0 0}
+.etc_wrap .cont_privacy ul li {position:relative;padding-left:15px;font-size:15px !important;font-weight:300;color:#727272;line-height:28px;letter-spacing:-0.1px}
+.etc_wrap .cont_privacy ul li:before {content:'';display:block;position:absolute;top:15px;left:2px;width:6px;height:1px;margin-right:20px;background-color:#727272}
+
+.etc_wrap .cont_privacy .table_01 {margin:25px 0 0;border-top:1px solid #444}
+.etc_wrap .cont_privacy .tbl_type thead th {padding:12px 0;border-bottom:1px solid #ebebeb;border-right:1px solid #eee;background-color:#f5f5f5;font-size:16px;color:#222}
+.etc_wrap .cont_privacy .tbl_type tbody td {padding:12px 0;border-bottom:1px solid #ebebeb;font-weight:300}
+.etc_wrap .cont_privacy .tbl_type th:last-child {border-right:0}
+
+
+/* 이용약관 */
+
+.etc_wrap {overflow:hidden;max-width:900px;height:auto;margin:40px auto 0;padding:50px;background-color:#fff;text-align:left}
+
+.etc_wrap h3 {display:block;margin:48px 0 28px;font-size:20px;font-weight:500}
+.etc_wrap h3.first {margin:18px 0 28px}
+.etc_wrap h4 {display:block;margin:30px 0 18px;font-size:16px;font-weight:350;color:#444}
+
+.etc_wrap p {font-size:16px;font-weight:300;color:#727272;line-height:28px}
+.etc_wrap ol {margin:5px 0 0;counter-reset:list-number-counter}
+.etc_wrap ol li {position:relative;padding-left:22px;font-size:15px !important;font-weight:300;color:#727272;line-height:28px;letter-spacing:-0.1px}
+.etc_wrap ol li:before {position:absolute;left:0;top:7px;width:14px;height:14px;border:1px solid #727272;font-size:12px;text-align:center;line-height:17px;color:#727272;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;content:counter(list-number-counter);counter-increment:list-number-counter}
+
+.etc_wrap ul {margin:5px 0 0}
+.etc_wrap ul li {position:relative;font-size:16px;font-weight:300;color:#727272;line-height:28px}
+.etc_wrap .red {color:#cc3946}
+.etc_wrap .red:before {border:1px solid #cc3946;color:#cc3946 !important}
+.etc_wrap ul li ol {margin:10px 0 10px 20px}
+
+
+/* 공통 */
+
+.content.gray {margin:0 auto;padding:141px 0 220px;background-color:#f5f5f5;text-align:center}
+
+h2.title_text {font-size:44px;font-weight:500;color:#222;line-height:100%}
+h3.title_text {display:block;padding:25px 0 18px;font-size:20px;font-weight:500;color:#222;text-align:left}
+.sub_txt {margin:20px 0;font-size:16px;font-weight:300;color:#727272}
+
+/* 정보입력 */
+
+.signup {position:relative}
+
+.require_both {position:absolute;top:30px;right:0}
+.require_both p {font-size:16px;font-weight:300;color:#747474}
+
+sup {display:inline-block;position:relative;top:-10px;width:7px;height:7px;margin:0 5px;background:url(../img/common/ico_asterisk.png) no-repeat;font-size:0}
+
+.form_table span.space {display:inline-block;padding:0 8px;font-size:16px}
+.form_table .item label {margin:0 20px 0 0}
+
+.btn_pack {width:98px;height:40px;margin-left:3px;border:1px solid #9d9d9d;font-size:14px;color:#666}
+
+.guide_txt {display:inline-block;font-size:14px;color:#cc3946 !important}
+.guide_txt.gray {color:#747474 !important}
+
+p.guide_txt {margin-top:10px}
+span.guide_txt {margin-left:10px}
+
+
+
 /* media query */
 
 @media (max-width:1200px) {
+
+	/* 공통 */
+
+	.content.gray {padding:111px 0 180px;background:#fff}
 
 	/* page head */
 
@@ -750,13 +828,10 @@ ul.news_wrap li:hover span {color:#fff}
 	.ensi_wrap .si_tit h3 {font-size:22px}
 	.ensi_wrap .si_box {padding:30px}
 
-	.ensi_wrap .si_head {display:block}
-	.ensi_wrap .si_head .info {display:block;width:100%}
-	.ensi_wrap .si_head .info li:nth-child(1) em {margin-top:5px}
+	.ensi_wrap .si_head .info {display:block;float:none;width:100%}
+	.ensi_wrap .si_head .btn_brochure {display:block;float:none;height:auto;margin-top:10px;text-align:center}
 
-	.ensi_wrap .si_head .btn_brochure {display:block;overflow:hidden;width:208px;height:auto;margin:10px auto 0;padding-top:50px;text-align:center}
-
-	.history_wrap .title_ensi {margin-bottom:30px}
+	.history_wrap .tit_history {margin-bottom:30px}
 
 	/* SI Research - 연구공모 */
 
@@ -765,7 +840,7 @@ ul.news_wrap li:hover span {color:#fff}
 	.cont_competition .inner_info .fl {float:none;width:100%;margin:0;padding:0 20px}
 	.cont_competition .inner_info .fr {float:none;width:100%;margin:0}
 
-	.cont_competition .inner_info .fl strong {margin-bottom:20px;font-size:22px}
+	.cont_competition .inner_info .fl strong {margin-bottom:10px;font-size:22px}
 	.cont_competition .inner_info .fl p {font-size:14px;line-height:23px}
 
 	.cont_competition .inner_info img {width:220px;margin-top:20px}
@@ -783,6 +858,13 @@ ul.news_wrap li:hover span {color:#fff}
 	.tbl_type thead th {padding:2% 1% 2% 3%;font-size:13px;line-height:18px}
 	.tbl_type tbody th {font-size:13px;line-height:18px}
 	.tbl_type td {padding:10px 5px;font-size:12px}
+
+	/* form table */
+
+	.form_table p {display:block;width:100%;padding-left:0}
+
+	.form_table td input[type="text"] {font-size:12px}
+	.form_table td input[type="password"] {font-size:12px}
 
 	/* 레이어 팝업 설정 */
 
@@ -879,17 +961,22 @@ ul.news_wrap li:hover span {color:#fff}
 	.ensi_wrap .si_box {padding:20px 20px 40px}
 	.ensi_wrap .si_head .info li:first-child {font-size:16px;line-height:120%}
 	.ensi_wrap .si_head .info li:nth-child(1) {margin-bottom:15px}
-	.ensi_wrap .si_head .btn_brochure {padding-top:30px}
 	.ensi_wrap .si_head .btn_brochure button {height:70px}
 
 	/* 컨퍼런스 팝업 설정 */
 
 	.modal_box .ensi_wrap .si_box {padding:10px}
-	.history_wrap .title_ensi {margin-bottom:20px;font-size:20px}
+	.history_wrap .tit_history {margin-bottom:20px;font-size:20px}
 
     /* 검색 */
 
     .search_input .input {width:230px;font-size:14px}
+
+	/* SI Research - 연구공모 */
+
+	.form_table th {padding:15px 12px;font-size:13px;font-weight:400}
+	.form_table td {padding:13px 10px;font-size:13px;font-weight:400}
+	.form_table textarea {font-size:14px;font-weight:400}
 
 	/* SI Research - 연구논문 */
 
@@ -954,6 +1041,10 @@ ul.news_wrap li:hover span {color:#fff}
 
 	.table_info {padding:20px 20px 10px}
 	.table_info ul li {margin-bottom:10px;font-size:14px;font-weight:400}
+
+	/* */
+
+	.etc_wrap {margin:30px auto 0;padding:0 20px 50px}
 
 }
 
