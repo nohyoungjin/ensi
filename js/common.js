@@ -87,9 +87,9 @@ $(function() {
 			delta = event.wheelDelta/120 || -event.originalEvent.detail/3;
 		} else {
 			if (typeof event.originalEvent.deltaY != 'undefined') {
-				delta = -event.originalEvent.deltaY/120;
+				delta = -event.originalEvent.deltaY / 120;
 			} else {
-				delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+				delta = event.originalEvent.wheelDelta / 120 || -event.originalEvent.detail / 3;
 			}
 		}
 

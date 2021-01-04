@@ -156,7 +156,7 @@ body {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum
 #gnb > .box > ul > li > a:focus {color:#cc3946}
 
 #gnb > .box > ul > li > .sub_menu {display:none;position:absolute;top:70px;left:0px;width:200px;max-height:0;padding:22px 0}
-#gnb > .box > ul > li > .sub_menu > ul > li {margin:0 0 5px 44px}
+#gnb > .box > ul > li > .sub_menu > ul > li {margin:0 0 4px 44px}
 #gnb > .box > ul > li > .sub_menu > ul > li > a {display:inline-block;position:relative;font-size:15px;line-height:28px;letter-spacing:-0.1px}
 #gnb > .box > ul > li > .sub_menu > ul > li > a:hover,
 #gnb > .box > ul > li > .sub_menu > ul > li > a:focus {color:#cc3946}
@@ -206,8 +206,13 @@ body {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum
 .papers_ensi .article_content {height:600px;margin:0}
 .papers_ensi .article_content .ensi_wrap {margin:20px}
 
-.mfp-content .mfp-close {top:30px;right:30px;width:23px;height:23px;background:url(../img/common/ico_close.png) no-repeat;background-size:23px;-webkit-transition:-webkit-transform 1s cubic-bezier(.075,.82,.165,1);transition:-webkit-transform 1s cubic-bezier(.075,.82,.165,1);transition:transform 1s cubic-bezier(.075,.82,.165,1);transition:transform 1s cubic-bezier(.075,.82,.165,1), -webkit-transform 1s cubic-bezier(.075,.82,.165,1)}
+.mfp-content .mfp-close {top:30px;right:30px;width:27px;height:27px;-webkit-transition:-webkit-transform 1s cubic-bezier(.075,.82,.165,1);transition:-webkit-transform 1s cubic-bezier(.075,.82,.165,1);transition:transform 1s cubic-bezier(.075,.82,.165,1);transition:transform 1s cubic-bezier(.075,.82,.165,1), -webkit-transform 1s cubic-bezier(.075,.82,.165,1)}
 .mfp-content .mfp-close:hover{-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
+
+.mfp-content .mfp-close:before,
+.mfp-content .mfp-close:after {content:'';display:block;position:absolute;top:50%;width:27px;height:1px;background-color:#333;transition:.4s ease-in-out;-webkit-transition:.4s ease-in-out}
+.mfp-content .mfp-close:before {transform:rotate(45deg);-webkit-transform:rotate(45deg)}
+.mfp-content .mfp-close:after {transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 
 /* scroll top */
 
