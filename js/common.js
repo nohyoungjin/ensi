@@ -412,10 +412,10 @@ $(function() {
 
 			var tl = new TimelineMax();
 
-			tl.from('.num_1', 1, {scrambleText: {text: '0', chars: '12345678910', revealDelay: 0.1, tweenLength: false, speed: 0.4, ease: Linear.easeNone} });
-			tl.from('.num_2', 1, {scrambleText: {text: '0', chars: '12345678910', revealDelay: 0.1, tweenLength: false, speed: 0.4, ease: Linear.easeNone} });
-			tl.from('.num_3', 1, {scrambleText: {text: '0', chars: '12345678910', revealDelay: 0.1, tweenLength: false, speed: 0.4, ease: Linear.easeNone} });
-			tl.from('.num_4', 1, {scrambleText: {text: '0', chars: '12345678910', revealDelay: 0.1, tweenLength: false, speed: 0.4, ease: Linear.easeNone} });
+			tl.from('.num_1', 1, {scrambleText: {text: '30', chars: '12345678910', revealDelay: 0.1, tweenLength: false, speed: 0.4, ease: Linear.easeNone} });
+			tl.from('.num_2', 1, {scrambleText: {text: '80', chars: '12345678910', revealDelay: 0.1, tweenLength: false, speed: 0.4, ease: Linear.easeNone} });
+			tl.from('.num_3', 1, {scrambleText: {text: '220', chars: '12345678910', revealDelay: 0.1, tweenLength: false, speed: 0.4, ease: Linear.easeNone} });
+			tl.from('.num_4', 1, {scrambleText: {text: '4,670', chars: '12345678910', revealDelay: 0.1, tweenLength: false, speed: 0.4, ease: Linear.easeNone} });
 
 			this.destroy();
 
