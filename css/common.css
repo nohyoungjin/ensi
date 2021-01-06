@@ -119,7 +119,7 @@ body {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum
 #gnb {position:absolute;left:50%;margin-left:-448px;padding:28px 0 0}
 
 #gnb .btn_menu {display:none;overflow:hidden;position:absolute;top:34px;right:20px;border:0}
-#gnb .btn_menu > span {display:block;position:relative;width:20px;height:16px;margin:0 auto;text-align:center}
+#gnb .btn_menu > span {display:block;position:relative;width:20px;height:17px;margin:0 auto;text-align:center}
 #gnb .btn_menu > span > i,
 #gnb .btn_menu > span:before,
 #gnb .btn_menu > span:after {display:block;overflow:hidden;position:absolute;left:0;width:100%;height:1px;background-color:#fff;text-indent:-9999em}
@@ -157,7 +157,7 @@ body {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum
 
 #gnb > .box > ul > li > .sub_menu {display:none;position:absolute;top:70px;left:0px;width:200px;max-height:0;padding:22px 0}
 #gnb > .box > ul > li > .sub_menu > ul > li {margin:0 0 4px 44px}
-#gnb > .box > ul > li > .sub_menu > ul > li > a {display:inline-block;position:relative;font-size:15px;line-height:28px;letter-spacing:-0.1px}
+#gnb > .box > ul > li > .sub_menu > ul > li > a {display:inline-block;position:relative;font-size:15px;line-height:28px}
 #gnb > .box > ul > li > .sub_menu > ul > li > a:hover,
 #gnb > .box > ul > li > .sub_menu > ul > li > a:focus {color:#cc3946}
 
@@ -322,10 +322,8 @@ body {font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum
 	.modal_header {padding:15px 20px;background:#f5f5f5}
 	.modal_header h3 {font-size:18px}
 
-	.mfp-content .mfp-close {top:22px;right:25px;width:15px;height:15px;background-size:15px}
-
-	.mfp-close {top:22px !important}
-	.mfp-close:active {top:22px !important}
+	.mfp-content .mfp-close {top:15px;right:15px}
+	.mfp-close:active {top:15px !important}
 
 }
 

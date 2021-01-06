@@ -213,6 +213,7 @@ $(function() {
 			$('#gnb > .box').css('display','block');
 			$(this).next().stop().animate({'right': '0%'}, 300);
 			$('#gnb > .dim').fadeIn();
+
 		});
 
 		$('#gnb > .box').on('click', '> ul > li > a', function(e) {
@@ -568,12 +569,9 @@ $(function() {
 			return; 
 		}
 
-		$('.popup-with-move-anim').magnificPopup( {
+		$('.popup-with-move-anim').magnificPopup({
 
 			type: 'inline',
-			callbacks : {
-				open : function() { $(window).on('load'); }
-			},
 
 			fixedContentPos: false,
 			fixedBgPos: true,
@@ -585,7 +583,37 @@ $(function() {
 
 			midClick: true,
 			removalDelay: 300,
-			mainClass: 'my-mfp-slide-bottom'
+			mainClass: 'my-mfp-slide-bottom',
+
+			callbacks : {
+				open : function() {
+
+					if ($('#content').is('.cont_conference, .cont_forum, .cont_seminar')) { 
+
+						$('.mod_slider').slick({
+							accessibility: false,
+							arrows: true,
+							autoplay: false,
+							autoplaySpeed: 2000,
+							dots: false,
+							fade: true,
+							slidesToShow: 1,
+							slidesToScroll: 1
+						});
+
+					}
+
+				},
+				close : function() {
+
+					if ($('#content').is('.cont_conference, .cont_forum, .cont_seminar')) { 
+				
+						$('.mod_slider').slick("unslick")
+
+					}
+
+				}
+			}
 
 		});
 
@@ -765,7 +793,7 @@ function InputFileEvt(btnFile, inputFile, btnDelete) {
 			$(this).parent().children('.fileName').html(allFilename);
 			$(Prt).children('.btn_slight').hide();
 			$(Prt).children('.delete').detach();
-			$(Prt).children('.fileName').after('<a href="#" class="ico_ del delete">첨부된 ' + allFilename + ' 파일 삭제</a>');
+			$(Prt).children('.fileName').after('<a href="#" class="ico_del delete"><span class="blind">첨부된 ' + allFilename + ' 파일 삭제</span></a>');
 			$(Prt).children('.delete').fadeIn();
 		}
 

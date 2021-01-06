@@ -60,7 +60,7 @@
 					<div class="sec_inner">
 
 						<h2 class="h_section">연구 공모</h2>
-						<p class="sub_txt a_c">ENSI는 매년 사회혁신가 육성 활성화를 위한 연구자를 발굴하고, 국내∙외 학술 연구비를 지원하고 있습니다.</p>
+						<p class="sub_txt">ENSI는 매년 사회혁신가 육성 활성화를 위한 연구자를 발굴하고, 국내∙외 학술 연구비를 지원하고 있습니다.</p>
 
 						<div class="inner_info">
 							<div class="fl">
@@ -369,7 +369,7 @@
 
 											<div class="form_table">
 												<table>
-													<caption></caption>
+													<caption>이름, 이메일, 논문제목, 구분, 전공분야, 첨부파일</caption>
 													<colgroup>
 														<col width="24%">
 														<col width="auto">
@@ -395,19 +395,15 @@
 														<th scope="row"><label for="">구분</label></th>
 														<td>
 															<span class="w49">
-																<label for="">
-																	<select name="" id="" class="select w100" title="구분1">
-																		<option value="">구분1</option>
-																	</select>
-																</label>
+																<select name="" id="" class="select w100" title="카테고리">
+																	<option value="">카테고리</option>
+																</select>
 															</span>
 															<span class="w0"></span>
 															<span class="w49">
-																<label for="">
-																	<select name="" id="" class="select w100" title="구분2">
-																		<option value="">구분2</option>
-																	</select>
-																</label>
+																<select name="" id="" class="select w100" title="세부구분">
+																	<option value="">세부구분</option>
+																</select>
 															</span>
 														</td>
 													</tr>
@@ -420,16 +416,7 @@
 													<tr>
 														<th scope="row">첨부파일</th>
 														<td>
-														
-															<!-- <div id='file_add_form'>
-																<div id="div">
-																	<input type=file name='file1' size='50' class='input_write'>
-																	<a href="javascript:file_add(50, 'class=input_write');"><b>첨부폼추가</b></a>
-																	<a href="javascript:file_delete();"><b>첨부폼삭제</b></a>
-																</div>
-															</div> -->
-
-															<input type="hidden" id="file_cnt" name="file_cnt" value="1">
+															<input type="hidden" name="file_cnt" id="file_cnt" value="1">
 															
 															<div id='file_add_form'>
 																<div id="div" class="wrap_fileSearch">
@@ -437,7 +424,7 @@
 																	<a href="#file1" class="btn_slight wf100" title="찾아보기">찾아보기</a>
 																	<a href="javascript:file_add(50, 'class=input_write');" class="btn_plus"><span class="blind">추가</span></a>
 																	<a href="javascript:file_delete();" class="btn_minus"><span class="blind">삭제</span></a>
-																	<input type="file" id="file1" class="input _file" title="파일선택">
+																	<input type="file" id="file1" class="blind" title="파일선택">
 																</div>
 															</div>
 															<p>(첨부파일은 ZIP, pptx, doc, docx, pdf만 가능하며 50MB까지 가능)</p>
@@ -530,7 +517,7 @@
 
 			obj4.setAttribute("type", "file");
 			obj4.setAttribute("id", "file"+(filecountTemp+1));
-			obj4.setAttribute("class", "input _file");
+			obj4.setAttribute("class", "blind");
 			obj4.setAttribute("title", "파일선택");
 			parents2.appendChild(obj4);
 
