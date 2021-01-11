@@ -38,7 +38,7 @@ SUMMARY :
 
 /* form */
 
-.input {display:inline-block;height:40px;padding:0 10px;border:1px solid #d9d9d9;font-size:14px;color:#777;line-height:40px;border-radius:0;-webkit-appearance:none}
+.input {display:inline-block;height:40px;padding:0 10px;border:1px solid #d9d9d9;font-size:14px;font-weight:300;color:#777;line-height:40px;border-radius:0;-webkit-appearance:none}
 .select {display:inline-block;height:40px;padding:0 10px;border:1px solid #d9d9d9;background:#fff url(../img/common/btn_select.png) no-repeat right 12px center;font-size:14px;color:#747474;vertical-align:middle;border-radius:0;-webkit-appearance:none;-moz-appearance:none;appearance:none}
 .textarea {display:inline-block;height:150px;padding:10px;border:1px solid #dbdbdb;font-size:16px;color:#777;line-height:1.6;border-radius:0;-webkit-appearance:none}
 
@@ -60,15 +60,14 @@ SUMMARY :
 /* search */
 
 .search_wrap {margin:50px 0 0;padding:17px 0;background:#f5f5f5;text-align:center}
-.search_wrap .inner {display:inline-block;overflow:hidden;clear:both;vertical-align:middle}
+.search_wrap .inner {display:inline-block;position:relative;padding-right:44px;border:1px solid #cecece}
 
 input::placeholder {font-size:16px;font-weight:300;color:#999}
 
-.search_input {display:inline-block;position:relative;padding-right:44px;border:1px solid #cecece;vertical-align:middle}
-.search_input .input {display:block;float:left;width:300px;height:38px;padding: 0 10px;border:none;font-size:16px;vertical-align:middle;color:#777;line-height:38px;border-radius:0;-webkit-appearance:none}
-.search_input .btn_search {position:absolute;top:0;right:0}
+.search_wrap .inner .input {width:300px;border:none;font-size:16px}
+.search_wrap .inner .btn_search {position:absolute;top:0;right:0}
 
-.btn_search {display:inline-block;width:44px;height:38px;background:url(../img/common/btn_search.png) no-repeat 0 0}
+.btn_search {width:44px;height:40px;background:url(../img/common/btn_search.png) no-repeat 0 0}
 
 /* no search */
 
@@ -77,16 +76,16 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 /* paging */
 
 .paging {width:100%;margin:50px 0 0;text-align:center}
-.paging button {display:inline-block;width:36px;height:36px;vertical-align:middle}
-.paging a {display:inline-block;width:36px;height:36px;font-size:15px;color:#777;vertical-align:middle;line-height:36px}
+.paging button {display:inline-block;width:36px;height:36px}
+.paging a {display:inline-block;width:36px;height:36px;font-size:15px;font-weight:300;color:#777;line-height:36px}
 
 .paging a:hover, 
 .paging a:focus,
 .paging a:active, 
 .paging a.on {background-color:#cc3946;color:#fff}
 
-.paging .btn_prev {margin-right:25px}
-.paging .btn_next {margin-left:25px}
+.paging .btn_prev {margin-right:5px}
+.paging .btn_next {margin-left:5px}
 
 .btn_first {background:url(../img/common/sp_common.png) no-repeat -499px -6px}
 .btn_prev {background:url(../img/common/sp_common.png) no-repeat -540px -6px}
@@ -353,23 +352,23 @@ ul.news_wrap li:hover span {color:#fff}
 
 .papersList ul.news_wrap li a {padding:33px 25px}
 
-.papersList ul.news_wrap li strong {display:-webkit-box;min-height:48px;max-height:48px;margin:0 0 25px;font-size:18px;font-weight:500;color:#444;line-height:24px;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.papersList ul.news_wrap li strong {display:-webkit-box;min-height:48px;max-height:48px;margin:0 0 25px;font-size:18px;color:#444;line-height:24px;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .papersList ul.news_wrap li p {display:-webkit-box;min-height:60px;margin:0 0 25px;-webkit-line-clamp:3;-webkit-box-orient:vertical}
 .papersList ul.news_wrap li span {position:relative;font-size:13px}
 
 .papersList ul.news_wrap li .bar {display:inline-block;position:relative;top:0;width:1px;height:10px;margin:0 5px;background-color:#9c9c9c}
 .papersList ul.news_wrap li:hover .bar {background-color:#fff}
 
-.papers_both:after {display:block;clear:both;content:''}
-.papers_both .fl {float:left}
-.papers_both .fr {float:right}
+.papers_wrap:after {display:block;clear:both;content:''}
+.papers_wrap .fl {float:left}
+.papers_wrap .fr {float:right}
 
 /* */
 
-.cont_papers .papers_both .fl {margin:0 10px 7px 0}
-.cont_papers .papers_both .fr {display:-webkit-box;overflow:hidden;float:none;height:19px;-webkit-line-clamp:1;-webkit-box-orient:vertical;text-overflow:ellipsis}
+.cont_papers .papers_wrap .fl {margin:0 10px 0 0}
+.cont_papers .papers_wrap .fr {display:-webkit-box;overflow:hidden;float:none;height:19px;-webkit-line-clamp:1;-webkit-box-orient:vertical;text-overflow:ellipsis}
 
-.cont_papers .papersList ul.news_wrap li .eye {display:inline-block;position:relative;top:0;width:19px;height:10px;margin:0 6px 0 0;background-position:-370px -58px}
+.cont_papers .papersList ul.news_wrap li .eye {position:relative;width:19px;height:10px;margin:0 6px 0 0;background-position:-370px -58px}
 .cont_papers .papersList ul.news_wrap li:hover .eye {background-position:-394px -58px}
 
 
@@ -413,7 +412,7 @@ ul.news_wrap li:hover span {color:#fff}
 
 /* SI Research - ENSI 인사이트 */
 
-.box-result {margin-bottom:50px;padding:35px 20px;background:#f5f5f5;font-size:16px;color:#727272;text-align:center}
+.box_result {margin-bottom:50px;padding:35px 0;background:#f5f5f5;font-size:16px;font-weight:300;color:#222;text-align:center}
 
 .insightsList ul.news_wrap li {width:32.33%;margin:0 0 4%;background:#f5f5f5}
 
@@ -423,7 +422,7 @@ ul.news_wrap li:hover span {color:#fff}
 .insightsList ul.news_wrap li:nth-child(11) {width:32.33%;margin:0 1.5% 4%}
 
 .insightsList ul.news_wrap li .thumb {height:192px;max-height:192px;padding-bottom:61.62%;background-position:center;background-repeat:no-repeat}
-.insightsList ul.news_wrap li strong {display:-webkit-box;height:60px;margin:20px 20px 0;font-size:18px;font-weight:500;color:#444;text-align:center;line-height:28px;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.insightsList ul.news_wrap li strong {display:-webkit-box;height:57px;margin:20px 20px 0;font-size:18px;color:#444;text-align:center;line-height:26px;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .insightsList ul.news_wrap li span {position:relative;font-size:13px}
 
 .insightsList ul.news_wrap li .down_wrap {margin:-15px 0 5px;text-align:center}
@@ -444,7 +443,7 @@ ul.news_wrap li:hover span {color:#fff}
 
 .curriculumList ul.news_wrap li .thumb {padding-bottom:65.92%;background-position:center;background-repeat:no-repeat;background-size:cover}
 .curriculumList ul.news_wrap li p {margin:0}
-.curriculumList ul.news_wrap li strong {display:-webkit-box;height:55px;margin:20px;font-size:18px;font-weight:500;color:#444;text-align:center;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.curriculumList ul.news_wrap li strong {display:-webkit-box;height:55px;margin:20px;font-size:18px;color:#444;text-align:center;line-height:26px;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 
 .curriculumList ul.news_wrap li:hover strong {color:#fff}
 
@@ -765,9 +764,6 @@ span.guide_txt {margin-left:10px}
     .paging {margin-top:30px}
 	.paging a {width:28px;height:28px;line-height:28px}
 
-    .paging .btn_prev {margin-right:5px}
-    .paging .btn_next {margin-left:5px}
-
     .btn_first,
     .btn_prev,
     .btn_next,
@@ -928,9 +924,9 @@ span.guide_txt {margin-left:10px}
 	.modal_box .ensi_wrap .si_box {padding:10px}
 	.history_wrap .tit_history {margin-bottom:20px;font-size:20px}
 
-    /* 검색 */
+    /* search */
 
-    .search_input .input {width:230px;font-size:14px}
+    .search_wrap .inner .input {width:230px;font-size:14px}
 
 	/* SI Research - 연구공모 */
 
