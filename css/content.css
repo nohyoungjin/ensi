@@ -187,13 +187,13 @@ input::placeholder {font-size:16px;font-weight:300;color:#999}
 .ensi_wrap .si_box .slider .slick-next:hover {right:20px}
 
 .ensi_wrap .si_head {overflow:hidden;height:auto;padding:30px 0 40px;border-bottom:1px solid #d2d2d2}
-.ensi_wrap .si_head .info {display:table;float:left;width:74%}
+.ensi_wrap .si_head .info {float:left;width:74%}
 
-.ensi_wrap .si_head .info li {display:table-row;font-size:16px;font-weight:300;color:#222;text-align:left}
+.ensi_wrap .si_head .info li {display:flex;padding-top:10px;font-size:15px;font-weight:300;color:#222;text-align:left}
 .ensi_wrap .si_head .info li:first-child span {font-weight:500}
 
-.ensi_wrap .si_head .info li em {display:table-cell;width:64px;padding-bottom:10px;font-weight:400;color:#727272;text-align:center;vertical-align:middle}
-.ensi_wrap .si_head .info li span {display:table-cell;padding-bottom:10px;text-align:left;vertical-align:middle}
+.ensi_wrap .si_head .info li em {display:inline-block;width:64px;height:27px;margin:0 12px 0 5px;border:1px solid #d2d2d2;font-weight:300;color:#727272;text-align:center;line-height:26px}
+.ensi_wrap .si_head .info li span {display:inline-block;width:calc(100% - 76px);text-align:left;line-height:26px}
 
 .ensi_wrap .si_head .btn_brochure {float:right;width:auto;padding-top:5px}
 .ensi_wrap .si_head .btn_brochure button {width:200px;height:80px;background-color:#3b3c3c;font-size:16px;color:#fff;text-align:center}
@@ -915,8 +915,6 @@ span.guide_txt {margin-left:10px}
 	.ensi_wrap .si_tit h3 {font-size:18px}
 
 	.ensi_wrap .si_box {padding:20px 20px 40px}
-	.ensi_wrap .si_head .info li:first-child {font-size:16px;line-height:120%}
-	.ensi_wrap .si_head .info li:nth-child(1) {margin-bottom:15px}
 	.ensi_wrap .si_head .btn_brochure button {height:70px}
 
 	/* 컨퍼런스 팝업 설정 */
