@@ -24,7 +24,7 @@
 		<li><a href="#content">본문 바로가기</a></li>
 	</ul>
 
-	<!-- //skip -->
+	<!-- // skip -->
 
 	<!-- wrap -->
 
@@ -34,7 +34,7 @@
 
 		<script src="inc/header.js"></script>
 
-		<!-- //header -->
+		<!-- // header -->
 
 		<!-- container -->
 
@@ -456,17 +456,17 @@
 			</div>
 		</div>
 
-		<!-- //container -->
+		<!-- // container -->
 
 		<!-- footer -->
 
 		<script src="inc/footer.js"></script>
 		
-		<!-- //footer -->
+		<!-- // footer -->
    
 	</div>
 
-	<!-- //wrap -->
+	<!-- // wrap -->
 
 	<script src="inc/widget.js"></script>
 
@@ -495,11 +495,11 @@
 		} else { 
 
 			var div2 = document.createElement("div");
-			div2.setAttribute("id", "div"+(filecountTemp+1));
+			div2.setAttribute("id", "div" + (filecountTemp + 1));
 			div2.setAttribute("class", "wrap_fileSearch");
 			parents.appendChild(div2);
 
-			var parents2 = document.getElementById("div"+(filecountTemp+1));
+			var parents2 = document.getElementById("div"+(filecountTemp + 1));
 
 			var obj2   = document.createElement("span");
 			obj2.setAttribute("class", "input w60 fileName");
@@ -508,7 +508,7 @@
 			var obj3 = document.createElement("a");
 			var jbBtnText3 = document.createTextNode("찾아보기");
 
-			obj3.setAttribute("href", "#file"+(filecountTemp+1));
+			obj3.setAttribute("href", "#file" + (filecountTemp + 1));
 			obj3.setAttribute("class", "btn_slight wf100");
 			parents2.appendChild(obj3);
 			obj3.appendChild(jbBtnText3);
@@ -516,7 +516,7 @@
 			var obj4 = document.createElement("input");
 
 			obj4.setAttribute("type", "file");
-			obj4.setAttribute("id", "file"+(filecountTemp+1));
+			obj4.setAttribute("id", "file" + (filecountTemp + 1));
 			obj4.setAttribute("class", "blind");
 			obj4.setAttribute("title", "파일선택");
 			parents2.appendChild(obj4);
@@ -532,8 +532,8 @@
 		var filecountTemp = parseInt(document.getElementById("file_cnt").value);
 		var parents = document.getElementById("file_add_form");
 
-		var div = document.getElementById("div"+filecountTemp);
-		var obj = document.getElementById("file"+filecountTemp);
+		var div = document.getElementById("div" + filecountTemp);
+		var obj = document.getElementById("file" + filecountTemp);
 
 		div.removeChild(obj);
 		parents.removeChild(div);
