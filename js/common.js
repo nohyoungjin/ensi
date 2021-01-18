@@ -44,7 +44,7 @@ $(function() {
 
 	function smoothScroll() {
 
-		if (is_mobile() || is_mac_os() || is_browser_firefox()) { return }
+		if (isMobile() || isMacOs() || isBrowserFirefox()) { return }
 
 		var $window = $(window)
 
@@ -273,7 +273,7 @@ $(function() {
 
 				// progress
 
-				main_visual_action(opts.timeout)
+				mainVisualAction(opts.timeout)
 
 			}
 
@@ -301,7 +301,7 @@ $(function() {
 		$slider.on('cycle-before', function(event, opts, currEl, nextEl, fwdFlag) {
 
 			slide_motion(nextEl, false)
-			main_visual_action(opts.timeout + opts.speed)
+			mainVisualAction(opts.timeout + opts.speed)
 
 		})
 
@@ -309,14 +309,14 @@ $(function() {
 
 		function slide_motion(el, flag) {
 
-			var $el_txt = $(el).find('.inner')
-			var y_pos = 50
+			var $elTxt = $(el).find('.inner')
+			var yPos = 50
 
 			if (flag) {
 				TweenMax.set('.inner', { autoAlpha: 1 })
 			}
 
-			// TweenMax.fromTo($el_txt.find('h2'), 2, { y: 200, autoAlpha: 1 }, smooth_args({ y: 0, autoAlpha: 1, force3D: true, ease: Power3.easeOut, delay: 0.10 }), 0.15)
+			// TweenMax.fromTo($elTxt.find('h2'), 2, { y: 200, autoAlpha: 1 }, smoothArgs({ y: 0, autoAlpha: 1, force3D: true, ease: Power3.easeOut, delay: 0.10 }), 0.15)
 
 			TweenMax.to($('.lines h2'), 0.35, { y: 0, autoAlpha: 0, onComplete: function() {
 				TweenMax.fromTo($('.lines h2'), 1, { y: 80, autoAlpha: 0, ease: Power3.easeOut, delay: 0 }, { y: 0, autoAlpha: 1, delay: 0 })
@@ -356,7 +356,7 @@ $(function() {
 
 		// main visual slider helper
 
-		function main_visual_action(speed) {
+		function mainVisualAction(speed) {
 
 			TweenMax.killTweensOf($progress)
 
@@ -405,9 +405,7 @@ $(function() {
 
 	function lstWalk() {	
 
-		if (!$('body').hasClass('home')) { 
-			return
-		}
+		if (!$('body').hasClass('home')) { return }
 
 		var ok = false
 
@@ -639,9 +637,9 @@ $(function() {
 
 			if ($('.spot .inner p').length > 0) {
 				var title = new SplitText($('.spot .inner p'), { type: 'chars' })
-				var title_chars = title.chars
+				var titleChars = title.chars
 
-				tl.staggerFrom(title_chars, 1.2, smooth_args({ force3D: true, autoAlpha: 0, y: 10, ease: Back.easeOut, onComplete: function() {
+				tl.staggerFrom(titleChars, 1.2, smoothArgs({ force3D: true, autoAlpha: 0, y: 10, ease: Back.easeOut, onComplete: function() {
 						$('.spot .inner p').addClass('completed')
 					}
 				}), 0.02, '+=0')
@@ -664,6 +662,7 @@ $(function() {
 					} else if (e.originalEvent.wheelDelta <= -120) {
 						this.scrollTop += 50
 					}
+
 					return false
 
 				})
@@ -673,10 +672,6 @@ $(function() {
 		// 컨퍼런스, 포럼, 연구세미나
 
 		$('.papers_ensi .article_content').mouseWheel()
-
-		// 회원가입
-
-		$('.box_agree').mouseWheel()
 
 	}
 
@@ -833,7 +828,7 @@ function InputFileEvt(btnFile, inputFile, btnDelete) {
 
 // Debug ie not smoothy text motion
 
-function smooth_args(args) {
+function smoothArgs(args) {
 
 	if ($('html').hasClass('ie')) {
 	    args.rotation = 0.1
@@ -845,23 +840,23 @@ function smooth_args(args) {
 
 // mobile condition
 
-function is_mobile() {
+function isMobile() {
     return (/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)
 	// return $('html').hasClass('mobile')
 }
 
 // os check
 
-function is_mac_os() {
+function isMacOs() {
     return navigator.platform.indexOf('Mac') > -1
 }
 
 // browser check
 
-function is_browser_chrome() {
+function isBrowserChrome() {
     return /Chrome/.test(navigator.userAgent)
 }
 
-function is_browser_firefox() {
+function isBrowserFirefox() {
     return /Firefox/.test(navigator.userAgent)
 }
