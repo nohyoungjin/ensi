@@ -595,11 +595,11 @@ ul.news_wrap li:hover span {color:#fff}
 
 /* CONTACT */
 
-.lst_info {margin-bottom:40px;padding:30px 40px;background-color:#f5f5f5}
-.lst_info li {position:relative;padding-left:10px;font-size:16px;font-weight:300;color:#747474}
-.lst_info li:before {content:'';display:block;position:absolute;top:13px;left:0;width:3px;height:1px;background-color:#777}
+.cont_contact .lst_guide {margin-bottom:40px;padding:30px 40px;background-color:#f5f5f5}
+.cont_contact .lst_guide li {position:relative;padding-left:10px;font-size:16px;font-weight:300;color:#747474}
+.cont_contact .lst_guide li:before {content:'';display:block;position:absolute;top:13px;left:0;width:3px;height:1px;background-color:#777}
 
-.lst_info li sup:before {content:'*';margin-right:5px;font-size:14px;font-weight:500;color:#f35065}
+.cont_contact .lst_guide li sup:before {content:'*';margin-right:5px;font-size:14px;font-weight:500;color:#f35065}
 
 .tbl_inplist {border-top:1px solid #dedede}
 .tbl_inplist th {padding:10px 0 10px 20px;border-bottom:1px solid #dedede;background-color:#f8f8f8;font-size:15px;color:#727272;text-align:left;vertical-align:middle}
