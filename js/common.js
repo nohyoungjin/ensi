@@ -109,7 +109,7 @@ $(function() {
 				$(this).addClass('on')
 				$(this).parents('.h_group').addClass('menu_hover')
 				$(this).parents('.h_group').stop().animate({'height': '280px'}, 300)
-				$('#gnb > .box > ul > li > a').css('color','#444')
+				$('#gnb > .box > ul > li > a').css('color', '#444')
 				$('#gnb .sub_menu').show()
 			}
 
@@ -124,12 +124,12 @@ $(function() {
 					$('#gnb > .box > ul > li').siblings().children('.sub_menu').hide()
 
 					if ($('.h_group').hasClass('affix')) {
-						$('#gnb > .box > ul > li > a').css('color','#444')
+						$('#gnb > .box > ul > li > a').css('color', '#444')
 					} else {
 						if (!$('.h_group').hasClass('sub')) {
-							// $(this).css('background','transparent')
+							// $(this).css('background', 'transparent')
 						}
-						$('#gnb > .box > ul > li > a').css('color','#fff')
+						$('#gnb > .box > ul > li > a').css('color', '#fff')
 					}
 
 				})
@@ -144,7 +144,7 @@ $(function() {
 			if ($('body').data('device') != 'mobile') {
 				$(this).parents('.h_group').addClass('menu_hover')
 				$(this).parents('.h_group').stop().animate({'height': '280px'}, 300)
-				$('#gnb > .box > ul > li > a').css('color','#444')
+				$('#gnb > .box > ul > li > a').css('color', '#444')
 				$('#gnb .sub_menu').show()
 			}
 
@@ -174,11 +174,11 @@ $(function() {
 
 			if ($(document).scrollTop() > fixedOffset.top) {
 				$('.h_group').addClass('affix')
-				$('#gnb > .box > ul > li > a').css('color','#444')
+				$('#gnb > .box > ul > li > a').css('color', '#444')
 			} else {
 				$('.h_group').removeClass('affix')
 				if (!$('.h_group').hasClass('sub') && !$('.h_group').hasClass('menu_hover')) {
-					$('#gnb > .box > ul > li > a').css('color','#fff')
+					$('#gnb > .box > ul > li > a').css('color', '#fff')
 				}
 				
 			}
@@ -212,7 +212,7 @@ $(function() {
 
 			}
 
-			$('#gnb > .box').css('display','block')
+			$('#gnb > .box').css('display', 'block')
 			$(this).next().stop().animate({'right': '0%'}, 300)
 			$('#gnb > .dim').fadeIn()
 
@@ -241,7 +241,7 @@ $(function() {
 			$('#gnb > .dim').hide()
 
 			$('#gnb > .box').stop().animate({'right': '-80%'}, 300, function() {
-				$('#gnb > .box').css('display','none')
+				$('#gnb > .box').css('display', 'none')
 			})
 
 			$('#gnb .btn_menu').focus()
@@ -677,7 +677,7 @@ $(function() {
 
 	// youtube
 
-	$( 'iframe[src^="https://www.youtube.com/"], iframe[src^="https://www.facebook.com/"], iframe[src^="https://goo.gl/"]' ).wrap('<div class="youtubeWrap"></div>')
+	$('iframe[src^="https://www.youtube.com/"], iframe[src^="https://www.facebook.com/"], iframe[src^="https://goo.gl/"]').wrap('<div class="youtubeWrap"></div>')
 
 	// file upload
 
@@ -695,11 +695,11 @@ $.fn.device = function() {
 	var size = $(window).width() + 17
 
 	if (size <= 1200) {
-		$('body').data('device','mobile')
+		$('body').data('device', 'mobile')
 	/* } else if (size > 1024 && size < 1280) {
-		$('body').data('device','tablet') */
+		$('body').data('device', 'tablet') */
 	} else {
-		$('body').data('device','pc')
+		$('body').data('device', 'pc')
 	}
 
 }
@@ -713,7 +713,7 @@ $.fn.gnbSize = function() {
 
 	if ($('body').data('device') == 'mobile') {
 
-		$('body').css('overflow','visible')
+		$('body').css('overflow', 'visible')
 
 		$('#gnb > .box').css({
 			'height':deviceHeight,
@@ -730,7 +730,7 @@ $.fn.gnbSize = function() {
 	} else {
 
 		$('body').css('overflow','visible')
-		$('#header .h_group > div > h1 > a > img').css('display','block')
+		$('#header .h_group > div > h1 > a > img').css('display', 'block')
 
 		$('#gnb > div.box').css({
 			'display'    : 'block',
@@ -738,7 +738,7 @@ $.fn.gnbSize = function() {
 			'background' : 'none'
 		})
 
-		$('#gnb > div.box').css('right','-80%')
+		$('#gnb > div.box').css('right', '-80%')
 		$('#gnb > div.box > ul > li').removeClass('current')
 		$('#gnb .sub_menu').hide()
 		// $('#gnb .sub_menu ul').show()
