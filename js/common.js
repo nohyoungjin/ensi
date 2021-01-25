@@ -102,9 +102,11 @@ $(function() {
 
 	function navi() {
 
+		var $body = $('body')
+
 		$('#gnb').on('mouseenter', '> .box > ul > li', function() {
 
-			if ($('body').data('device') != 'mobile') {
+			if ($body.data('device') != 'mobile') {
 				$('#gnb > .box > ul > li').removeClass('on')
 				$(this).addClass('on')
 				$(this).parents('.h_group').addClass('menu_hover')
@@ -117,7 +119,7 @@ $(function() {
 
 		$('.h_group').on('mouseleave', function() {
 
-			if ($('body').data('device') != 'mobile') {
+			if ($body.data('device') != 'mobile') {
 				$('#gnb > .box > ul > li').removeClass('on')
 				$('#gnb > .box > ul > li').parents('.h_group').stop().animate({'height': '91px'}, 300, function() {
 					$(this).removeClass('menu_hover')
@@ -141,7 +143,7 @@ $(function() {
 
 		$('#gnb').on('focusin', '> .box > ul > li', function() {
 
-			if ($('body').data('device') != 'mobile') {
+			if ($body.data('device') != 'mobile') {
 				$(this).parents('.h_group').addClass('menu_hover')
 				$(this).parents('.h_group').stop().animate({'height': '280px'}, 300)
 				$('#gnb > .box > ul > li > a').css('color', '#444')
@@ -152,7 +154,7 @@ $(function() {
 
 		$(document).on('focus', '.h_group h1 a, .slick-prev', function() {
 
-			if ($('body').data('device') != 'mobile') {
+			if ($body.data('device') != 'mobile') {
 				$('#gnb > .box > ul > li').parents('.h_group').stop().animate({'height': '91px'}, 300, function() {
 					$('#gnb > .box > ul > li').siblings().children('.sub_menu').hide()
 				})
@@ -167,17 +169,18 @@ $(function() {
 	function sticky() {
 
 		var fixedOffset = $('#header').offset()
+		var $hGroup = $('.h_group')
 
 		// window.alert(fixedOffset.top)
 
 		$(window).on('scroll', $.throttle(1000 / 15, function() {
 
 			if ($(document).scrollTop() > fixedOffset.top) {
-				$('.h_group').addClass('affix')
+				$hGroup.addClass('affix')
 				$('#gnb > .box > ul > li > a').css('color', '#444')
 			} else {
-				$('.h_group').removeClass('affix')
-				if (!$('.h_group').hasClass('sub') && !$('.h_group').hasClass('menu_hover')) {
+				$hGroup.removeClass('affix')
+				if (!$hGroup.hasClass('sub') && !$hGroup.hasClass('menu_hover')) {
 					$('#gnb > .box > ul > li > a').css('color', '#fff')
 				}
 				
@@ -392,10 +395,7 @@ $(function() {
 			var nextSec = $('.ensi.e2').offset().top - 91
 			var wHeight = $(window).height()
 
-			$('html, body').animate({
-				scrollTop: nextSec
-				}, 400
-			)
+			$('html, body').animate({ scrollTop: nextSec }, 400)
 
 		})
 
