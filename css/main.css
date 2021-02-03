@@ -72,7 +72,7 @@ SUMMARY :
 
 /* e2 */
 
-.ensi.e2 {height:649px;background:#a3adb3 url(../img/main/e2_bg.jpg) no-repeat center center;background-size:cover}
+.ensi.e2 {position:relative;z-index:100;height:649px;background:#a3adb3 url(../img/main/e2_bg.jpg) no-repeat center center;background-size:cover}
 
 .ensi.e2 .lst_walk {width:100%;margin:0 auto;padding-top:110px}
 .ensi.e2 .lst_walk:after {display:block;clear:both;content:''}

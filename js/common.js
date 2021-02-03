@@ -364,10 +364,10 @@ $(function() {
 			TweenMax.killTweensOf($progress)
 
 			progressTime = TweenMax.fromTo($progress, parseInt(speed / 1000), {
-				width : '0%'
+				width: '0%'
 			}, {
-				width : '100%',
-				ease : Power0.easeNone,
+				width: '100%',
+				ease: Power0.easeNone,
 				onStart: function() {
 					flagNext = false
 				},
@@ -591,8 +591,8 @@ $(function() {
 			removalDelay: 300,
 			mainClass: 'my-mfp-slide-bottom',
 
-			callbacks : {
-				open : function() {
+			callbacks: {
+				open: function() {
 
 					if ($('#content').is('.cont_conference, .cont_forum, .cont_seminar')) { 
 
@@ -612,7 +612,7 @@ $(function() {
 					}
 
 				},
-				close : function() {
+				close: function() {
 
 					if ($('#content').is('.cont_conference, .cont_forum, .cont_seminar')) { 
 				

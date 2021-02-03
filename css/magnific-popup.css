@@ -150,7 +150,6 @@ button::-moz-focus-inner {
 .mfp-close {
 	position: absolute;
 	right: 10px;
-	top: 30px;
 	width: 27px;
 	height: 26px;
 	padding: 0 0 18px 10px;
@@ -168,10 +167,6 @@ button::-moz-focus-inner {
 .mfp-close:hover,
 .mfp-close:focus {
 	opacity: 1; 
-}
-
-.mfp-close:active {
-	top: 30px; 
 }
 
 .mfp-close-btn-in .mfp-close {

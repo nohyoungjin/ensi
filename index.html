@@ -46,10 +46,10 @@
 				<section class="ensi e1">
 					<div class="visual_wrap">
 
-						<div id="main_slider" class="main_slider">
+						<div id="main_slider" class="main_slider skrollable skrollable-between" data-0="top: 0px" data-800="top: 400px">
 							<div class="viewport">
 								<div class="slider_item item_1">
-									<div class="message_box">
+									<div class="message_box" data-0="opacity: 1" data-800="opacity: 0">
 										<div class="inner">
 											<div class="lines">
 												<h2>지식과 경험을 공유하기 위한 플랫폼, ENSI</h2>
@@ -62,7 +62,7 @@
 								</div>
 								
 								<div class="slider_item item_2">
-									<div class="message_box">
+									<div class="message_box" data-0="opacity: 1" data-800="opacity: 0">
 										<div class="inner">
 											<div class="lines">
 												<h2>사회혁신교육자네트워크</h2>
@@ -88,7 +88,7 @@
 								</div>
 							</div>
 
-							<div class="controller">
+							<div class="controller" data-0="opacity: 1" data-800="opacity: 1">
 								<a href="javascript:" class="prev">이전 사진</a>
 								<a href="javascript:" class="next">다음 사진</a>
 							</div>
@@ -160,7 +160,7 @@
 
 				<!--  -->
 
-				<section class="ensi e3">
+				<section class="ensi e3" data-top-bottom="background-position:50% 0%" data-bottom-top="background-position:50% 100%">
 
 					<div class="sec_inner">
 						<h2 class="h_section">연구논문</h2>
@@ -190,7 +190,7 @@
 
 						<div>
 							<strong>사회적 기업에 대한 성찰</strong>
-							<p>사회혁신 교육자 네트워크(ENSI, Educators’ <br>Network for Social Innovation)는  행복나눔재단과 행복나눔재단과 행복나눔재단과</p>
+							<p>사회혁신 교육자 네트워크(ENSI, Educators’ <br>Network for Social Innovation)는 행복나눔재단과 행복나눔재단과 행복나눔재단과</p>
 							<ul>
 								<li>김철수 교수<span class="bar"></span></li>
 								<li>한국대학교</li>
@@ -327,6 +327,7 @@
 	<script src="js/ScrollToPlugin.min.js"></script>
 	<script src="js/SplitTextmin.js"></script>
 	<script src="js/ScrambleTextPlugin.min.js"></script>
+	<script src="js/skrollr.min.js"></script>
 	
 	<script src="js/jquery.cycle2.min.js"></script>
 	<script src="js/jquery.cycle2.swipe.min.js"></script>
@@ -336,6 +337,18 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/easing.js"></script>
 	<script src="js/common.js"></script>
+
+	<script type="text/javascript">
+
+	jQuery(document).ready(function($) {
+
+		var s = skrollr.init({
+			forceHeight: false
+		})
+
+	});
+
+	</script>
 
 </body>
 </html>
