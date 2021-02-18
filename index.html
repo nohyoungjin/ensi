@@ -342,6 +342,8 @@
 
 	jQuery(document).ready(function($) {
 
+		if (isMobile()) { return }
+
 		var s = skrollr.init({
 			forceHeight: false
 		})

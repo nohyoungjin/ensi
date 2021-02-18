@@ -36,6 +36,21 @@ header, main, footer, hgroup, menu, nav, section {
 	display: block;
 }
 
+html {
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+body {
+	font-family: 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', 'Apple Gothic', sans-serif;
+	/* font-size: 13px; */
+	font-weight: 400;
+	color: #333;
+	line-height: 1.5;
+	word-break: keep-all;
+}
+
 ol, ul {
 	list-style: none;
 }
