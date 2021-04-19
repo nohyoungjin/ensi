@@ -751,7 +751,7 @@ $.fn.gnbSize = function() {
 
 // scroll top 
 
-function scollTopStart() {
+function scrollTopStart() {
 
 	 $('html,body').stop().animate({ scrollTop: 0 }, 600)
 
