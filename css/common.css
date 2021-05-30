@@ -85,11 +85,11 @@ SUMMARY :
 
 /* header */
 
-#header .h_group {overflow:visible;position:fixed;top:0;left:0;z-index:999;width:100%;height:91px;background-color:transparent}
+#header .h_group {overflow:visible;position:fixed;top:0;left:0;z-index:999;width:100%;height:91px;;background-color:transparent;transition:background .3s,color .3s}
 /* #header .h_group:before {content:"";position:absolute;top:91px;left:0px;width:100%;height:1px} */
 
 #header .h_group > div {height:91px;margin:0 auto}
-#header .h_group > div h1 {position:absolute;top:34px;left:80px;width:77px;height:27px}
+#header .h_group > div h1 {position:absolute;top:34px;left:80px}
 #header .h_group > div h1 a.logo {display:block;width:77px;height:27px;background:url(../img/common/logo.png) no-repeat;background-size:77px 27px}
 #header .h_group > div h1 span.txt {display:inline-block;position:absolute;top:0;left:94px;width:200px;font-size:10px;font-weight:300;color:#fff;line-height:140%}
 
@@ -187,7 +187,7 @@ SUMMARY :
 .btn_family {display:block;position:relative;width:224px;padding:10px;border-bottom:1px solid #666;background:url(../img/common/ico_down.png) center right 10px no-repeat;font-size:16px;color:#666}
 .btn_family.open {display:block;width:224px;padding:10px;border-bottom:1px solid #666;background:url(../img/common/ico_up.png) center right 10px no-repeat;font-size:16px;color:#666}
 
-.lst_family {display:none;position:absolute;bottom:45px;z-index:3;width:224px;padding:10px;border:1px solid #999;background:#fff}
+.lst_family {display:none;position:absolute;bottom:45px;z-index:3;width:224px;padding:10px 14px;border:1px solid #999;background:#fff}
 .lst_family li {font-size:14px;color:#999;line-height:28px}
 
 /* layer popup */
@@ -244,7 +244,7 @@ SUMMARY :
 	/* header */
 
 	#header .h_group {height:75px !important;border-top:0}
-	#header .h_group > div {width:auto;height:75px;padding:0 20px}
+	#header .h_group > div {width:auto;height:75px}
 
 	#header .h_group > div h1 {top:24px;left:18px}
 
