@@ -5,4 +5,4 @@ str += '		<span class="blind">상단으로 이동</span>'
 str += '	</a>'
 str += '</div>'
 
-document.write(str);																	
+document.write(str)														
