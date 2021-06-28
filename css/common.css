@@ -18,7 +18,7 @@ SUMMARY :
 #wrap {position:relative;width:100%;min-height:100%}
 #container {width:100%}
 *html #container {height:100%}
-.content {min-height:calc(100vh - 173px);padding-bottom:146px}
+.content {min-height:calc(100vh - 146px);padding-bottom:146px}
 
 /* skip */
 
@@ -237,7 +237,7 @@ SUMMARY :
 	/* layout */
 
 	#container {min-width:100%}
-	.content {padding-bottom:173px}
+	.content {min-height:calc(100vh - 194px);padding-bottom:194px}
 
 	/* header */
 
@@ -285,7 +285,7 @@ SUMMARY :
 
 	/* footer */
 
-	#footer {height:194px;padding:0 0 50px;border-top:0}
+	#footer {height:194px;border-top:0;padding:0 0 20px}
 
 	#footer .inner {float:none;width:100%;margin:0;padding:15px 0 0;text-align:left}
 	#footer .inner ul.add {width:100%;margin-top:60px;padding:0 20px;text-align:center}
